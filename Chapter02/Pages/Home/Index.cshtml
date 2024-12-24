@@ -1,0 +1,38 @@
+﻿@page "/"
+@using Chapter02.Core.Dtos.Users
+@model IndexModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Home Page";
+    
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+<ul>
+    @{int i = 0;}
+    @foreach (var item in Model.contactUsers)
+    {
+      
+        i++;
+        <div>@i User in Collection</div> 
+        <li>Name: @item.Name, Surname: @item.Surname,
+            Email: @item.Email, Phone: @item.PhoneNumber,
+        </li>
+            
+    }
+</ul>
+@if (User.Identity!.IsAuthenticated)
+{
+    <p>Ви увійшли як @User.Identity.Name</p>
+}
+else
+{
+    <p>Ви не авторизовані</p>
+}
+    
+    
+

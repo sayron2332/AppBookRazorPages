@@ -1,0 +1,26 @@
+﻿@page "{id}"
+@model Chapter02.Pages.Admin.Categories.UpdateModel
+@{
+    Layout = "_AdminLayout";
+}
+<div class="row">
+    <div class="col-md-5 offset-3">
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title">Category Update</h3>
+            </div>
+          
+            <form class="text-start" method="post">
+                <input type="hidden" asp-for="Category.Id" value="@Model.Category?.Id" />
+                <div>
+                    <label>Name</label>
+                    <input required class="form-control" asp-for="Category.Name" value="Category.Name" type="text">
+                    <span class="text-danger" asp-validation-for="Category.Name"></span>
+                </div>
+
+                <br />
+                <button class="btn btn-success">summbit</button>
+            </form>
+        </div>
+    </div>
+</div>

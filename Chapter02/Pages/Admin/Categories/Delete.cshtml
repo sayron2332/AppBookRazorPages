@@ -1,0 +1,30 @@
+﻿@page "{id}"
+@model Chapter02.Pages.Admin.Categories.DeleteModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class=" bg-opacity-25">
+   
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-5 offset-3">
+                <div class="card card-danger">
+                    <br />
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Do you wanna Delete category with name @Model.Category?.Name</h6>
+                            <form method="post">
+                                <input type="hidden" value="@Model.Category?.Id" />
+                                <button class="btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.card -->
+</div>
+

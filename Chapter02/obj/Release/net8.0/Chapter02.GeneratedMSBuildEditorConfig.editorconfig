@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Chapter02
+build_property.RootNamespace = Chapter02
+build_property.ProjectDir = C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Admin/Categories/AllCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcmllc1xBbGxDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Admin/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Admin/Users/AllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlcnNcQWxsVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Auth/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Auth/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Auth/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Home/Catalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxDYXRhbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Home/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxDb250YWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/User/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nazar/Desktop/C\#_BOOK/AspNetCoreInAction/Chapter02/Chapter02/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

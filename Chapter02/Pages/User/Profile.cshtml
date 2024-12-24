@@ -1,0 +1,148 @@
+﻿@page 
+@using Chapter02.Core.Entities;
+@using Chapter02.Core.Dtos.Users;
+@using Microsoft.AspNetCore.Identity;
+@inject UserManager<AspNetUser> UserManager;
+@model Chapter02.Pages.User.ProfileModel;
+@{
+    var user = await UserManager.GetUserAsync(User);
+    Layout = "_Layout";
+}
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="text-center alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+        @if (@TempData["ErrorMessage"] != null)
+        {
+            <span class="alert alert-danger">@TempData["ErrorMessage"] </span>
+            <span class="alert alert-danger">@TempData["Error"]</span>
+        }
+        @if (@ViewData["ErrorMessage"] != null)
+        {
+            <span class="alert alert-danger">@ViewData["ErrorMessage"] </span>
+            <span class="alert alert-danger">@ViewData["Error"]</span>
+        }
+        @if (@ViewData["SuccessMessage"] != null)
+        {
+            <span class="alert alert-success">@ViewData["SuccessMessage"]</span>
+        }
+    <h2>Profile</h2>
+    <section class="content">
+        
+        <div class="container-fluid">
+            <div class="card card-default">
+                <div class="card-header">
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body bg">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <div class="card card-danger">
+                                <div class="card-header">
+                                    <h3 class="card-title">User Information</h3>
+                                </div>
+                                <div class="text-start">
+                                  
+                                    <div class="mb-3">
+                                        <label>Name</label>
+                                        <input class="form-control" readonly placeholder="@user?.Name" type="text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label>Surname</label>
+                                        <input class="form-control"  readonly placeholder="@user?.Surname" type="text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label>Phone</label>
+                                        <input class="form-control"  readonly placeholder="@user?.PhoneNumber" type="text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label>Email</label>
+                                        <input class ="form-control" readonly placeholder="@user?.Email" type="text">
+                                    </div>
+                                    <br />
+                                    <div class="d-flex justify-content-sm-between">
+                                        <a class="btn btn-success w-100" asp-route-id="@user?.Id" asp-page="/user/update">Change information</a>
+                                        <a class="btn btn-danger w-100" asp-route-id="@user?.Id" asp-page="/user/delete">Delete profile</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-danger">
+                                <div class="card-header">
+                                    <h3 class="card-title">Update password</h3>
+                                </div>
+                             
+                                <br>
+                                <form method="post">
+
+
+                                    <input type="hidden" value="@user?.Id" asp-for="UpdateUserPassword.Id">
+
+                                    <div>
+                                        <label asp-for="UpdateUserPassword.OldPassword">Old Password*</label>
+                                        <input required type="password" class="form-control" asp-for="UpdateUserPassword.OldPassword">
+                                        <span class="text-danger" asp-validation-for="UpdateUserPassword.OldPassword"></span>
+                                    </div>
+
+                                    <div>
+                                        <label asp-for="UpdateUserPassword.Password">Password*</label>
+                                        <span id="passwordHelpInline" class="form-text">
+                                            Password must contain min 6 symbol, 1 UpperCase letter, 1 Digit
+                                        </span>
+                                        <input required type="password" class="form-control" asp-for="UpdateUserPassword.Password">
+                                        <span class="text-danger" asp-validation-for="UpdateUserPassword.Password"></span>
+                                    </div>
+
+                                    <div>
+                                        <label asp-for="UpdateUserPassword.ConfirmPassword">Confirm Password*</label>
+                                        <input required type="password" class="form-control" asp-for="UpdateUserPassword.ConfirmPassword">
+                                        <span class="text-danger" asp-validation-for="UpdateUserPassword.ConfirmPassword"></span>
+                                    </div>
+                                    <div class="text-danger" asp-validation-summary="All"></div>
+                                    <button required type="submit" class="btn btn-success w-50">Submit</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-default">
+                <div class="card-header">
+                  
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+              
+                <!-- /.card -->
+            </div>
+           
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>

@@ -1,0 +1,73 @@
+﻿@page 
+@model SignUp
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "My Register Form";
+}
+
+
+<form method="post">
+    @if (@ViewData["ErrorMessage"] != null)
+    {
+        <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
+    }
+    <br>
+
+    <div>
+        <label asp-for="@Model.RegisterUser.Name">Name</label>
+        <input required type="text" class="form-control" asp-for="@Model.RegisterUser.Name">
+        <span class="text-danger" asp-validation-for="@Model.RegisterUser.Name"></span>
+    </div>
+
+    <div>
+        <label asp-for="@Model.RegisterUser.Surname">Surname</label>
+        <input required type="text" class="form-control" asp-for="@Model.RegisterUser.Surname">
+        <span class="text-danger" asp-validation-for="@Model.RegisterUser.Surname"></span>
+    </div>
+
+    <div>
+        <label asp-for="@Model.RegisterUser.Email">Email address</label>
+        <input required type="email" class="form-control" asp-for="@Model.RegisterUser.Email">
+        <span class="text-danger" asp-validation-for="@Model.RegisterUser.Email"></span>
+    </div>
+
+    <div>
+        <label asp-for="@Model.RegisterUser.Password">Password</label>
+        <span id="passwordHelpInline" class="form-text">
+            Password must contain min 6 symbol, 1 UpperCase letter, 1 Digit
+        </span>
+        <input required type="password" class="form-control" asp-for="@Model.RegisterUser.Password">
+        <span class="text-danger" asp-validation-for="@Model.RegisterUser.Password"></span>
+    </div>
+
+    <div>
+        <label asp-for="@Model.RegisterUser.ConfirmPassword">Confirm Password</label>
+        <input required type="password" class="form-control" asp-for="@Model.RegisterUser.ConfirmPassword">
+        <span class="text-danger" asp-validation-for="@Model.RegisterUser.ConfirmPassword"></span>
+    </div>
+
+    <div>
+        <label asp-for="@Model.RegisterUser.PhoneNumber">Phone</label>
+        <input type="text" class="form-control" asp-for="@Model.RegisterUser.PhoneNumber">
+        <span class="text-danger" asp-validation-for="@Model.RegisterUser.PhoneNumber"></span>
+    </div>
+    @if (@User.IsInRole("admin"))
+    {
+        <div>
+            <label>Role</label>
+            <select class="form-select" asp-for="RegisterUser.Role" type="text">
+                <option selected value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+        </div>
+    }
+    else
+    {
+       <input type="hidden" class="form-control" asp-for="RegisterUser.Role">
+    }
+    <br />
+
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="text-danger" asp-validation-summary="All"></div>
+</form>

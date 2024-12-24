@@ -1,0 +1,29 @@
+﻿@page "{id}"
+@model Chapter02.Pages.Admin.Authors.DeleteModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class=" bg-opacity-25">
+
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-5 offset-3">
+                <div class="card card-danger">
+                    <br />
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Do you wanna Delete Author @Model.Author?.Name @Model.Author?.Surname</h6>
+                            <form method="post">
+                                <button class="btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.card -->
+</div>
+

@@ -1,0 +1,42 @@
+﻿@page "{id}"
+@model Chapter02.Pages.Admin.Authors.UpdateModel
+@{
+    Layout = "_AdminLayout";
+}
+<div class="row">
+    <div class="col-md-5 offset-3">
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title">Author Update</h3>
+            </div>
+
+            <form class="text-start align-items-center" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="@Model.Author.Id" asp-for="Author.Id" />
+                <div style="text-align:center;">
+                    <img style="max-width:150px;max-height:200px;" src="/images/authors/@Model.Author.ImageName" />
+                </div>
+              
+                <div>
+                    <label>Name</label>
+                    <input required class="form-control" asp-for="Author.Name" value="@Model.Author.Name" type="text">
+                    <span class="text-danger" asp-validation-for="Author.Name"></span>
+                </div>
+
+                <div>
+                    <label>Surname</label>
+                    <input required class="form-control" asp-for="Author.Surname" value="@Model.Author.Surname" type="text">
+                    <span class="text-danger" asp-validation-for="Author.Surname"></span>
+                </div>
+
+
+                <div>
+                    <label>Photo</label>
+                    <input accept="image/*" type="file" class="form-control" name="photo">
+                </div>
+
+                <br />
+                <button class="btn btn-success">summbit</button>
+            </form>
+        </div>
+    </div>
+</div>

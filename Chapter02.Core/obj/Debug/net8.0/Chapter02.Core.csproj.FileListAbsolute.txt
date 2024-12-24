@@ -1,0 +1,13 @@
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\bin\Debug\net8.0\Chapter02.Core.deps.json
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\bin\Debug\net8.0\Chapter02.Core.dll
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\bin\Debug\net8.0\Chapter02.Core.pdb
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.csproj.AssemblyReference.cache
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.AssemblyInfoInputs.cache
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.AssemblyInfo.cs
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.sourcelink.json
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.dll
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\refint\Chapter02.Core.dll
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\Chapter02.Core.pdb
+C:\Users\Nazar\Desktop\C#_BOOK\AspNetCoreInAction\Chapter02\Chapter02.Core\obj\Debug\net8.0\ref\Chapter02.Core.dll

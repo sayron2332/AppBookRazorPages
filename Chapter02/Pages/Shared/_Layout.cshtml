@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>@ViewData["Title"]</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <!-- Логотип -->
+                    <h1><a class="navbar-brand" href="#">BookStore</a></h1>
+                    <!-- Кнопка для мобільного меню -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Меню навігації -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                        @if (User.IsInRole("admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/admin/users/allusers">Admin</a>
+                            </li>
+                        }
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" asp-page="/about-us">About us</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" asp-page="/catalog">Catalog</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" asp-page="/contacts">Contacts</a>
+                            </li>
+                       
+                        @if (User.Identity!.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a asp-page="/user/profile" class="nav-link">Profile</a>
+                            </li>
+                        }else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/auth/signin">Sign In</a>
+                            </li>
+                        }
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-grow-1  py-3">
+            <div class="container">
+                @RenderBody()
+            </div>
+        </main>
+     
+        <footer class="bg-dark text-white py-3">
+            <div class="container">
+                <div class="row">
+                    <!-- Логотип і опис -->
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">BookStore</h5>
+                    <p>Your the best Choise for buy books all ganres. we like all reader and work on it</p>
+                    </div>
+
+                    <!-- Швидкі посилання -->
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="/about-us" class="text-white text-decoration-none">About us</a></li>
+                            <li><a href="/contact" class="text-white text-decoration-none">Contact</a></li>
+                            <li><a href="/catalog" class="text-white text-decoration-none">Catalog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Контактна інформація -->
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Contact</h5>
+                        <p>
+                            <i class="bi bi-geo-alt"></i>Street Rivnenska 58, Rivne <br>
+                            <i class="bi bi-telephone"></i>(+380) 959 348 105<br>
+                            <i class="bi bi-envelope"></i>xvtnxjgbyv@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3">
+                    <p class="mb-0">&copy; 2024 BookStore. All copyright protected.</p>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿@page 
+@model SignInModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "My Login Form";
+
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+<form method="post" asp-page="/SignIn">
+        @if (@ViewData["ErrorMessage"] != null)
+        {
+            <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
+        }
+        <br>
+        <div>
+            <label asp-for="SignInUser.Email">Email address</label>
+            <input type="email" class="form-control" asp-for="SignInUser.Email">
+            <span class="text-danger" asp-validation-for="SignInUser.Email"></span>
+        </div>
+
+        <div>
+            
+            <label asp-for="SignInUser.Password">Password</label>
+            <input type="password" class="form-control" asp-for="SignInUser.Password">
+            <span class="text-danger" asp-validation-for="SignInUser.Password"></span>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input asp-for="SignInUser.RememberMe" type="checkbox" class="form-check-input">
+            <label class="form-check-label" asp-for="SignInUser.RememberMe">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="text-danger" asp-validation-summary="All"></div>
+    </form>

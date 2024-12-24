@@ -1,0 +1,30 @@
+﻿@page
+@model Chapter02.Pages.Admin.Authors.CreateModel
+@{
+    Layout = "_AdminLayout";
+}
+<form method="post" enctype="multipart/form-data">
+    @if (@ViewData["ErrorMessage"] != null)
+    {
+        <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
+    }
+    <br>
+    <h2 class="card-title">Create New Author</h2>
+    <div class="col-4 offset-4">
+        <label asp-for="Author.Name">Name</label>
+        <input required type="text" class="form-control" asp-for="Author.Name">
+        <span class="text-danger" asp-validation-for="Author.Name"></span>
+    </div>
+    <div class="col-4 offset-4">
+        <label asp-for="Author.Surname">Surname</label>
+        <input required type="text" class="form-control" asp-for="Author.Surname">
+        <span class="text-danger" asp-validation-for="Author.Surname"></span>
+    </div>
+    <div class="col-4 offset-4">
+        <label>Photo</label>
+        <input accept="image/*" type="file" class="form-control" name="photo">
+       
+    </div>
+    <br />
+    <button class="btn btn-success">Create</button>
+</form>

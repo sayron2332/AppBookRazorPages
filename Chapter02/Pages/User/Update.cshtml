@@ -1,0 +1,59 @@
+﻿@page "{id}"
+@model Chapter02.Pages.User.UpdateModel
+@{
+    Layout = "_Layout";
+    
+}
+
+<div class="row">
+    <div class="col-md-5 offset-3">
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title">User Information</h3>
+            </div>
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <span class="alert alert-danger">@ViewData["ErrorMessage"]</span>
+                <span class="alert alert-danger">@ViewData["Error"]</span>
+            }
+            <form class="text-start" method="post">
+                <input value="@Model.Id"  asp-for="UpdateUser.Id" type="hidden">
+                <div>
+                    <label>Name</label>
+                    <input class="form-control" asp-for="UpdateUser.Name" value="@Model.UpdateUser.Name" type="text">
+                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.Name"></span>
+                </div>
+
+                <div>
+                    <label>Surname</label>
+                    <input class="form-control" asp-for="UpdateUser.Surname" value="@Model.UpdateUser.Surname" type="text">
+                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.Surname"></span>
+                </div>
+
+                <div class="form">
+                    <label>Phone</label>
+                    <input class="form-control" asp-for="UpdateUser.PhoneNumber" value="@Model.UpdateUser.PhoneNumber" type="text">
+                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.PhoneNumber"></span>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input class="form-control" asp-for="UpdateUser.Email" value="@Model.UpdateUser.Email" type="text">
+                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.Email"></span>
+                </div>
+                @if (@User.IsInRole("admin"))
+                {
+                    <div>
+                        <label>Role</label>
+                        <select class="form-select" asp-for="UpdateUser.Role" type="text">
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                        </select>
+                    </div>
+                }
+                <br />
+              <button class="btn btn-success">summbit</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿@page "{id}"
+@model Chapter02.Pages.User.DeleteModel
+@{
+    Layout = "_Layout";
+}
+
+<div class=" bg-opacity-25">
+   
+    <!-- /.card-header -->
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-5 offset-3">
+                <div class="card card-danger">
+                    <br />
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hello @Model.UpdateUser.Name, @Model.UpdateUser.Surname</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Do you wanna Delete user @Model.UpdateUser.Email</h6>
+                            <p class="card-text">If you do this Your user @Model.UpdateUser.Email will delete forever</p>
+                            <form method="post">
+                                <input type="hidden" value="@Model.UpdateUser.Id" />
+                                <button class="btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.card -->
+</div>
+

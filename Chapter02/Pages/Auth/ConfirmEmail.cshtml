@@ -1,0 +1,15 @@
+﻿@page 
+@model ConfirmEmailModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Confrim Email page";
+}
+
+
+@if (ViewData["ErrorMessage"] != null)
+{
+    <span class="text-danger">@ViewData["ErrorMessage"]</span>
+}else
+{
+<span class="text-success">@ViewData["SuccessMessage"]</span>
+}
