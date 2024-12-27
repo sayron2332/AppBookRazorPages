@@ -9,6 +9,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg",
+      "PackagePath": "staticwebassets\\images\\authors\\2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg",
+      "PackagePath": "staticwebassets\\images\\authors\\4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg",
+      "PackagePath": "staticwebassets\\images\\authors\\9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\a355c94e-df6e-43b7-aafe-170535aa63e3.jpg",
+      "PackagePath": "staticwebassets\\images\\authors\\a355c94e-df6e-43b7-aafe-170535aa63e3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\a9a72908-465f-4ebe-b243-e738e7e5c311.jpg",
+      "PackagePath": "staticwebassets\\images\\authors\\a9a72908-465f-4ebe-b243-e738e7e5c311.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg",
+      "PackagePath": "staticwebassets\\images\\authors\\af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg",
+      "PackagePath": "staticwebassets\\images\\authors\\d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg"
+    },
+    {
       "Id": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\images\\authors\\default.jpg",
       "PackagePath": "staticwebassets\\images\\authors\\default.jpg"
     },

@@ -1,8 +1,10 @@
-﻿using AutoMapper;
+﻿using Ardalis.Specification;
+using AutoMapper;
 using Chapter02.Core.Dtos.Authors;
 using Chapter02.Core.Dtos.Configuration;
 using Chapter02.Core.Entities;
 using Chapter02.Core.Interfaces;
+using Chapter02.Core.Specification;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 
@@ -41,8 +43,9 @@ namespace Chapter02.Core.Services
 
                     using (var fileStream = new FileStream(Path.Combine(upload, fileName), FileMode.Create))
                     {
-                        photo.CopyTo(fileStream);
+                       await photo.CopyToAsync(fileStream);
                     }
+                    
 
                     model.ImageName = fileName;
                 }
@@ -67,7 +70,6 @@ namespace Chapter02.Core.Services
 
             }
         }
-
         public async Task<ServiceResponse> Delete(int Id)
         {
             Author? author = await _repository.GetByID(Id);
@@ -95,7 +97,6 @@ namespace Chapter02.Core.Services
                 Message = "Author successfuly deleted"
             };
         }
-
         public async Task<IEnumerable<AuthorDto>> GetAll()
         { 
             IEnumerable<Author> authors = await _repository.GetAll();
@@ -127,7 +128,6 @@ namespace Chapter02.Core.Services
            };
 
         }
-
         public async Task<ServiceResponse> Update(IFormFile photo, AuthorDto model)
         {
            Author? author = await _repository.GetByID(model.Id);
@@ -173,5 +173,11 @@ namespace Chapter02.Core.Services
            };
 
         }
+        public async Task<IEnumerable<Author>> GetListById(int[] Id)
+        {
+             return await _repository.GetListBySpec(new AuthorsSpecification.GetListById(Id));
+        }
+       
+
     }
 }

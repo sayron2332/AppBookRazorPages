@@ -1,5 +1,6 @@
 ﻿using Chapter02.Core.Entities;
 using Chapter02.Core.Interfaces;
+using Chapter02.Core.Specification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,14 +16,12 @@ namespace Chapter02.Core.Services
         {
             _repository = repository;
         }
-
         public async Task Create(Category model)
         {
             await _repository.Insert(model);
             await _repository.Save();
             
         }
-
         public async Task<ServiceResponse> Delete(int Id)
         {
             Category category = await GetbyId(Id);
@@ -43,7 +42,6 @@ namespace Chapter02.Core.Services
                 Message = "Category successfuly deleted"
             };
         }
-
         public async Task<IEnumerable<Category>> GetAll()
         {
             IEnumerable<Category> result = await _repository.GetAll();
@@ -53,8 +51,6 @@ namespace Chapter02.Core.Services
             }
             return result;
         }
-        
-
         public async Task<Category> GetbyId(int id)
         {
             var result = await _repository.GetByID(id);
@@ -64,8 +60,6 @@ namespace Chapter02.Core.Services
             }
             return result;
         }
-      
-
         public async Task<ServiceResponse> Update(Category model)
         {
             var category = await _repository.GetByID(model.Id);
@@ -87,6 +81,10 @@ namespace Chapter02.Core.Services
                 Success = true,
                 Message = "Category successfuly updated"
             };
+        }
+        public async Task<IEnumerable<Category>> GetListById(int[] id)
+        {
+            return await _repository.GetListBySpec(new CategorySpecification.GetListById(id));
         }
     }
 }

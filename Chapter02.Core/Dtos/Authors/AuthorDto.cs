@@ -11,6 +11,7 @@ namespace Chapter02.Core.Dtos.Authors
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Surname { get; set; } = string.Empty;
+        public string FullName => Name + " "+ Surname;
         public string ImageName {  get; set; } = "default.jpg";
 
     }

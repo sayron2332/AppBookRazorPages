@@ -3,12 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\specification\\authorsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\specification\\authorsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\specification\\categoryspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\specification\\categoryspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.infrastructure\\helpers\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\helpers\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.infrastructure\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\automapper\\books\\automapperbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\automapper\\books\\automapperbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\automapper\\authors\\automapperauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\automapper\\authors\\automapperauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\authors\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\authors\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\dtos\\book\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\dtos\\book\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\validation\\books\\createbookvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\validation\\books\\createbookvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\validation\\authors\\authorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\validation\\authors\\authorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\dtos\\authors\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\dtos\\authors\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\chapter02.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\chapter02.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\authors\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\authors\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,63 +131,27 @@
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\categories\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\authors\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\authors\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\authors\\allauthors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\authors\\allauthors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\dtos\\authors\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\dtos\\authors\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.infrastructure\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\books\\allbooks.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\books\\allbooks.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\books\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nazar\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\validation\\authors\\authorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\validation\\authors\\authorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\validation\\categories\\categoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,20 +182,8 @@
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\automapper\\authors\\automapperauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\automapper\\authors\\automapperauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,10 +210,6 @@
       "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -178,24 +226,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chapter02.Infrastructure\\Migrations\\20241223112107_updateAuthorEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\automapper\\user\\automapperuserprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\automapper\\user\\automapperuserprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\categories\\allcategories.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -254,10 +286,6 @@
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\categories\\allcategories.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\admin\\users\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\admin\\users\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -308,10 +336,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\pages\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\pages\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.infrastructure\\helpers\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\helpers\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217161257_SeedComments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -422,20 +446,12 @@
       "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\chapter02.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.core\\chapter02.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E5E98EB2-EFC5-4B7C-9720-BEC4C8454B45}|Chapter02.Core\\Chapter02.Core.csproj|solutionrelative:chapter02.core\\chapter02.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241115180317_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chapter02.Infrastructure\\Migrations\\20241115180317_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E1857C07-4814-45DE-A6A7-001523126604}|Chapter02\\Chapter02.csproj|solutionrelative:chapter02\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|c:\\users\\nazar\\desktop\\c#_book\\aspnetcoreinaction\\chapter02\\chapter02.infrastructure\\migrations\\20241224095641_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12C57951-C9EE-4047-9568-5DEEE80078B9}|Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj|solutionrelative:chapter02.infrastructure\\migrations\\20241224095641_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -445,324 +461,276 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Author.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\Author.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Author.cs",
-              "RelativeToolTip": "Chapter02.Core\\Entities\\Author.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Title": "CategorySpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Specification\\CategorySpecification.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Specification\\CategorySpecification.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Specification\\CategorySpecification.cs",
+              "RelativeToolTip": "Chapter02.Core\\Specification\\CategorySpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:34:57.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Book.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\Book.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Book.cs",
-              "RelativeToolTip": "Chapter02.Core\\Entities\\Book.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:20:36.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\appsettings.json",
-              "RelativeDocumentMoniker": "Chapter02\\appsettings.json",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\appsettings.json",
-              "RelativeToolTip": "Chapter02\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-13T15:57:24.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Chapter02.Infrastructure\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\ServiceExtensions.cs",
-              "RelativeToolTip": "Chapter02.Infrastructure\\ServiceExtensions.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAMwBYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T15:59:37.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthorDto.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
-              "RelativeToolTip": "Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T10:57:12.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAgwCgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T13:17:38.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBkAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T12:19:03.886Z",
+              "WhenOpened": "2024-12-27T17:50:45.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Update.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAIAwwCYAAAAQAAAA",
+              "Title": "AuthorsSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Specification\\AuthorsSpecification.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Specification\\AuthorsSpecification.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Specification\\AuthorsSpecification.cs",
+              "RelativeToolTip": "Chapter02.Core\\Specification\\AuthorsSpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T13:00:27.572Z",
+              "WhenOpened": "2024-12-27T17:33:30.016Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthorService.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\AuthorService.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Services\\AuthorService.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\AuthorService.cs",
-              "RelativeToolTip": "Chapter02.Core\\Services\\AuthorService.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAwwG0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T11:11:48.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T12:56:59.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA4AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T10:10:43.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T12:18:36.9Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AllAuthors.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAlwAwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T10:55:48.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T11:01:15.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "IAuthorService.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IAuthorService.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Interfaces\\IAuthorService.cs",
               "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IAuthorService.cs",
               "RelativeToolTip": "Chapter02.Core\\Interfaces\\IAuthorService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAIwA8AAAArAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAowBEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T11:10:34.129Z"
+              "WhenOpened": "2024-12-23T11:10:34.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\BookService.cs",
+              "RelativeToolTip": "Chapter02.Core\\Services\\BookService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAA0wDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:18:01.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAMwCYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T10:44:26.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T17:36:18.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "Chapter02.Core\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:48:06.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IBookService.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Interfaces\\IBookService.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IBookService.cs",
+              "RelativeToolTip": "Chapter02.Core\\Interfaces\\IBookService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAwwA4AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:17:47.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\AuthorService.cs",
+              "RelativeToolTip": "Chapter02.Core\\Services\\AuthorService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAgwLMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T12:04:12.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\CategoryService.cs",
+              "RelativeToolTip": "Chapter02.Core\\Services\\CategoryService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwFUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:57:16.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\ServiceExtensions.cs",
+              "RelativeToolTip": "Chapter02.Core\\ServiceExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:59:27.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AutoMapperAuthor.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
+              "RelativeToolTip": "Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T11:15:11.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
+              "RelativeToolTip": "Chapter02.Core\\Dtos\\Authors\\AuthorDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T10:57:12.843Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Chapter02.Infrastructure\\Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:59:47.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Book\\CreateBookDto.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Book\\CreateBookDto.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Book\\CreateBookDto.cs",
+              "RelativeToolTip": "Chapter02.Core\\Dtos\\Book\\CreateBookDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T15:41:30.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Helpers\\SeedData.cs",
+              "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Helpers\\SeedData.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Helpers\\SeedData.cs",
+              "RelativeToolTip": "Chapter02.Infrastructure\\Helpers\\SeedData.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:08:57.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Chapter02.Infrastructure\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\ServiceExtensions.cs",
+              "RelativeToolTip": "Chapter02.Infrastructure\\ServiceExtensions.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAMwBoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:59:37.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AutoMapperBook.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\AutoMapper\\Books\\AutoMapperBook.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\AutoMapper\\Books\\AutoMapperBook.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\AutoMapper\\Books\\AutoMapperBook.cs",
+              "RelativeToolTip": "Chapter02.Core\\AutoMapper\\Books\\AutoMapperBook.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T16:51:18.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Create.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Create.cshtml",
               "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Create.cshtml",
               "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Create.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAABOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-23T13:15:38.121Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "AllBooks.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:12:33.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T10:09:31.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Create.cshtml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T10:44:26.175Z"
+              "WhenOpened": "2024-12-23T13:17:38.717Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\BookService.cs",
-              "RelativeToolTip": "Chapter02.Core\\Services\\BookService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwC4AAAAzAAAA",
+              "DocumentIndex": 24,
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAIAwwCAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:18:01.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CategoryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
-              "RelativeToolTip": "Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:05:13.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "EmailSettings.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
-              "RelativeToolTip": "Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:02:22.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T13:13:12.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AutoMapperAuthor.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
-              "RelativeToolTip": "Chapter02.Core\\AutoMapper\\Authors\\AutoMapperAuthor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T11:15:11.619Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 108,
-              "Title": "20241224095641_Init.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241224095641_Init.cs",
-              "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241224095641_Init.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241224095641_Init.cs",
-              "RelativeToolTip": "Chapter02.Infrastructure\\Migrations\\20241224095641_Init.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:56:42.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\Nazar\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
-              "ToolTip": "C:\\Users\\Nazar\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-13T15:57:32.714Z"
+              "WhenOpened": "2024-12-24T13:00:27.572Z"
             },
             {
               "$type": "Document",
@@ -778,7 +746,223 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Program.cs",
+              "RelativeDocumentMoniker": "Chapter02\\Program.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Program.cs",
+              "RelativeToolTip": "Chapter02\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:11:16.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateBookValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\Books\\CreateBookValidator.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Validation\\Books\\CreateBookValidator.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\Books\\CreateBookValidator.cs",
+              "RelativeToolTip": "Chapter02.Core\\Validation\\Books\\CreateBookValidator.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T17:13:24.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Chapter02.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Chapter02.Core.csproj",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj",
+              "RelativeToolTip": "Chapter02.Core\\Chapter02.Core.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-15T18:45:46.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Chapter02\\Pages\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T13:13:12.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T12:18:36.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T10:10:43.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T12:56:59.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T12:19:03.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Book.cs",
+              "RelativeToolTip": "Chapter02.Core\\Entities\\Book.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:20:36.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\appsettings.json",
+              "RelativeDocumentMoniker": "Chapter02\\appsettings.json",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\appsettings.json",
+              "RelativeToolTip": "Chapter02\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T15:57:24.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Author.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\Author.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Author.cs",
+              "RelativeToolTip": "Chapter02.Core\\Entities\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:34:57.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AllAuthors.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAlwAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T10:55:48.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Categories\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T11:01:15.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AllBooks.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:12:33.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Categories\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T10:09:31.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CategoryValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
+              "RelativeToolTip": "Chapter02.Core\\Validation\\Categories\\CategoryValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:05:13.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
+              "RelativeToolTip": "Chapter02.Core\\Dtos\\Configuration\\EmailSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T17:02:22.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Nazar\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
+              "ToolTip": "C:\\Users\\Nazar\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd42556b-0b9d-4bc3-8805-bd09cba0ae3e\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T15:57:32.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "AllAuthors.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Authors\\AllAuthors.cshtml.cs",
@@ -790,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 39,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Create.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Create.cshtml",
@@ -802,7 +986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 41,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Services\\EmailService.cs",
@@ -814,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 43,
               "Title": "ImageSettings.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Configuration\\ImageSettings.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Configuration\\ImageSettings.cs",
@@ -826,7 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 45,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Chapter02\\appsettings.Development.json",
@@ -838,19 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Program.cs",
-              "RelativeDocumentMoniker": "Chapter02\\Program.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Program.cs",
-              "RelativeToolTip": "Chapter02\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T19:11:16.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 44,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "Chapter02\\ServiceExtensions.cs",
@@ -862,7 +1034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 47,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Shared\\_Layout.cshtml",
@@ -874,7 +1046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 46,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Services\\UserService.cs",
@@ -887,7 +1059,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 48,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Home\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Home\\Index.cshtml.cs",
@@ -899,7 +1071,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 49,
               "Title": "AllBooks.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Books\\AllBooks.cshtml",
@@ -911,7 +1083,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 50,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Repository\\Repository.cs",
@@ -923,7 +1095,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 51,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Interfaces\\IRepository.cs",
@@ -935,19 +1107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Services\\CategoryService.cs",
-              "RelativeToolTip": "Chapter02.Core\\Services\\CategoryService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowCsAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T18:57:16.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 52,
               "Title": "ServiceResponse.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\ServiceResponse.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\ServiceResponse.cs",
@@ -959,7 +1119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 53,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Chapter02\\Properties\\launchSettings.json",
@@ -971,7 +1131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 55,
               "Title": "20241223112107_updateAuthorEntity.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241223112107_updateAuthorEntity.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241223112107_updateAuthorEntity.cs",
@@ -983,19 +1143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\ServiceExtensions.cs",
-              "RelativeToolTip": "Chapter02.Core\\ServiceExtensions.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAuwBwAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T15:59:27.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 56,
               "Title": "AutoMapperUserProfile .cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\AutoMapper\\User\\AutoMapperUserProfile .cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\AutoMapper\\User\\AutoMapperUserProfile .cs",
@@ -1007,7 +1155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 54,
               "Title": "Chapter02.csproj",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Chapter02.csproj",
               "RelativeDocumentMoniker": "Chapter02\\Chapter02.csproj",
@@ -1019,31 +1167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Interfaces\\ICategoryService.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\ICategoryService.cs",
-              "RelativeToolTip": "Chapter02.Core\\Interfaces\\ICategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:48:06.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
-              "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
-              "RelativeToolTip": "Chapter02\\Pages\\Admin\\Books\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T17:36:18.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 61,
               "Title": "SignIn.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Auth\\SignIn.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Auth\\SignIn.cshtml.cs",
@@ -1055,7 +1179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 58,
               "Title": "Update.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Update.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Update.cshtml.cs",
@@ -1067,7 +1191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 62,
               "Title": "Profile.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\User\\Profile.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\User\\Profile.cshtml.cs",
@@ -1080,7 +1204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 63,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\User\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\User\\Delete.cshtml.cs",
@@ -1092,19 +1216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IBookService.cs",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Interfaces\\IBookService.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IBookService.cs",
-              "RelativeToolTip": "Chapter02.Core\\Interfaces\\IBookService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAwwAsAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T17:17:47.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 60,
               "Title": "SignUp.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Auth\\SignUp.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Auth\\SignUp.cshtml.cs",
@@ -1117,7 +1229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 59,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\Create.cshtml.cs",
@@ -1129,7 +1241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 57,
               "Title": "AllCategories.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\AllCategories.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\AllCategories.cshtml",
@@ -1141,7 +1253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 64,
               "Title": "Update.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\User\\Update.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\User\\Update.cshtml.cs",
@@ -1153,7 +1265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 65,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\User\\Update.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\User\\Update.cshtml",
@@ -1165,7 +1277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 66,
               "Title": "SignUp.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Auth\\SignUp.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Auth\\SignUp.cshtml",
@@ -1177,7 +1289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 67,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\User\\Delete.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\User\\Delete.cshtml",
@@ -1189,7 +1301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 68,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\Category.cs",
@@ -1201,7 +1313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 70,
               "Title": "AllCategories.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Categories\\AllCategories.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Categories\\AllCategories.cshtml.cs",
@@ -1213,19 +1325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "Chapter02.Infrastructure\\Context\\AppDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAMwBAAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T16:59:47.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 69,
               "Title": "AllUsers.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Users\\AllUsers.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Users\\AllUsers.cshtml.cs",
@@ -1237,7 +1337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 71,
               "Title": "AllUsers.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Admin\\Users\\AllUsers.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Admin\\Users\\AllUsers.cshtml",
@@ -1249,7 +1349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 73,
               "Title": "SignIn.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Auth\\SignIn.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Auth\\SignIn.cshtml",
@@ -1261,7 +1361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 72,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\User\\Profile.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\User\\Profile.cshtml",
@@ -1273,7 +1373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 74,
               "Title": "ConfirmEmail.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Auth\\ConfirmEmail.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Auth\\ConfirmEmail.cshtml",
@@ -1285,7 +1385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 76,
               "Title": "UpdateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Users\\UpdateUserDto.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Users\\UpdateUserDto.cs",
@@ -1297,7 +1397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 78,
               "Title": "CreateUserDto.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Users\\CreateUserDto.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Users\\CreateUserDto.cs",
@@ -1309,7 +1409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 79,
               "Title": "AdminUserDto.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Users\\AdminUserDto.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Users\\AdminUserDto.cs",
@@ -1321,7 +1421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 80,
               "Title": "AspNetUser.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\AspNetUser.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\AspNetUser.cs",
@@ -1333,7 +1433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 75,
               "Title": "UpdatePasswordDto.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Users\\UpdatePasswordDto.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Users\\UpdatePasswordDto.cs",
@@ -1345,7 +1445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 77,
               "Title": "SignInUserDto.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Dtos\\Users\\SignInUserDto.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Dtos\\Users\\SignInUserDto.cs",
@@ -1357,7 +1457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 81,
               "Title": "Contacts.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Home\\Contacts.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Home\\Contacts.cshtml",
@@ -1369,7 +1469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 82,
               "Title": "Catalog.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Home\\Catalog.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Home\\Catalog.cshtml",
@@ -1381,7 +1481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 83,
               "Title": "AboutUs.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Home\\AboutUs.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Home\\AboutUs.cshtml",
@@ -1393,7 +1493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 88,
               "Title": "BookAuthor.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\BookAuthor.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\BookAuthor.cs",
@@ -1405,19 +1505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Helpers\\SeedData.cs",
-              "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Helpers\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Helpers\\SeedData.cs",
-              "RelativeToolTip": "Chapter02.Infrastructure\\Helpers\\SeedData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T18:08:57.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 87,
               "Title": "20241217160014_SeedRolesUsersCategories.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217160014_SeedRolesUsersCategories.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217160014_SeedRolesUsersCategories.cs",
@@ -1429,7 +1517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 86,
               "Title": "20241217160258_SeedRolesUsersBooksAuthors.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217160258_SeedRolesUsersBooksAuthors.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217160258_SeedRolesUsersBooksAuthors.cs",
@@ -1441,7 +1529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 85,
               "Title": "20241217160416_SeedCategories.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217160416_SeedCategories.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217160416_SeedCategories.cs",
@@ -1453,7 +1541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 84,
               "Title": "20241217161257_SeedComments.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217161257_SeedComments.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217161257_SeedComments.cs",
@@ -1465,7 +1553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 89,
               "Title": "20241217155554_SeedRolesUsersCategories.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217155554_SeedRolesUsersCategories.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217155554_SeedRolesUsersCategories.cs",
@@ -1477,7 +1565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 90,
               "Title": "20241217155513_SeedRolesUsersCategories.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217155513_SeedRolesUsersCategories.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217155513_SeedRolesUsersCategories.cs",
@@ -1489,7 +1577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 91,
               "Title": "20241217155234_SeedRolesUsersCategories.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217155234_SeedRolesUsersCategories.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217155234_SeedRolesUsersCategories.cs",
@@ -1501,7 +1589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 92,
               "Title": "20241217153649_SeedRolesUsersCategories.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217153649_SeedRolesUsersCategories.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217153649_SeedRolesUsersCategories.cs",
@@ -1513,7 +1601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 93,
               "Title": "20241217152546_SeedData.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217152546_SeedData.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217152546_SeedData.cs",
@@ -1525,7 +1613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 95,
               "Title": "Chapter02",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Chapter02.csproj",
               "RelativeDocumentMoniker": "Chapter02\\Chapter02.csproj",
@@ -1536,7 +1624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 94,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Entities\\Comment.cs",
@@ -1548,7 +1636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 96,
               "Title": "20241217144634_Init.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217144634_Init.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217144634_Init.cs",
@@ -1560,7 +1648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 97,
               "Title": "20241217144230_Init.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241217144230_Init.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241217144230_Init.cs",
@@ -1572,7 +1660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 98,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Home\\Index.cshtml",
@@ -1584,7 +1672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 99,
               "Title": "IEntity.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Interfaces\\IEntity.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Interfaces\\IEntity.cs",
@@ -1596,7 +1684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 100,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\_ViewImports.cshtml",
@@ -1608,7 +1696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 101,
               "Title": "AboutUs.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Home\\AboutUs.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Home\\AboutUs.cshtml.cs",
@@ -1620,7 +1708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 102,
               "Title": "Contacts.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Home\\Contacts.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Home\\Contacts.cshtml.cs",
@@ -1632,7 +1720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 104,
               "Title": "UpdatePasswordValidator.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\User\\UpdatePasswordValidator.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Validation\\User\\UpdatePasswordValidator.cs",
@@ -1644,7 +1732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 103,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Error.cshtml",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Error.cshtml",
@@ -1656,7 +1744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 105,
               "Title": "Error.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Error.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Error.cshtml.cs",
@@ -1668,7 +1756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 106,
               "Title": "UpdateUserValidator.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\User\\UpdateUserValidator.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Validation\\User\\UpdateUserValidator.cs",
@@ -1680,7 +1768,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 107,
               "Title": "CreateUserValidator.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\User\\CreateUserValidator.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Validation\\User\\CreateUserValidator.cs",
@@ -1692,7 +1780,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 108,
               "Title": "SignInUserValidator.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Validation\\User\\SignInUserValidator.cs",
               "RelativeDocumentMoniker": "Chapter02.Core\\Validation\\User\\SignInUserValidator.cs",
@@ -1704,7 +1792,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 109,
               "Title": "ConfirmEmail.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\Pages\\Auth\\ConfirmEmail.cshtml.cs",
               "RelativeDocumentMoniker": "Chapter02\\Pages\\Auth\\ConfirmEmail.cshtml.cs",
@@ -1717,7 +1805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 110,
               "Title": "Chapter02.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj",
@@ -1729,19 +1817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
-              "Title": "Chapter02.Core.csproj",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj",
-              "RelativeDocumentMoniker": "Chapter02.Core\\Chapter02.Core.csproj",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj",
-              "RelativeToolTip": "Chapter02.Core\\Chapter02.Core.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-15T18:45:46.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 111,
               "Title": "20241115180317_Init.cs",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Migrations\\20241115180317_Init.cs",
               "RelativeDocumentMoniker": "Chapter02.Infrastructure\\Migrations\\20241115180317_Init.cs",
@@ -1752,7 +1828,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 112,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Chapter02\\wwwroot\\css\\site.css",
