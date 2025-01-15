@@ -14,7 +14,5 @@ namespace Chapter02.Core.Dtos.Users
         public string Surname { get; set; } = string.Empty;
         public string Role { get; set; } = string.Empty;
         public string? PhoneNumber { get; set; }  
-
-
     }
 }

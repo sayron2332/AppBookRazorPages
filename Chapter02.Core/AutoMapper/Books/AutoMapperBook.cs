@@ -14,6 +14,7 @@ namespace Chapter02.Core.AutoMapper.Books
         public AutoMapperBook()
         {
             CreateMap<CreateBookDto, Book>();
+            CreateMap<BookDto, Book>().ReverseMap();
         }
     }
 }

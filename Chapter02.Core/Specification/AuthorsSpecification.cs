@@ -14,7 +14,14 @@ namespace Chapter02.Core.Specification
         {
             public GetListById(int[] id)
             {
-               Query.Where(a => id.Contains(a.Id)).AsTracking();
+               Query.Where(a => id.Contains(a.Id));
+            }
+        }
+        public class GetListByIdAsTracking : Specification<Author>
+        {
+            public GetListByIdAsTracking(int[] id)
+            {
+                Query.Where(a => id.Contains(a.Id)).AsTracking();
             }
         }
     }

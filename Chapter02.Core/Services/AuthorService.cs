@@ -100,14 +100,7 @@ namespace Chapter02.Core.Services
         public async Task<IEnumerable<AuthorDto>> GetAll()
         { 
             IEnumerable<Author> authors = await _repository.GetAll();
-            List<AuthorDto> mappedAuthors = new List<AuthorDto>();
-            ImageSettings? imageSettings = _configuration.GetSection("ImageSettings").Get<ImageSettings>();
-            foreach (var author in authors)
-            {
-                 author.ImageName = Path.Combine(imageSettings?.AuthorImage + author.ImageName);
-                 mappedAuthors.Add(_mapper.Map<AuthorDto>(author));
-            }
-            return mappedAuthors;
+            return authors.Select(a => _mapper.Map<AuthorDto>(a));
         }
         public async Task<ServiceResponse> GetbyId(int Id)
         {
@@ -173,11 +166,16 @@ namespace Chapter02.Core.Services
            };
 
         }
-        public async Task<IEnumerable<Author>> GetListById(int[] Id)
+        public async Task<ICollection<Author>> GetListById(int[] Id)
         {
-             return await _repository.GetListBySpec(new AuthorsSpecification.GetListById(Id));
+             var authors = await _repository.GetListBySpec(new AuthorsSpecification.GetListById(Id));
+             return (ICollection<Author>)authors;
         }
-       
+        public async Task<ICollection<Author>> GetListByIdAsTracking(int[] Id)
+        {
+            var authors = await _repository.GetListBySpec(new AuthorsSpecification.GetListByIdAsTracking(Id));
+            return (ICollection<Author>)authors;
+        }
 
     }
 }

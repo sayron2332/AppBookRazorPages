@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj": {}
+    "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj": {
+    "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Core\\Chapter02.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj",
+        "projectUniqueName": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Core\\Chapter02.Core.csproj",
         "projectName": "Chapter02.Core",
-        "projectPath": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj",
-        "packagesPath": "C:\\Users\\Nazar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\obj\\",
+        "projectPath": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Core\\Chapter02.Core.csproj",
+        "packagesPath": "C:\\Users\\sayron\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sayron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -90,21 +95,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj": {
+    "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj",
         "projectName": "Chapter02.Infrastructure",
-        "projectPath": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Nazar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Infrastructure\\Chapter02.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\sayron\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sayron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,8 +127,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj": {
-                "projectPath": "C:\\Users\\Nazar\\Desktop\\C#_BOOK\\AspNetCoreInAction\\Chapter02\\Chapter02.Core\\Chapter02.Core.csproj"
+              "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Core\\Chapter02.Core.csproj": {
+                "projectPath": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02.Core\\Chapter02.Core.csproj"
               }
             }
           }
@@ -133,7 +142,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -178,7 +188,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

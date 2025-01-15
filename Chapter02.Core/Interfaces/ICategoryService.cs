@@ -14,6 +14,8 @@ namespace Chapter02.Core.Interfaces
         public Task<ServiceResponse> Delete(int Id);
         public Task<IEnumerable<Category>> GetAll();
         public Task<ServiceResponse> Update(Category model);
-        public Task<IEnumerable<Category>> GetListById(int[] Id);
+        public Task<ICollection<Category>> GetListById(int[] Id);
+        public Task<ICollection<Category>> GetListByIdAsTracking(int[] Id);
+
     }
 }

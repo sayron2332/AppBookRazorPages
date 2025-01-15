@@ -15,7 +15,8 @@ namespace Chapter02.Core.Interfaces
         public Task<ServiceResponse> Create(IFormFile photo, AuthorDto model);
         public Task<ServiceResponse> Delete(int Id);
         public Task<IEnumerable<AuthorDto>> GetAll();
-        public Task<IEnumerable<Author>> GetListById(int[] Id);
+        public Task<ICollection<Author>> GetListById(int[] Id);
         public Task<ServiceResponse> Update(IFormFile photo, AuthorDto model);
+        public Task<ICollection<Author>> GetListByIdAsTracking(int[] Id);
     }
 }

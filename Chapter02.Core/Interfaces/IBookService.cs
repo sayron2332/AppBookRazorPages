@@ -16,5 +16,6 @@ namespace Chapter02.Core.Interfaces
         public Task<ServiceResponse> Delete(int Id);
         public Task<IEnumerable<Book>> GetAll();
         public Task<ServiceResponse> Update(Book model);
+        public Task<BookDto> GetBookByIdWithIncludes(int Id);
     }
 }

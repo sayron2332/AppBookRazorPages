@@ -3,6 +3,7 @@ using Chapter02.Core.Dtos.Book;
 using Chapter02.Core.Dtos.Configuration;
 using Chapter02.Core.Entities;
 using Chapter02.Core.Interfaces;
+using Chapter02.Core.Specification;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -45,8 +46,8 @@ namespace Chapter02.Core.Services
             }
             Book book = _mapper.Map<Book>(model);
           
-            book.Authors = await _authorService.GetListById(model.AuthorsId);
-            book.Categories = await _categoryService.GetListById(model.CategoriesId);
+            book.Authors = await _authorService.GetListByIdAsTracking(model.AuthorsId);
+            book.Categories = await _categoryService.GetListByIdAsTracking(model.CategoriesId);
 
             await _repository.Insert(book);
             await _repository.Save();
@@ -69,6 +70,12 @@ namespace Chapter02.Core.Services
                     Message = "Book Not found"
                 };
             }
+            if (Book.ImageName != "default.jpg")
+            {
+                ImageSettings imageSettings = _configuration.GetSection("ImageSettings").Get<ImageSettings>()!;
+                string image = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.BookImage, Book.ImageName);
+                File.Delete(image);
+            }
             await _repository.Delete(Id);
             await _repository.Save();
 
@@ -89,6 +96,11 @@ namespace Chapter02.Core.Services
             return result;
         }
 
+        public async Task<BookDto> GetBookByIdWithIncludes(int Id)
+        {
+            return _mapper.Map<BookDto>(await _repository
+                .GetItemBySpec(new BookSpecification.GetBookByIdWithIncludes(Id))); ;
+        }
 
         public async Task<ServiceResponse> GetbyId(int id)
         {
@@ -127,5 +139,7 @@ namespace Chapter02.Core.Services
                 Message = "Book successfuly updated"
             };
         }
+
+      
     }
 }

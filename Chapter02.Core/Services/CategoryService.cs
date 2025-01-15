@@ -82,9 +82,16 @@ namespace Chapter02.Core.Services
                 Message = "Category successfuly updated"
             };
         }
-        public async Task<IEnumerable<Category>> GetListById(int[] id)
+        public async Task<ICollection<Category>> GetListByIdAsTracking(int[] Id)
         {
-            return await _repository.GetListBySpec(new CategorySpecification.GetListById(id));
+            var categories = await _repository.GetListBySpec(new CategorySpecification.GetListByIdAsTracking(Id));
+            return (ICollection<Category>)categories;
+        }
+
+        public async Task<ICollection<Category>> GetListById(int[] Id)
+        {
+            var categories = await _repository.GetListBySpec(new CategorySpecification.GetListById(Id));
+            return (ICollection<Category>)categories;
         }
     }
 }

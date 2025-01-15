@@ -1,6 +1,7 @@
 ﻿@page
 @model Chapter02.Pages.Admin.Authors.AllAuthorsModel
 @{
+
     ViewData["Title"] = "AllAuthors";
     Layout = "_AdminLayout";
 }
@@ -34,7 +35,7 @@
                 @foreach (var author in Model.Authors)
                 {
                     <tr>
-                        <td><img style="max-width:120px;max-height:120px;" src="/@author.ImageName" /></td>
+                        <td><img style="max-width:120px;max-height:120px;" src="/images/authors/@author.ImageName" /></td>
                         <td>@author.Name</td>
                         <td>@author.Surname</td>
                         <td><a asp-page="/admin/authors/update" asp-route-Id="@author.Id" class="btn btn-secondary">Edit</a></td>
@@ -42,13 +43,12 @@
 
                     </tr>
                 }
-
             }
             else
             {
-                <h2>authors isnt exist in database</h2>
+                <span>authors isnt exist in database</span>
             }
-
         </tbody>
     </table>
+   
 </div>

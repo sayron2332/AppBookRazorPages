@@ -151,16 +151,16 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "88692e93-d614-456a-bc86-7e385b9a925d",
+                            Id = "4d988b1c-3291-4cd2-b340-bdcdb39f293e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e210074a-29d8-4902-b714-49be3c9f6352",
+                            ConcurrencyStamp = "26ca594a-cdc8-4516-9463-ab077bff438d",
                             Email = "xvtnxjgbyv@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             Name = "Nazar",
                             NormalizedEmail = "xvtnxjgbyv@gmail.com",
                             NormalizedUserName = "xvtnxjgbyv@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEE8qe++68XkmeTxF/2wGVd7WS51qifh0MsX5TDy/iVSsNJErDKetIWhquAerdw1/uA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENzU9wdO2nqe6is0lWTn30qqNwngnIqnJaiSRi2v5vw1ISvlQ8fAPLL4dXp64y7P5g==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             Surname = "Kurylovych",
@@ -364,13 +364,13 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "cc26c78b-21e3-45df-b48d-48d4432cd24c",
+                            Id = "a441df31-595c-47c7-92b1-6d28cb69e7ef",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "d13d9155-d309-4505-85eb-bbf182628b00",
+                            Id = "cdf6d55d-8597-4068-9e52-91edaceff6c4",
                             Name = "user",
                             NormalizedName = "USER"
                         });
@@ -465,8 +465,8 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "88692e93-d614-456a-bc86-7e385b9a925d",
-                            RoleId = "cc26c78b-21e3-45df-b48d-48d4432cd24c"
+                            UserId = "4d988b1c-3291-4cd2-b340-bdcdb39f293e",
+                            RoleId = "a441df31-595c-47c7-92b1-6d28cb69e7ef"
                         });
                 });
 
@@ -506,7 +506,7 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            AspNetUserId = "88692e93-d614-456a-bc86-7e385b9a925d",
+                            AspNetUserId = "4d988b1c-3291-4cd2-b340-bdcdb39f293e",
                             CommentId = 1
                         });
                 });

@@ -13,6 +13,6 @@ namespace Chapter02.Core.Entities
     {
         public string Name { get; set; } = string.Empty;
         public string Surname { get; set; } = string.Empty;
-        public IEnumerable<Comment> Comments { get; set; } = null!;
+        public ICollection<Comment> Comments { get; set; } = null!;
     }
 }
