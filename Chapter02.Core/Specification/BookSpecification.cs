@@ -10,12 +10,15 @@ namespace Chapter02.Core.Specification
 {
     public class BookSpecification
     {
+      
         public class GetBookByIdWithIncludes : Specification<Book>
         {
             public GetBookByIdWithIncludes(int id)
             {
-                Query.Include(a => a.Authors).Include(c => c.Categories).Where(b => b.Id == id);
+                Query.Include(a => a.AuthorsLink).Include(c => c.CategoriesLink).Where(b => b.Id == id);
             }
         }
+      
+       
     }
 }

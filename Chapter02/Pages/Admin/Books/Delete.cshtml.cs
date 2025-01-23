@@ -2,11 +2,13 @@ using AutoMapper;
 using Chapter02.Core.Dtos.Book;
 using Chapter02.Core.Entities;
 using Chapter02.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Chapter02.Pages.Admin.Books
 {
+    [Authorize(Roles = "admin")]
     public class DeleteModel(IBookService bookService) : PageModel
     {
         public required BookDto Book { get; set; }
@@ -14,13 +16,12 @@ namespace Chapter02.Pages.Admin.Books
 
         public async Task<IActionResult> OnGet(int Id)
         {
-            var result = await _bookService.GetBookByIdWithIncludes(Id);
-            if (result is null)
+            Book = await _bookService.GetbyId(Id);
+            if (Book is null)
             {
-                TempData["ErrorMessage"] = "This book not found";
+                TempData["ErrorMessage"] = "This Book not found";
                 return RedirectToPage("AllBooks");
             }
-            Book = await _bookService.GetBookByIdWithIncludes(Id);
             return Page();
         }
         public async Task<IActionResult> OnPost(int Id)

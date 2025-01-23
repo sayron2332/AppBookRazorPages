@@ -21,7 +21,7 @@ namespace Chapter02.Core.Specification
         {
             public GetListByIdAsTracking(int[] id)
             {
-                Query.Where(a => id.Contains(a.Id)).AsTracking();
+                Query.AsTracking().Where(a => id.Contains(a.Id)).AsTracking();
             }
         }
     }

@@ -14,7 +14,11 @@ namespace Chapter02.Core.Dtos.Book
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public string ImageName { get; set; } = string.Empty;
-        public ICollection<AuthorDto> Authors { get; set; } = [];
-        public ICollection<Category> Categories { get; set; } = [];
+        public string Leanguage { get; set; } = string.Empty;
+        public int Price { get; set; }
+        public uint NumberOfPages { get; set; }
+        public int Age { get; set; }
+        public ICollection<BookAuthor> AuthorsLink { get; set; } = [];
+        public ICollection<BookCategory> CategoriesLink { get; set; } = [];
     }
 }

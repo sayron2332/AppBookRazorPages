@@ -44,6 +44,7 @@ namespace Chapter02.Infrastructure
         public static void AddRepository(this IServiceCollection services)
         {
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IBookRepository), typeof(BookRepository));
         }
 
     }

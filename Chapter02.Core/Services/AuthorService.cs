@@ -102,24 +102,10 @@ namespace Chapter02.Core.Services
             IEnumerable<Author> authors = await _repository.GetAll();
             return authors.Select(a => _mapper.Map<AuthorDto>(a));
         }
-        public async Task<ServiceResponse> GetbyId(int Id)
+        public async Task<AuthorDto> GetbyId(int Id)
         {
-           Author? author = await _repository.GetByID(Id);
-           if (author is null)
-           {
-               return new ServiceResponse()
-               {
-                   Success = false,
-                   Message = "Author not find some problem with Id",
-               };
-           }
-          
-           return new ServiceResponse()
-           {
-               Success = true,
-               Payload =  _mapper.Map<AuthorDto>(author)
-           };
-
+             Author? author =  await _repository.GetByID(Id);
+             return _mapper.Map<AuthorDto>(author);
         }
         public async Task<ServiceResponse> Update(IFormFile photo, AuthorDto model)
         {

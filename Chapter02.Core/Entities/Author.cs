@@ -13,6 +13,7 @@ namespace Chapter02.Core.Entities
         public string Name { get; set; } = string.Empty;
         public string Surname { get; set; } = string.Empty;
         public string ImageName { get; set; } = "default.jpg";
-        public ICollection<Book> Books { get; set; } = null!;
+        public ICollection<BookAuthor> BooksLink { get; set; } = null!;
+        
     }
 }

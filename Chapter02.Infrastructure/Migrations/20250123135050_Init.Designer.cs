@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Chapter02.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250115193729_Init")]
+    [Migration("20250123135050_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -24,60 +24,6 @@ namespace Chapter02.Infrastructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("BookAuthor", b =>
-                {
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("AuthorId")
-                        .HasColumnType("int");
-
-                    b.HasKey("BookId", "AuthorId");
-
-                    b.HasIndex("AuthorId");
-
-                    b.ToTable("BookAuthor");
-
-                    b.HasData(
-                        new
-                        {
-                            BookId = 1,
-                            AuthorId = 1
-                        },
-                        new
-                        {
-                            BookId = 2,
-                            AuthorId = 2
-                        });
-                });
-
-            modelBuilder.Entity("BookCategory", b =>
-                {
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CategoryId", "BookId");
-
-                    b.HasIndex("BookId");
-
-                    b.ToTable("BookCategory");
-
-                    b.HasData(
-                        new
-                        {
-                            CategoryId = 2,
-                            BookId = 1
-                        },
-                        new
-                        {
-                            CategoryId = 2,
-                            BookId = 2
-                        });
-                });
 
             modelBuilder.Entity("Chapter02.Core.Entities.AspNetUser", b =>
                 {
@@ -154,16 +100,17 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "4d988b1c-3291-4cd2-b340-bdcdb39f293e",
+                            Id = "97e8873f-dca7-4304-8205-ec24fe812772",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "26ca594a-cdc8-4516-9463-ab077bff438d",
+                            ConcurrencyStamp = "2a8c818a-904e-4942-aad2-accce52b53bd",
                             Email = "xvtnxjgbyv@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             Name = "Nazar",
                             NormalizedEmail = "xvtnxjgbyv@gmail.com",
                             NormalizedUserName = "xvtnxjgbyv@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAENzU9wdO2nqe6is0lWTn30qqNwngnIqnJaiSRi2v5vw1ISvlQ8fAPLL4dXp64y7P5g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMjTLjxY3SuAVjuo60Rwe45134xIx+w+FuhbA9KNeQTkWkNDOYJCODaCtdRLi2g+9g==",
+                            PhoneNumber = "+380959348105",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             Surname = "Kurylovych",
@@ -275,6 +222,60 @@ namespace Chapter02.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Chapter02.Core.Entities.BookAuthor", b =>
+                {
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BookId", "AuthorId");
+
+                    b.HasIndex("AuthorId");
+
+                    b.ToTable("BookAuthor");
+
+                    b.HasData(
+                        new
+                        {
+                            BookId = 1,
+                            AuthorId = 1
+                        },
+                        new
+                        {
+                            BookId = 2,
+                            AuthorId = 2
+                        });
+                });
+
+            modelBuilder.Entity("Chapter02.Core.Entities.BookCategory", b =>
+                {
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BookId", "CategoryId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("BookCategory");
+
+                    b.HasData(
+                        new
+                        {
+                            BookId = 1,
+                            CategoryId = 1
+                        },
+                        new
+                        {
+                            BookId = 2,
+                            CategoryId = 2
+                        });
+                });
+
             modelBuilder.Entity("Chapter02.Core.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -319,7 +320,13 @@ namespace Chapter02.Infrastructure.Migrations
                     b.Property<byte>("NumberOfStars")
                         .HasColumnType("tinyint");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
 
@@ -327,14 +334,16 @@ namespace Chapter02.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "So cool book about asp.net Core",
-                            NumberOfStars = (byte)5
+                            Name = "So cool Book about asp.net Core",
+                            NumberOfStars = (byte)5,
+                            UserId = "97e8873f-dca7-4304-8205-ec24fe812772"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "So cool book about Entity Framwork Core",
-                            NumberOfStars = (byte)4
+                            Name = "So cool Book about Entity Framwork Core",
+                            NumberOfStars = (byte)4,
+                            UserId = "97e8873f-dca7-4304-8205-ec24fe812772"
                         });
                 });
 
@@ -367,13 +376,13 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "a441df31-595c-47c7-92b1-6d28cb69e7ef",
+                            Id = "d40c703b-fa58-4d7d-86ba-b4e8cd39cb69",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "cdf6d55d-8597-4068-9e52-91edaceff6c4",
+                            Id = "7b3f1b36-c87a-4b5d-932b-092febc92cf1",
                             Name = "user",
                             NormalizedName = "USER"
                         });
@@ -468,8 +477,8 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "4d988b1c-3291-4cd2-b340-bdcdb39f293e",
-                            RoleId = "a441df31-595c-47c7-92b1-6d28cb69e7ef"
+                            UserId = "97e8873f-dca7-4304-8205-ec24fe812772",
+                            RoleId = "d40c703b-fa58-4d7d-86ba-b4e8cd39cb69"
                         });
                 });
 
@@ -492,56 +501,53 @@ namespace Chapter02.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("UserComment", b =>
+            modelBuilder.Entity("Chapter02.Core.Entities.BookAuthor", b =>
                 {
-                    b.Property<string>("AspNetUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("CommentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("AspNetUserId", "CommentId");
-
-                    b.HasIndex("CommentId");
-
-                    b.ToTable("UserComment");
-
-                    b.HasData(
-                        new
-                        {
-                            AspNetUserId = "4d988b1c-3291-4cd2-b340-bdcdb39f293e",
-                            CommentId = 1
-                        });
-                });
-
-            modelBuilder.Entity("BookAuthor", b =>
-                {
-                    b.HasOne("Chapter02.Core.Entities.Author", null)
-                        .WithMany()
+                    b.HasOne("Chapter02.Core.Entities.Author", "Author")
+                        .WithMany("BooksLink")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Chapter02.Core.Entities.Book", null)
-                        .WithMany()
+                    b.HasOne("Chapter02.Core.Entities.Book", "Book")
+                        .WithMany("AuthorsLink")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Book");
                 });
 
-            modelBuilder.Entity("BookCategory", b =>
+            modelBuilder.Entity("Chapter02.Core.Entities.BookCategory", b =>
                 {
-                    b.HasOne("Chapter02.Core.Entities.Book", null)
-                        .WithMany()
+                    b.HasOne("Chapter02.Core.Entities.Book", "Book")
+                        .WithMany("CategoriesLink")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Chapter02.Core.Entities.Category", null)
-                        .WithMany()
+                    b.HasOne("Chapter02.Core.Entities.Category", "Category")
+                        .WithMany("BooksLink")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("Chapter02.Core.Entities.Comment", b =>
+                {
+                    b.HasOne("Chapter02.Core.Entities.AspNetUser", "User")
+                        .WithMany("Comments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -595,19 +601,26 @@ namespace Chapter02.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("UserComment", b =>
+            modelBuilder.Entity("Chapter02.Core.Entities.AspNetUser", b =>
                 {
-                    b.HasOne("Chapter02.Core.Entities.AspNetUser", null)
-                        .WithMany()
-                        .HasForeignKey("AspNetUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Comments");
+                });
 
-                    b.HasOne("Chapter02.Core.Entities.Comment", null)
-                        .WithMany()
-                        .HasForeignKey("CommentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+            modelBuilder.Entity("Chapter02.Core.Entities.Author", b =>
+                {
+                    b.Navigation("BooksLink");
+                });
+
+            modelBuilder.Entity("Chapter02.Core.Entities.Book", b =>
+                {
+                    b.Navigation("AuthorsLink");
+
+                    b.Navigation("CategoriesLink");
+                });
+
+            modelBuilder.Entity("Chapter02.Core.Entities.Category", b =>
+                {
+                    b.Navigation("BooksLink");
                 });
 #pragma warning restore 612, 618
         }

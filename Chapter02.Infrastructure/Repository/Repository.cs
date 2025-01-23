@@ -8,21 +8,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Chapter02.Core.Entities;
+using Org.BouncyCastle.Asn1;
 
 namespace Chapter02.Infrastructure.Repository
 {
     internal class Repository<TEntity> : IRepository<TEntity> where TEntity : class, IEntity
     {
-        private AppDbContext context;
-        private DbSet<TEntity> dbSet;
+        private readonly AppDbContext _context;
+        private readonly DbSet<TEntity> _dbSet;
         public Repository(AppDbContext context)
         {
-            this.context = context;
-            this.dbSet = context.Set<TEntity>();
+            this._context = context;
+            this._dbSet = context.Set<TEntity>();
         }
         public async Task Delete(object id)
         {
-            TEntity? entityToDelete = await dbSet.FindAsync(id);
+            TEntity? entityToDelete = await _dbSet.FindAsync(id);
             if (entityToDelete != null)
             {
                 await Delete(entityToDelete);
@@ -34,22 +36,22 @@ namespace Chapter02.Infrastructure.Repository
             await Task.Run(
                 () =>
                 {
-                    if (context.Entry(entityToDelete).State == EntityState.Detached)
+                    if (_context.Entry(entityToDelete).State == EntityState.Detached)
                     {
-                        dbSet.Attach(entityToDelete);
+                        _dbSet.Attach(entityToDelete);
                     }
-                    dbSet.Remove(entityToDelete);
+                    _dbSet.Remove(entityToDelete);
                 });
         }
 
         public async Task<IEnumerable<TEntity>> GetAll()
         {
-            return await dbSet.ToListAsync();
+            return await _dbSet.ToListAsync();
         }
 
         public async Task<TEntity?> GetByID(object id)
         {
-            return await dbSet.FindAsync(id);
+            return await _dbSet.FindAsync(id);
         }
 
         public async Task<TEntity?> GetItemBySpec(ISpecification<TEntity> specification)
@@ -60,7 +62,7 @@ namespace Chapter02.Infrastructure.Repository
         private IQueryable<TEntity> ApplySpecification(ISpecification<TEntity> specification)
         {
             var evaluator = new SpecificationEvaluator();
-            return evaluator.GetQuery(dbSet, specification);
+            return evaluator.GetQuery(_dbSet, specification);
         }
 
         public async Task<IEnumerable<TEntity>> GetListBySpec(ISpecification<TEntity> specification)
@@ -70,23 +72,46 @@ namespace Chapter02.Infrastructure.Repository
 
         public async Task Insert(TEntity entity)
         {
-            await dbSet.AddAsync(entity);
+            await _dbSet.AddAsync(entity);
         }
 
         public async Task Save()
         {
-            await context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
 
         public async Task Update(TEntity ententityToUpdate)
         {
-            await Task.Run
-                (
-                () =>
+            if (ententityToUpdate is Book)
+            {
+                await DeleteOldBookReferences((ententityToUpdate as Book)!);
+            }
+
+             await Task.Run(() =>
+             {
+                 _dbSet.Attach(ententityToUpdate);
+                 _context.Entry(ententityToUpdate).State = EntityState.Modified;
+             });
+        }
+        private async Task DeleteOldBookReferences(Book book)
+        {
+            var authors = await _context.BookAuthor.Where(b => b.BookId == book.Id).ToListAsync();
+            if (authors.Count != 0)
+            {
+                foreach (BookAuthor item in authors)
                 {
-                    dbSet.Attach(ententityToUpdate);
-                    context.Entry(ententityToUpdate).State = EntityState.Modified;
-                });
+                    _context.BookAuthor.Remove(item);
+                }
+            }
+            var categories = await _context.BookCategory.Where(b => b.BookId == book.Id).ToListAsync();
+            if (categories.Count != 0)
+            {
+                foreach (var item in categories)
+                {
+                    _context.BookCategory.Remove(item);
+                }
+            }
+            
         }
     }
 }

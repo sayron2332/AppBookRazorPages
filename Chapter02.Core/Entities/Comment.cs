@@ -12,6 +12,7 @@ namespace Chapter02.Core.Entities
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public byte NumberOfStars { get; set; }
-        public ICollection<AspNetUser> Users { get; set; } = null!;
+        public AspNetUser User { get; set; } = null!;
+        public string UserId { get; set; } = string.Empty;
     }
 }

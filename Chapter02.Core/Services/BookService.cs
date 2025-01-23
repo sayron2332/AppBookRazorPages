@@ -6,6 +6,7 @@ using Chapter02.Core.Interfaces;
 using Chapter02.Core.Specification;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using MimeKit.Cryptography;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Chapter02.Core.Services
 {
     public class BookService : IBookService
     {
-        private readonly IRepository<Book> _repository;
+        private readonly IRepository<Book> _bookRepository;
         private readonly IConfiguration _configuration;
         private readonly IMapper _mapper;
         private readonly IAuthorService _authorService;
@@ -24,7 +25,7 @@ namespace Chapter02.Core.Services
         public BookService(IRepository<Book> repository, IConfiguration configuration, 
             IMapper mapper, IAuthorService authorService, ICategoryService categoryService)
         {
-            _repository = repository;
+            _bookRepository = repository;
             _configuration = configuration;
             _mapper = mapper;
             _authorService = authorService;
@@ -37,20 +38,18 @@ namespace Chapter02.Core.Services
             {
                 ImageSettings imageSettings = _configuration.GetSection("ImageSettings").Get<ImageSettings>()!;
                 string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
-                string upload = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.AuthorImage);
+                string upload = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.BookImage);
                 using (var fileStream = new FileStream(Path.Combine(upload, fileName), FileMode.Create))
                 {
                     await photo.CopyToAsync(fileStream);
                 }
                 model.ImageName = fileName;
             }
-            Book book = _mapper.Map<Book>(model);
-          
-            book.Authors = await _authorService.GetListByIdAsTracking(model.AuthorsId);
-            book.Categories = await _categoryService.GetListByIdAsTracking(model.CategoriesId);
 
-            await _repository.Insert(book);
-            await _repository.Save();
+            Book book = _mapper.Map<Book>(model);
+            await AddAuthorsAndCategoriesToBook(book, model.AuthorsId, model.CategoriesId);
+            await _bookRepository.Insert(book);
+            await _bookRepository.Save();
             return new ServiceResponse
             { 
                 Success = true,
@@ -58,16 +57,41 @@ namespace Chapter02.Core.Services
             };
 
         }
+        private async Task AddAuthorsAndCategoriesToBook(Book book, int[] authorsId, int[] categoriesId)
+        {
+          
+            var authors = await _authorService.GetListByIdAsTracking(authorsId);
+            var categories = await _categoryService.GetListByIdAsTracking(categoriesId);
 
+            book.AuthorsLink.Clear();
+            book.CategoriesLink.Clear();
+
+            foreach (var author in authors)
+            {
+
+                BookAuthor bookAuthors = new BookAuthor();
+                bookAuthors.Book = book;
+                bookAuthors.Author = author;
+                book.AuthorsLink.Add(bookAuthors);
+            }
+            foreach (var category in categories)
+            {
+                BookCategory bookCategory = new BookCategory();
+                bookCategory.Book = book;
+                bookCategory.Category = category;
+                book.CategoriesLink.Add(bookCategory);
+
+            }
+        }
         public async Task<ServiceResponse> Delete(int Id)
         {
-            Book? Book = await _repository.GetByID(Id);
+            Book? Book = await _bookRepository.GetByID(Id);
             if (Book is null)
             {
                 return new ServiceResponse
                 {
                     Success = false,
-                    Message = "Book Not found"
+                    Message = "currentBook Not found"
                 };
             }
             if (Book.ImageName != "default.jpg")
@@ -76,70 +100,88 @@ namespace Chapter02.Core.Services
                 string image = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.BookImage, Book.ImageName);
                 File.Delete(image);
             }
-            await _repository.Delete(Id);
-            await _repository.Save();
+            await _bookRepository.Delete(Id);
+            await _bookRepository.Save();
 
             return new ServiceResponse
             {
                 Success = true,
-                Message = "Book successfuly deleted"
+                Message = "currentBook successfuly deleted"
             };
         }
-
-        public async Task<IEnumerable<Book>> GetAll()
+        public async Task<IEnumerable<BookDto>> GetAll()
         {
-            IEnumerable<Book> result = await _repository.GetAll();
-            if (result is null)
-            {
-                return null!;
-            }
-            return result;
+            IEnumerable<Book> result = await _bookRepository.GetAll();
+            return result.Select(b => _mapper.Map<BookDto>(b));
         }
-
         public async Task<BookDto> GetBookByIdWithIncludes(int Id)
         {
-            return _mapper.Map<BookDto>(await _repository
-                .GetItemBySpec(new BookSpecification.GetBookByIdWithIncludes(Id))); ;
+            return _mapper.Map<BookDto>(await _bookRepository
+                .GetItemBySpec(new BookSpecification.GetBookByIdWithIncludes(Id))); 
         }
-
-        public async Task<ServiceResponse> GetbyId(int id)
+        public async Task<BookDto> GetbyId(int id)
         {
-            var result = await _repository.GetByID(id);
+            var result = await _bookRepository.GetByID(id);
             if (result is null)
             {
                 return null!;
             }
-            return new ServiceResponse 
-            { 
-                Success = true,
-                Message = "All are good",
-                Payload = result
-            };
+            return _mapper.Map<BookDto>(result);
         }
-
-
-        public async Task<ServiceResponse> Update(Book model)
+        public async Task<ServiceResponse> Update(IFormFile photo,BookDto model)
         {
-            var Book = await _repository.GetByID(model.Id);
-            if (Book is null)
+            Book currentBook = _mapper.Map<Book>(await GetBookByIdWithIncludes(model.Id));
+          
+            if (currentBook is null)
             {
                 return new ServiceResponse
                 {
                     Success = false,
-                    Message = "Book not found"
+                    Message = "currentBook not found"
                 };
             }
-           
-            await _repository.Update(model);
-            await _repository.Save();
+
+            if (photo != null)
+            {
+                ImageSettings imageSettings = _configuration.GetSection("ImageSettings").Get<ImageSettings>()!;
+
+                if (currentBook.ImageName != "default.jpg")
+                {
+                    string oldImage = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.BookImage, currentBook.ImageName);
+                    File.Delete(oldImage);
+                }
+
+                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+                string upload = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.BookImage);
+
+
+                using (var fileStream = new FileStream(Path.Combine(upload, fileName), FileMode.Create))
+                {
+                    photo.CopyTo(fileStream);
+                }
+
+                model.ImageName = fileName;
+            }
+            else
+            {
+                model.ImageName = currentBook.ImageName;
+            }
+
+            _mapper.Map(model, currentBook);
+
+            int[] authorsId = model.AuthorsLink.Select(a => a.AuthorId).ToArray();
+            int[] categoriesId = model.CategoriesLink.Select(a => a.CategoryId).ToArray();
+
+            await AddAuthorsAndCategoriesToBook(currentBook, authorsId, categoriesId);
+            await _bookRepository.Update(currentBook);
+            await _bookRepository.Save();
 
             return new ServiceResponse
             {
                 Success = true,
-                Message = "Book successfuly updated"
+                Message = "currentBook successfuly updated"
             };
         }
 
-      
     }
 }

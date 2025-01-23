@@ -1,0 +1,78 @@
+﻿@page "{Id}"
+@model Chapter02.Pages.Admin.Books.UpdateModel
+@{
+    Layout = "_AdminLayout";
+}
+<div class="row">
+    <div class="col-md-5 offset-3">
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title">Book Update</h3>
+            </div>
+
+            <form class="text-start align-items-center" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="@Model.Book.Id" asp-for="Book.Id" />
+                <div style="text-align:center;">
+                    <img style="max-width:150px;max-height:200px;" src="/images/books/@Model.Book.ImageName" />
+                </div>
+
+                <div>
+                    <label>Name</label>
+                    <input required class="form-control" asp-for="Book.Name" value="@Model.Book.Name" type="text">
+                    <span class="text-danger" asp-validation-for="Book.Name"></span>
+                </div>
+
+                <div>
+                    <label>Age</label>
+                    <input required class="form-control" asp-for="Book.Age" value="@Model.Book.Age" type="text">
+                    <span class="text-danger" asp-validation-for="Book.Age"></span>
+                </div>
+
+                <div>
+                    <label>Price</label>
+                    <input required class="form-control" asp-for="Book.Price" value="@Model.Book.Price" type="text">
+                    <span class="text-danger" asp-validation-for="Book.Price"></span>
+                </div>
+                
+                <div>
+                    <label>NumberOfPages</label>
+                    <input required class="form-control" asp-for="Book.NumberOfPages" value="@Model.Book.NumberOfPages" type="text">
+                    <span class="text-danger" asp-validation-for="Book.NumberOfPages"></span>
+                </div>
+
+                <div>
+                    <label>Leanguage</label>
+                    <input required class="form-control" asp-for="Book.Leanguage" value="@Model.Book.Leanguage" type="text">
+                    <span class="text-danger" asp-validation-for="Book.Leanguage"></span>
+                </div>
+
+                <div>
+                    <label>Description</label>
+                    <input required class="form-control" asp-for="Book.Description" value="@Model.Book.Description" type="text">
+                    <span class="text-danger" asp-validation-for="Book.Description"></span>
+                </div>
+
+                <div>
+                    <label>Categories</label>
+                    <select multiple class="form-select" name="categoriesId" asp-items="@Model.categoryList"></select>
+                    <span class="text-danger" asp-validation-for="Book.CategoriesLink"></span>
+                </div>
+
+                <div>
+                    <label>Authors</label>
+                    <select multiple class="form-select" name="authorsId" asp-items="@Model.authorList"></select>
+                    <span class="text-danger" asp-validation-for="Book.AuthorsLink"></span>
+                </div>
+                
+
+                <div>
+                    <label>Photo</label>
+                    <input accept="image/*" type="file" class="form-control" name="photo">
+                </div>
+
+                <br />
+                <button class="btn btn-success">summbit</button>
+            </form>
+        </div>
+    </div>
+</div>

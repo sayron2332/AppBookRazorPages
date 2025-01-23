@@ -16,7 +16,6 @@ namespace Chapter02.Infrastructure.Helpers
         public static void SeedRolesUsersComments(ModelBuilder builder)
         {
             string ADMIN_ID = Guid.NewGuid().ToString();
-            // any guid, but nothing is against to use the same one
             string ADMIN_ROLE_ID = Guid.NewGuid().ToString();
             string USER_ROLE_ID = Guid.NewGuid().ToString();
             builder.Entity<IdentityRole>().HasData(new IdentityRole
@@ -42,8 +41,9 @@ namespace Chapter02.Infrastructure.Helpers
                 NormalizedUserName = "xvtnxjgbyv@gmail.com",
                 Email = "xvtnxjgbyv@gmail.com",
                 NormalizedEmail = "xvtnxjgbyv@gmail.com",
+                PhoneNumber = "+380959348105",
                 EmailConfirmed = true,
-                PasswordHash = hasher.HashPassword(null!, "Sayron450@"),
+                PasswordHash = hasher.HashPassword(null!, "Sayron561"),
                 SecurityStamp = string.Empty,
              
             }) ;
@@ -57,24 +57,9 @@ namespace Chapter02.Infrastructure.Helpers
             builder.Entity<Comment>(b =>
             {
                 b.HasData(
-                    new Comment { Id = 1, Name = "So cool book about asp.net Core", NumberOfStars = 5 },
-                    new Comment { Id = 2, Name = "So cool book about Entity Framwork Core", NumberOfStars = 4 });
-
-
-
-                b.HasMany(x => x.Users)
-                    .WithMany(x => x.Comments)
-                    .UsingEntity(
-                       "UserComment",
-                        b => b.HasOne(typeof(AspNetUser)).WithMany().HasForeignKey("AspNetUserId").HasPrincipalKey(nameof(AspNetUser.Id)),
-                        c => c.HasOne(typeof(Comment)).WithMany().HasForeignKey("CommentId").HasPrincipalKey(nameof(Comment.Id)),
-                        je =>
-                        {
-                            je.HasKey("AspNetUserId", "CommentId");
-                            je.HasData(
-                                new { AspNetUserId = ADMIN_ID, CommentId = 1 });
-                             
-                        });
+                    new Comment { Id = 1, Name = "So cool Book about asp.net Core", NumberOfStars = 5, UserId = ADMIN_ID },
+                    new Comment { Id = 2, Name = "So cool Book about Entity Framwork Core", NumberOfStars = 4,UserId = ADMIN_ID }
+                );
             });
         }
         public static void SeedBooksAuthorsCategories(ModelBuilder builder)
@@ -87,7 +72,7 @@ namespace Chapter02.Infrastructure.Helpers
 
             builder.Entity<Book>(b =>
             {
-                
+
 
                 b.HasData(
                     new Book
@@ -109,23 +94,8 @@ namespace Chapter02.Infrastructure.Helpers
                         Leanguage = "English",
                         NumberOfPages = 920,
                         Price = 30
-                    });
-
-                b.HasMany(x => x.Authors)
-                     .WithMany(x => x.Books)
-                     .UsingEntity(
-                         "BookAuthor",
-                         r => r.HasOne(typeof(Author)).WithMany().HasForeignKey("AuthorId").HasPrincipalKey(nameof(Author.Id)),
-                         l => l.HasOne(typeof(Book)).WithMany().HasForeignKey("BookId").HasPrincipalKey(nameof(Book.Id)),
-                         je =>
-                         {
-                             je.HasKey("BookId", "AuthorId");
-                             je.HasData(
-                                 new { BookId = 1, AuthorId = 1 },
-                                 new { BookId = 2, AuthorId = 2 });
-
-                         });
-
+                    }
+                );
 
             });
 
@@ -133,23 +103,25 @@ namespace Chapter02.Infrastructure.Helpers
             {
                 b.HasData(
                     new Category { Id = 1, Name = "Fantasy" },
-                    new Category { Id = 2, Name = "Study" });
+                    new Category { Id = 2, Name = "Study" }
+                );
 
+            });
 
-                b.HasMany(x => x.Books)
-                    .WithMany(x => x.Categories)
-                    .UsingEntity(
-                        "BookCategory",
-                        r => r.HasOne(typeof(Book)).WithMany().HasForeignKey("BookId").HasPrincipalKey(nameof(Book.Id)),
-                        l => l.HasOne(typeof(Category)).WithMany().HasForeignKey("CategoryId").HasPrincipalKey(nameof(Category.Id)),
-                        je =>
-                        {
-                            je.HasKey("CategoryId", "BookId");
-                            je.HasData(
-                                new { CategoryId = 2, BookId = 1 },
-                                new { CategoryId = 2, BookId = 2 });
+            builder.Entity<BookAuthor>(b =>
+            {
+                b.HasData(
+                    new BookAuthor {AuthorId = 1, BookId = 1},
+                    new BookAuthor {AuthorId = 2, BookId = 2 }
+                );
+            });
 
-                        });
+            builder.Entity<BookCategory>(b =>
+            {
+                b.HasData(
+                    new BookCategory { CategoryId = 1, BookId = 1 },
+                    new BookCategory { CategoryId = 2, BookId = 2 }
+                );
             });
         }
 

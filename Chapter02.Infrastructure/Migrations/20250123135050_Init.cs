@@ -102,20 +102,6 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Comments",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NumberOfStars = table.Column<byte>(type: "tinyint", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Comments", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -222,11 +208,32 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Comments",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NumberOfStars = table.Column<byte>(type: "tinyint", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Comments", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Comments_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "BookAuthor",
                 columns: table => new
                 {
-                    BookId = table.Column<int>(type: "int", nullable: false),
-                    AuthorId = table.Column<int>(type: "int", nullable: false)
+                    AuthorId = table.Column<int>(type: "int", nullable: false),
+                    BookId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -254,7 +261,7 @@ namespace Chapter02.Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BookCategory", x => new { x.CategoryId, x.BookId });
+                    table.PrimaryKey("PK_BookCategory", x => new { x.BookId, x.CategoryId });
                     table.ForeignKey(
                         name: "FK_BookCategory_Books_BookId",
                         column: x => x.BookId,
@@ -269,43 +276,19 @@ namespace Chapter02.Infrastructure.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "UserComment",
-                columns: table => new
-                {
-                    AspNetUserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CommentId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserComment", x => new { x.AspNetUserId, x.CommentId });
-                    table.ForeignKey(
-                        name: "FK_UserComment_AspNetUsers_AspNetUserId",
-                        column: x => x.AspNetUserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_UserComment_Comments_CommentId",
-                        column: x => x.CommentId,
-                        principalTable: "Comments",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "a441df31-595c-47c7-92b1-6d28cb69e7ef", null, "admin", "ADMIN" },
-                    { "cdf6d55d-8597-4068-9e52-91edaceff6c4", null, "user", "USER" }
+                    { "7b3f1b36-c87a-4b5d-932b-092febc92cf1", null, "user", "USER" },
+                    { "d40c703b-fa58-4d7d-86ba-b4e8cd39cb69", null, "admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Surname", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "4d988b1c-3291-4cd2-b340-bdcdb39f293e", 0, "26ca594a-cdc8-4516-9463-ab077bff438d", "xvtnxjgbyv@gmail.com", true, false, null, "Nazar", "xvtnxjgbyv@gmail.com", "xvtnxjgbyv@gmail.com", "AQAAAAIAAYagAAAAENzU9wdO2nqe6is0lWTn30qqNwngnIqnJaiSRi2v5vw1ISvlQ8fAPLL4dXp64y7P5g==", null, false, "", "Kurylovych", false, "xvtnxjgbyv@gmail.com" });
+                values: new object[] { "97e8873f-dca7-4304-8205-ec24fe812772", 0, "2a8c818a-904e-4942-aad2-accce52b53bd", "xvtnxjgbyv@gmail.com", true, false, null, "Nazar", "xvtnxjgbyv@gmail.com", "xvtnxjgbyv@gmail.com", "AQAAAAIAAYagAAAAEMjTLjxY3SuAVjuo60Rwe45134xIx+w+FuhbA9KNeQTkWkNDOYJCODaCtdRLi2g+9g==", "+380959348105", false, "", "Kurylovych", false, "xvtnxjgbyv@gmail.com" });
 
             migrationBuilder.InsertData(
                 table: "Authors",
@@ -335,18 +318,9 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Comments",
-                columns: new[] { "Id", "Name", "NumberOfStars" },
-                values: new object[,]
-                {
-                    { 1, "So cool book about asp.net Core", (byte)5 },
-                    { 2, "So cool book about Entity Framwork Core", (byte)4 }
-                });
-
-            migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "a441df31-595c-47c7-92b1-6d28cb69e7ef", "4d988b1c-3291-4cd2-b340-bdcdb39f293e" });
+                values: new object[] { "d40c703b-fa58-4d7d-86ba-b4e8cd39cb69", "97e8873f-dca7-4304-8205-ec24fe812772" });
 
             migrationBuilder.InsertData(
                 table: "BookAuthor",
@@ -362,14 +336,18 @@ namespace Chapter02.Infrastructure.Migrations
                 columns: new[] { "BookId", "CategoryId" },
                 values: new object[,]
                 {
-                    { 1, 2 },
+                    { 1, 1 },
                     { 2, 2 }
                 });
 
             migrationBuilder.InsertData(
-                table: "UserComment",
-                columns: new[] { "AspNetUserId", "CommentId" },
-                values: new object[] { "4d988b1c-3291-4cd2-b340-bdcdb39f293e", 1 });
+                table: "Comments",
+                columns: new[] { "Id", "Name", "NumberOfStars", "UserId" },
+                values: new object[,]
+                {
+                    { 1, "So cool Book about asp.net Core", (byte)5, "97e8873f-dca7-4304-8205-ec24fe812772" },
+                    { 2, "So cool Book about Entity Framwork Core", (byte)4, "97e8873f-dca7-4304-8205-ec24fe812772" }
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -416,14 +394,14 @@ namespace Chapter02.Infrastructure.Migrations
                 column: "AuthorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_BookCategory_BookId",
+                name: "IX_BookCategory_CategoryId",
                 table: "BookCategory",
-                column: "BookId");
+                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserComment_CommentId",
-                table: "UserComment",
-                column: "CommentId");
+                name: "IX_Comments_UserId",
+                table: "Comments",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -451,7 +429,7 @@ namespace Chapter02.Infrastructure.Migrations
                 name: "BookCategory");
 
             migrationBuilder.DropTable(
-                name: "UserComment");
+                name: "Comments");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -467,9 +445,6 @@ namespace Chapter02.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "Comments");
         }
     }
 }

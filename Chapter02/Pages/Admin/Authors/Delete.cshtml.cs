@@ -1,10 +1,12 @@
 using Chapter02.Core.Dtos.Authors;
 using Chapter02.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Chapter02.Pages.Admin.Authors
 {
+    [Authorize(Roles = "admin")]
     public class DeleteModel : PageModel
     {
         [BindProperty]
@@ -16,14 +18,15 @@ namespace Chapter02.Pages.Admin.Authors
         }
         public async Task<IActionResult> OnGet(int id)
         {
-            var result = await _authorService.GetbyId(id);
-            if (result.Success)
+            Author = await _authorService.GetbyId(id);
+            if (Author is null)
             {
-                Author = (AuthorDto)result.Payload;
-                return Page();
+                TempData["ErrorMessage"] = "Author not found";
+                return RedirectToPage("AllAuthors");
+              
             }
-            TempData["ErrorMessage"] = result.Message;
-            return RedirectToPage("AllAuthors");
+            ViewData["SuccessMessage"] = "Take your Author"; 
+            return Page();
         }
         public async Task<IActionResult> OnPost(int id)
         {

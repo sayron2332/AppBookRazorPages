@@ -1,16 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\images\authors\2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg
-wwwroot\images\authors\4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg
-wwwroot\images\authors\6f1f05dd-ce89-45de-9091-a746e863039f.jpg
-wwwroot\images\authors\9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg
-wwwroot\images\authors\a355c94e-df6e-43b7-aafe-170535aa63e3.jpg
-wwwroot\images\authors\a9a72908-465f-4ebe-b243-e738e7e5c311.jpg
-wwwroot\images\authors\aa089e90-6d53-476c-871e-fa5558018ba5.jpg
-wwwroot\images\authors\af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg
-wwwroot\images\authors\d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg
 wwwroot\images\authors\default.jpg
-wwwroot\images\books\default.jpg
+wwwroot\images\books\18de0915-2f78-43c6-9cf7-a1c9232df7f0.jfif
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

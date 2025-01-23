@@ -20,7 +20,7 @@
         <thead class="table-dark">
             <tr>
 
-                <th scope="col">Id</th>
+                <th scope="col">Image</th>
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>
                 <th scope="col">Price</th>
@@ -34,7 +34,7 @@
                 @foreach (var book in Model.Books)
                 {
                     <tr>
-                        <td>@book.Id</td>
+                        <td><img style="width:150px; height:120px;" src="~/images/books/@book.ImageName" /></td>
                         <td>@book.Name</td>
                         <td>@book.Description</td>
                         <td>@book.Price</td>

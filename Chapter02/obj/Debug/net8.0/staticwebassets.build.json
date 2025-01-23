@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "22MZY2zkaQFbxZ0dLEqV9okHEHEDmYxFu9TunhrnRFA=",
+  "Hash": "f9b6XNJ/gk09dS0qDtnPcNDqCisfsltUf1HouN/NoeM=",
   "Source": "Chapter02",
   "BasePath": "_content/Chapter02",
   "Mode": "Default",
@@ -1319,195 +1319,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/2e068cff-7ede-48b8-abfa-3b5a8bec6c96#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/4875790e-8c0e-4fd0-b8b1-9f2f8d634998#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\6f1f05dd-ce89-45de-9091-a746e863039f.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/6f1f05dd-ce89-45de-9091-a746e863039f#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\6f1f05dd-ce89-45de-9091-a746e863039f.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/9131d2cc-3eec-45b7-aaaf-ced67a78d35d#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\a355c94e-df6e-43b7-aafe-170535aa63e3.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/a355c94e-df6e-43b7-aafe-170535aa63e3#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\a355c94e-df6e-43b7-aafe-170535aa63e3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\a9a72908-465f-4ebe-b243-e738e7e5c311.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/a9a72908-465f-4ebe-b243-e738e7e5c311#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\a9a72908-465f-4ebe-b243-e738e7e5c311.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\aa089e90-6d53-476c-871e-fa5558018ba5.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/aa089e90-6d53-476c-871e-fa5558018ba5#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\aa089e90-6d53-476c-871e-fa5558018ba5.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/af81b17f-af97-41bc-ba07-b62097b6ebfc#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg",
-      "SourceId": "Chapter02",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
-      "BasePath": "_content/Chapter02",
-      "RelativePath": "images/authors/d781889f-e55f-4bf3-bcb8-ba46cc4578f9#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fdwiioijdv",
-      "Integrity": "YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\authors\\d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg"
-    },
-    {
       "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\default.jpg",
       "SourceId": "Chapter02",
       "SourceType": "Discovered",
@@ -1529,12 +1340,12 @@
       "OriginalItemSpec": "wwwroot\\images\\authors\\default.jpg"
     },
     {
-      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\default.jpg",
+      "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\18de0915-2f78-43c6-9cf7-a1c9232df7f0.jfif",
       "SourceId": "Chapter02",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\",
       "BasePath": "_content/Chapter02",
-      "RelativePath": "images/books/default#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/books/18de0915-2f78-43c6-9cf7-a1c9232df7f0#[.{fingerprint}]?.jfif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1543,11 +1354,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tzn1a5gz8h",
-      "Integrity": "uW12iTTOFW4hjOyZIiz+AZdrWnQDiM1YJoJe/IeXB9s=",
+      "Fingerprint": "05mean5je4",
+      "Integrity": "lH33+Vl9oLwEEUAJ1T4LWpQo8WXhl1TsnHxu2KVRX6Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\books\\default.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\books\\18de0915-2f78-43c6-9cf7-a1c9232df7f0.jfif"
     },
     {
       "Identity": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\js\\site.js",
@@ -5154,744 +4965,6 @@
       ]
     },
     {
-      "Route": "images/authors/2e068cff-7ede-48b8-abfa-3b5a8bec6c96.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\2e068cff-7ede-48b8-abfa-3b5a8bec6c96.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/4875790e-8c0e-4fd0-b8b1-9f2f8d634998.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\4875790e-8c0e-4fd0-b8b1-9f2f8d634998.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/6f1f05dd-ce89-45de-9091-a746e863039f.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\6f1f05dd-ce89-45de-9091-a746e863039f.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/6f1f05dd-ce89-45de-9091-a746e863039f.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/6f1f05dd-ce89-45de-9091-a746e863039f.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\6f1f05dd-ce89-45de-9091-a746e863039f.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/9131d2cc-3eec-45b7-aaaf-ced67a78d35d.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\9131d2cc-3eec-45b7-aaaf-ced67a78d35d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/a355c94e-df6e-43b7-aafe-170535aa63e3.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\a355c94e-df6e-43b7-aafe-170535aa63e3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/a355c94e-df6e-43b7-aafe-170535aa63e3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/a355c94e-df6e-43b7-aafe-170535aa63e3.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\a355c94e-df6e-43b7-aafe-170535aa63e3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/a9a72908-465f-4ebe-b243-e738e7e5c311.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\a9a72908-465f-4ebe-b243-e738e7e5c311.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/a9a72908-465f-4ebe-b243-e738e7e5c311.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/a9a72908-465f-4ebe-b243-e738e7e5c311.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\a9a72908-465f-4ebe-b243-e738e7e5c311.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/aa089e90-6d53-476c-871e-fa5558018ba5.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\aa089e90-6d53-476c-871e-fa5558018ba5.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/aa089e90-6d53-476c-871e-fa5558018ba5.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/aa089e90-6d53-476c-871e-fa5558018ba5.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\aa089e90-6d53-476c-871e-fa5558018ba5.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/af81b17f-af97-41bc-ba07-b62097b6ebfc.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\af81b17f-af97-41bc-ba07-b62097b6ebfc.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/d781889f-e55f-4bf3-bcb8-ba46cc4578f9.fdwiioijdv.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fdwiioijdv"
-        },
-        {
-          "Name": "label",
-          "Value": "images/authors/d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
-      "Route": "images/authors/d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\d781889f-e55f-4bf3-bcb8-ba46cc4578f9.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YwZh/qVVmmtQWhZX7+SILRPp1HMJFonqfUxkrc4Zy4k="
-        }
-      ]
-    },
-    {
       "Route": "images/authors/default.jpg",
       "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\authors\\default.jpg",
       "Selectors": [],
@@ -5974,8 +5047,8 @@
       ]
     },
     {
-      "Route": "images/books/default.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\default.jpg",
+      "Route": "images/books/18de0915-2f78-43c6-9cf7-a1c9232df7f0.05mean5je4.jfif",
+      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\18de0915-2f78-43c6-9cf7-a1c9232df7f0.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5984,56 +5057,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8273"
+          "Value": "45355"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/pjpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"uW12iTTOFW4hjOyZIiz+AZdrWnQDiM1YJoJe/IeXB9s=\""
+          "Value": "\"lH33+Vl9oLwEEUAJ1T4LWpQo8WXhl1TsnHxu2KVRX6Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uW12iTTOFW4hjOyZIiz+AZdrWnQDiM1YJoJe/IeXB9s="
-        }
-      ]
-    },
-    {
-      "Route": "images/books/default.tzn1a5gz8h.jpg",
-      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\default.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8273"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uW12iTTOFW4hjOyZIiz+AZdrWnQDiM1YJoJe/IeXB9s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 17:09:23 GMT"
+          "Value": "Thu, 23 Jan 2025 13:54:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6043,15 +5079,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tzn1a5gz8h"
+          "Value": "05mean5je4"
         },
         {
           "Name": "label",
-          "Value": "images/books/default.jpg"
+          "Value": "images/books/18de0915-2f78-43c6-9cf7-a1c9232df7f0.jfif"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uW12iTTOFW4hjOyZIiz+AZdrWnQDiM1YJoJe/IeXB9s="
+          "Value": "sha256-lH33+Vl9oLwEEUAJ1T4LWpQo8WXhl1TsnHxu2KVRX6Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/books/18de0915-2f78-43c6-9cf7-a1c9232df7f0.jfif",
+      "AssetFile": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\18de0915-2f78-43c6-9cf7-a1c9232df7f0.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lH33+Vl9oLwEEUAJ1T4LWpQo8WXhl1TsnHxu2KVRX6Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 13:54:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lH33+Vl9oLwEEUAJ1T4LWpQo8WXhl1TsnHxu2KVRX6Q="
         }
       ]
     },

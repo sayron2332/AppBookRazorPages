@@ -2,6 +2,7 @@
 using Chapter02.Infrastructure.Helpers;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace Chapter02.Infrastructure.Context
 {
@@ -13,15 +14,23 @@ namespace Chapter02.Infrastructure.Context
         {
             SeedData.SeedRolesUsersComments(builder);
             SeedData.SeedBooksAuthorsCategories(builder);
+            builder.Entity<BookAuthor>()
+            .HasKey(ba => new { ba.BookId, ba.AuthorId });
+
+            builder.Entity<BookCategory>()
+           .HasKey(ba => new { ba.BookId, ba.CategoryId });
+
+
             base.OnModelCreating(builder);
         }
-       
-
-        DbSet<AspNetUser> AspNetUsers { get; set; }
-        DbSet<Category> Catogories { get; set; }
-        DbSet<Comment> Comments { get; set; }
-        DbSet<Book> Books { get; set; }
-        DbSet<Author> Authors { get; set; }
+      
+        public DbSet<AspNetUser> AspNetUsers { get; set; }
+        public DbSet<Category> Catogories { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<BookAuthor> BookAuthor { get; set; }
+        public DbSet<BookCategory> BookCategory { get; set; }
 
     }
 }

@@ -15,11 +15,7 @@
                     <div class="card">
                         <div class="card-body">
                             <img style="width:300px; height:300px;" src="~/images/books/@Model.Book.ImageName"/>
-                            <h6 class="card-subtitle mb-2 text-muted">Do you wanna Delete @Model.Book.Name 
-                                by  @foreach (var item in Model.Book.Authors)
-                                {
-                                    <span>@item.Name @item.Surname, </span>
-                                }</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Do you wanna Delete book with name @Model.Book.Name</h6> 
                             <form method="post">
                                 <button class="btn btn-danger">Delete</button>
                             </form>

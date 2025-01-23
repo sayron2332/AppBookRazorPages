@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace Chapter02.Core.Validation.Books
 {
-    public class CreateBookValidator : AbstractValidator<CreateBookDto>
+    public class EditBookValidator : AbstractValidator<BookDto>
     {
-        public CreateBookValidator()
+        public EditBookValidator()
         {
-             RuleFor(b => b.Age).NotEmpty().NotNull().WithMessage("Age not will be Empty")
-            .GreaterThan(0).WithMessage("Age must Greater Than 0")
-            .LessThan(DateTime.Now.Year + 1).WithMessage("Age is Greater than current year");
+
+            RuleFor(b => b.Age).NotEmpty().NotNull().WithMessage("Age not will be Empty")
+           .GreaterThan(0).WithMessage("Age must Greater Than 0")
+           .LessThan(DateTime.Now.Year + 1).WithMessage("Age is Greater than current year");
 
             RuleFor(b => b.Price).NotNull().NotEmpty().WithMessage("Price not will be Empty")
              .GreaterThan(0).WithMessage("Price must Greater Than 0");
@@ -31,8 +32,9 @@ namespace Chapter02.Core.Validation.Books
            .MaximumLength(30).WithMessage("Leanguage name maximum length 30 symbol")
            .MinimumLength(3).WithMessage("Leanguage name minumum length 3 symbol");
 
-            RuleFor(b => b.AuthorsId).NotNull().NotEmpty().WithMessage("Cant be Empty Please select Author");
-            RuleFor(b => b.CategoriesId).NotNull().NotEmpty().WithMessage("Cant be Empty Please select Category");
+            RuleFor(b => b.AuthorsLink).NotEmpty().NotNull().WithMessage("Author not will be Empty");
+
+            RuleFor(b => b.CategoriesLink).NotEmpty().NotNull().WithMessage("Author not will be Empty");
 
         }
     }

@@ -24,5 +24,7 @@ namespace Chapter02.Core.Specification
                 Query.Where(a => id.Contains(a.Id)).AsTracking();
             }
         }
+
+       
     }
 }

@@ -12,7 +12,7 @@ namespace Chapter02.Pages.Auth
         {
             _userService = userService;
         }
-        public async Task<IActionResult> OnGet(string userId, string token)
+        public async Task<IActionResult> OnGet(string userId,string token)
         {
            var result = await _userService.ConfirmEmailAsync(userId, token);
             if (result.Success)

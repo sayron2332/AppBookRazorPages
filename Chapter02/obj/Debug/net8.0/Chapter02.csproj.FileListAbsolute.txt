@@ -322,10 +322,10 @@ C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebas
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Chapter02.props
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Chapter02.props
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\Chapter02.csproj.Up2Date
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\Chapter02.dll
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\refint\Chapter02.dll
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\Chapter02.pdb
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\Chapter02.genruntimeconfig.cache
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\ref\Chapter02.dll
+C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

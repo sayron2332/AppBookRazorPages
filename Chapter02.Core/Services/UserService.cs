@@ -102,7 +102,7 @@ namespace Chapter02.Core.Services
             var encodedEmailToken = Encoding.UTF8.GetBytes(token);
             var validEmailToken = WebEncoders.Base64UrlEncode(encodedEmailToken);
 
-            var url = $"{_config["HostSettings:URL"]}/Auth/confirmemail?userid={newUser.Id}&token={validEmailToken}";
+            var url = $"{_config["HostSettings:URL"]}/auth/confirmemail/{newUser.Id}/{validEmailToken}";
             string body = $"<h1>Confirm your email</h1> <a href='{url}'>Confirm now!</a>";
             await _emailService.SendEmailAsync(newUser.Email!, "Confirmation email.", body);
         }

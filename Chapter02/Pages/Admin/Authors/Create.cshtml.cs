@@ -4,6 +4,7 @@ using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Chapter02.Core.Validation.Authors;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Chapter02.Pages.Admin.Authors
 {
+    [Authorize(Roles = "admin")]
     public class CreateModel : PageModel
     {
         [BindProperty]

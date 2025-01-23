@@ -11,11 +11,11 @@ namespace Chapter02.Core.Interfaces
 {
     public interface IBookService
     {
-        public Task<ServiceResponse> GetbyId(int Id);
+        public Task<BookDto> GetbyId(int Id);
         public Task<ServiceResponse> Create(IFormFile photo, CreateBookDto category);
         public Task<ServiceResponse> Delete(int Id);
-        public Task<IEnumerable<Book>> GetAll();
-        public Task<ServiceResponse> Update(Book model);
+        public Task<IEnumerable<BookDto>> GetAll();
+        public Task<ServiceResponse> Update(IFormFile photo,BookDto model);
         public Task<BookDto> GetBookByIdWithIncludes(int Id);
     }
 }

@@ -45,7 +45,7 @@ namespace Chapter02.Pages.Auth
                     TempData["SuccessMessage"] = serviceResult.Message;
                     if (User.IsInRole("admin"))
                     {
-                        return RedirectToPage("admin/users/AllUsers");
+                        return RedirectToPage("/admin/users/AllUsers");
                     }
 
                     return RedirectToPage(nameof(SignIn));

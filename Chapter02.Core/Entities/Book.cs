@@ -17,7 +17,8 @@ namespace Chapter02.Core.Entities
         public uint NumberOfPages { get; set; }
         public int Age { get; set; }
         public string ImageName { get; set; } = "default.jpg";
-        public ICollection<Category> Categories { get; set; } = [];
-        public ICollection<Author> Authors { get; set; } = [];
+        public ICollection<BookCategory> CategoriesLink { get; set; } = [];
+        public ICollection<BookAuthor> AuthorsLink { get; set; } = [];
+    
     }
 }

@@ -11,7 +11,7 @@ namespace Chapter02.Core.Interfaces
 {
     public interface IAuthorService
     {
-        public Task<ServiceResponse> GetbyId(int Id);
+        public Task<AuthorDto> GetbyId(int Id);
         public Task<ServiceResponse> Create(IFormFile photo, AuthorDto model);
         public Task<ServiceResponse> Delete(int Id);
         public Task<IEnumerable<AuthorDto>> GetAll();

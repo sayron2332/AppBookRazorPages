@@ -3,6 +3,7 @@ using Chapter02.Core.Dtos.Book;
 using Chapter02.Core.Entities;
 using Chapter02.Core.Interfaces;
 using Chapter02.Core.Validation.Books;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Chapter02.Pages.Admin.Books
 {
+    [Authorize(Roles = "admin")]
     public class CreateModel : PageModel
     {
         private readonly IBookService _bookservice;
@@ -37,6 +39,12 @@ namespace Chapter02.Pages.Admin.Books
             if (validationResult.IsValid)
             {
                var result = await _bookservice.Create(photo,Book);
+               if (result.Success)
+               {
+                   TempData["SuccessMessage"] = result.Message;
+                   return RedirectToPage("AllBooks");
+               }
+               ViewData["ErrorMessage"] = result.Message;
             }
             await LoadCategoriesAndAuthors();
             return Page();
