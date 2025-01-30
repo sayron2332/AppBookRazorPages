@@ -1,58 +1,108 @@
-﻿@page ""
+﻿@page 
 @model Chapter02.Pages.Admin.Books.CreateModel
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Create Book";
 }
- <form method="post" enctype="multipart/form-data">
-    @if (@ViewData["ErrorMessage"] != null)
-    {
-        <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
-    }
-    <br>
-    <h2 class="card-title">Create New Book</h2>
-    <div class="col-4 offset-4">
-        <label asp-for="Book.Name">Name</label>
-        <input required type="text" class="form-control" asp-for="Book.Name">
-        <span class="text-danger" asp-validation-for="Book.Name"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label asp-for="Book.Description">Description</label>
-        <textarea required type="text" class="form-control" asp-for="Book.Description"></textarea>
-        <span class="text-danger" asp-validation-for="Book.Description"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label asp-for="Book.Age">Age</label>
-        <input required type="text" class="form-control" asp-for="Book.Age">
-        <span class="text-danger" asp-validation-for="Book.Age"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label asp-for="Book.Leanguage">Leanguage</label>
-        <input required type="text" class="form-control" asp-for="Book.Leanguage">
-        <span class="text-danger" asp-validation-for="Book.Leanguage"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label asp-for="Book.NumberOfPages">NumberOfPages</label>
-        <input required type="text" class="form-control" asp-for="Book.NumberOfPages">
-        <span class="text-danger" asp-validation-for="Book.NumberOfPages"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label asp-for="Book.Price">Price</label>
-        <input required type="text" class="form-control" asp-for="Book.Price">
-        <span class="text-danger" asp-validation-for="Book.Price"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label>Categories</label>
-        <select class="form-select" multiple asp-for="Book.CategoriesId" asp-items="@((SelectList)ViewData["categoryList"]!)"></select>
-    </div>
-    <div class="col-4 offset-4">
-        <label>Authors</label>
-        <select class="form-select" multiple asp-for="Book.AuthorsId" asp-items="@((SelectList)ViewData["authorList"]!)"></select>
-    </div>
-    <div class="col-4 offset-4">
-        <label>Photo</label>
-        <input accept="image/*" type="file" class="form-control" name="photo">
 
-    </div>
-    <br />
-    <button class="btn btn-success">Create</button>
-</form> 
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">Create Book</h3>
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5 offset-3">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">New Book</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                @if (@ViewData["ErrorMessage"] != null)
+                                {
+                                    <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
+                                }
+                               
+                                <form method="post" enctype="multipart/form-data">
+                                    <div class="card-body">
+                                         @if (@ViewData["ErrorMessage"] != null)
+                                         {
+                                             <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
+                                         }
+                                         <br>
+                                        <div class="form-group">
+                                             <label asp-for="Book.Name">Name</label>
+                                             <input required type="text" class="form-control" asp-for="Book.Name">
+                                             <span class="text-danger" asp-validation-for="Book.Name"></span>
+                                         </div>
+                                        <div class="form-group">
+                                             <label asp-for="Book.Description">Description</label>
+                                             <textarea required type="text" class="form-control" asp-for="Book.Description"></textarea>
+                                             <span class="text-danger" asp-validation-for="Book.Description"></span>
+                                         </div>
+                                        <div class="form-group">
+                                             <label asp-for="Book.Age">Age</label>
+                                             <input required type="text" class="form-control" asp-for="Book.Age">
+                                             <span class="text-danger" asp-validation-for="Book.Age"></span>
+                                         </div>
+                                        <div class="form-group">
+                                             <label asp-for="Book.Leanguage">Leanguage</label>
+                                             <input required type="text" class="form-control" asp-for="Book.Leanguage">
+                                             <span class="text-danger" asp-validation-for="Book.Leanguage"></span>
+                                         </div>
+                                        <div class="form-group">
+                                             <label asp-for="Book.NumberOfPages">NumberOfPages</label>
+                                             <input required type="text" class="form-control" asp-for="Book.NumberOfPages">
+                                             <span class="text-danger" asp-validation-for="Book.NumberOfPages"></span>
+                                         </div>
+                                        <div class="form-group">
+                                             <label asp-for="Book.Price">Price</label>
+                                             <input required type="text" class="form-control" asp-for="Book.Price">
+                                             <span class="text-danger" asp-validation-for="Book.Price"></span>
+                                         </div>
+                                        <div class="form-group">
+                                             <label>Categories</label>
+                                             <select class="form-select" multiple asp-for="Book.CategoriesId" asp-items="@((SelectList)ViewData["categoryList"]!)"></select>
+                                         </div>
+                                        <div class="form-group">
+                                             <label>Authors</label>
+                                             <select class="form-select" multiple asp-for="Book.AuthorsId" asp-items="@((SelectList)ViewData["authorList"]!)"></select>
+                                         </div>
+                                        <div class="form-group">
+                                             <label>Photo</label>
+                                             <input accept="image/*" type="file" class="form-control" name="photo">
+                                         
+                                         </div>
+                                         <br />
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-primary">Create</button>
+                                        </div>
+                                    </div>
+                                </form>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>

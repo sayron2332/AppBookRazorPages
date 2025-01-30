@@ -15,19 +15,13 @@ namespace Chapter02.Pages.Admin.Books
     public class UpdateModel : PageModel
     {
         private readonly IBookService _bookService;
-        private readonly ICategoryService _categoryService;
-        private readonly IAuthorService _authorService;
         public required MultiSelectList categoryList;
         public required MultiSelectList authorList;
         [BindProperty]
         public required BookDto Book { get; set; }
-        public UpdateModel(IBookService bookService, ICategoryService categoryService,
-            IAuthorService authorService)
+        public UpdateModel(IBookService bookService)
         {
             _bookService = bookService;
-            _categoryService = categoryService;
-            _authorService = authorService;
-            
         }
         public async Task<IActionResult> OnGet(int Id)
         {
@@ -70,6 +64,7 @@ namespace Chapter02.Pages.Admin.Books
                     return RedirectToPage("AllBooks");
                 }
                 TempData["ErrorMessage"] = result.Message;
+                return RedirectToPage("AllBooks");
             }
             Book = await _bookService.GetBookByIdWithIncludes(Book.Id);
             await LoadCategoriesAndAuthors();
@@ -79,14 +74,14 @@ namespace Chapter02.Pages.Admin.Books
         {
             
             categoryList = new MultiSelectList(
-                await _categoryService.GetAll(),
+                await _bookService.LoadCategories(),
                 nameof(Category.Id),
                 nameof(Category.Name),
                 Book.CategoriesLink.Select(c => c.CategoryId)
             );
 
             authorList = new MultiSelectList(
-                await _authorService.GetAll(),
+                await _bookService.LoadAuthors(),
                 nameof(AuthorDto.Id),
                 nameof(AuthorDto.FullName),
                 Book.AuthorsLink.Select(c => c.AuthorId)

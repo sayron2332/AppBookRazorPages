@@ -1,11 +1,11 @@
 ﻿@page
 @model Chapter02.Pages.Admin.Books.AllBooksModel
 @{
-    ViewData["Title"] = "AllBooks";
+    ViewData["Title"] = "All Books";
     Layout = "_AdminLayout";
 }
 
-<div class="container mt-12">
+<div class="content-wrapper">
     @if (TempData["ErrorMessage"] != null)
     {
         <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
@@ -14,45 +14,52 @@
     {
         <div class="alert alert-success">@TempData["SuccessMessage"]</div>
     }
-    <h3>Create new Book  <a class="btn btn-success" asp-page="Create">Create</a></h3>
-    <h2 class="text-center mb-4">All Book</h2>
-    <table class="table table-striped table-bordered">
-        <thead class="table-dark">
-            <tr>
 
-                <th scope="col">Image</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Price</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model.Books != null)
-            {
-                @foreach (var book in Model.Books)
-                {
-                    <tr>
-                        <td><img style="width:150px; height:120px;" src="~/images/books/@book.ImageName" /></td>
-                        <td>@book.Name</td>
-                        <td>@book.Description</td>
-                        <td>@book.Price</td>
-                        <td><a asp-page="/admin/books/update" asp-route-Id="@book.Id" class="btn btn-secondary">Edit</a></td>
-                        <td><a asp-page="/admin/books/delete" asp-route-Id="@book.Id" class="btn btn-danger">Delete</a></td>
-
-                    </tr>
-                }
-
-            }
-            else
-            {
-                <span>books isnt exist in database</span>
-            }
-
-        </tbody>
-        
-      
-    </table>
-   
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Books list</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Img</th>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.Books)
+                                    {
+                                        <tr>
+                                            <td><img style="width:150px; height:120px;" src="~/images/books/@item.ImageName" /> </td>
+                                            <td>@item.Name</td>
+                                            <td>@item.Description</td>
+                                            <td>@item.Price</td>
+                                            <td><a asp-page="/admin/books/update" asp-route-Id="@item.Id" class="btn btn-dark">Edit</a></td>
+                                            <td><a asp-page="/admin/books/delete" asp-route-Id="@item.Id" class="btn btn-danger">Delete</a></td>
+                                           
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+            <!-- /.col -->
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
 </div>

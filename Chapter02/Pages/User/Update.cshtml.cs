@@ -42,25 +42,15 @@ namespace Chapter02.Pages.User
         
         public async Task<IActionResult> OnPost()
         {
+            UpdateUser.Role = "user";
             UpdateUserValidator validator = new UpdateUserValidator();
             ValidationResult validationResult = validator.Validate(UpdateUser);
             if (validationResult.IsValid)
             {
-                if (!User.IsInRole("admin"))
-                {
-                    UpdateUser.Role = "user";
-                }
-
                 var result = await _userService.UpdateUserAsync(UpdateUser);
                 if (result.Success)
                 {
                     TempData["SuccessMessage"] = result.Message;
-
-                    if (User.IsInRole("admin"))
-                    {
-                        return RedirectToPage("/admin/users/AllUsers");
-                    }
-
                     return RedirectToPage("Profile");
                 }
               
@@ -69,8 +59,6 @@ namespace Chapter02.Pages.User
                 {
                     ViewData["Error"] = result.Errors.ToArray()[0];
                 }
-
-               
             }
             return Page();
         }

@@ -83,13 +83,13 @@ namespace Chapter02.Core.Services
             AspNetUser? user = await _userManager.FindByIdAsync(id);
             return user!;
         }
-        public async Task<List<AdminUserDto>> GetAllUsersAsync()
+        public async Task<List<UserDto>> GetAllUsersAsync()
         {
             var users = await _userManager.Users.ToListAsync();
-            List<AdminUserDto> mappedUsers = new();
+            List<UserDto> mappedUsers = new();
             foreach (AspNetUser user in users)
             {
-                AdminUserDto adminUser = _autoMapper.Map<AdminUserDto>(user);
+                UserDto adminUser = _autoMapper.Map<UserDto>(user);
                 IList<string> roles = await _userManager.GetRolesAsync(user);
                 adminUser.Role = roles[0];
                 mappedUsers.Add(adminUser);

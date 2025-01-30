@@ -1,0 +1,112 @@
+﻿<aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+    <!--begin::Sidebar Brand-->
+    <div class="sidebar-brand">
+        <!--begin::Brand Link-->
+        <a asp-page="/admin/index" class="brand-link">
+            <!--begin::Brand Image-->
+            <img src="~/dist/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image opacity-75 shadow">
+            <!--end::Brand Image-->
+            <!--begin::Brand Text-->
+            <span class="brand-text fw-light">AdminLTE 4</span>
+            <!--end::Brand Text-->
+        </a>
+        <!--end::Brand Link-->
+    </div>
+    <!--end::Sidebar Brand-->
+    <!--begin::Sidebar Wrapper-->
+    <div class="sidebar-wrapper" data-overlayscrollbars="host">
+        <div class="os-size-observer">
+            <nav class="mt-2">
+                <!--begin::Sidebar Menu-->
+                <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-person-circle"></i>
+                          <p>User</p>
+                          <i class="nav-arrow bi bi-chevron-right"></i>
+                        </a>
+                        <ul class="nav nav-treeview" style="box-sizing: border-box; display: none;">
+                            <li class="nav-item">
+                                <a asp-page ="/admin/users/allusers" class="nav-link active">
+                                    <i class="bi bi-people"></i>
+                                    <p>All Users</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/admin/users/create" class="nav-link active">
+                                    <i class="bi bi-person-add"></i>
+                                    <p>Add User</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-file-earmark-person"></i>
+                            <p>Author</p>
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </a>
+                        <ul class="nav nav-treeview" style="box-sizing: border-box; display: none;">
+                            <li class="nav-item">
+                                <a asp-page="/admin/authors/allauthors" class="nav-link active">
+                                    <i class="bi bi-people"></i>
+                                    <p>All Authors</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/admin/authors/create" class="nav-link active">
+                                    <i class="bi bi-person-add"></i>
+                                    <p>Add Author</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-bookmark-fill"></i>
+                            <p>Category</p>
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </a>
+                        <ul class="nav nav-treeview" style="box-sizing: border-box; display: none;">
+                            <li class="nav-item">
+                                <a asp-page="/admin/categories/allcategories" class="nav-link active">
+                                    <i class="bi bi-bookmarks"></i>
+                                    <p>All Categories</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/admin/categories/create" class="nav-link active">
+                                    <i class="bi bi-bookmark-plus"></i>
+                                    <p>Add Category</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-book-half"></i>
+                            <p>Book</p>
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </a>
+                        <ul class="nav nav-treeview" style="box-sizing: border-box; display: none;">
+                            <li class="nav-item">
+                                <a asp-page="/admin/books/allbooks" class="nav-link active">
+                                    <i class="bi bi-book"></i>
+                                    <p>All Books</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/admin/Books/create" class="nav-link active">
+                                    <i class="bi bi-journal-plus"></i>
+                                    <p>Add Book</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--end::Sidebar Menu-->
+            </nav>
+        </div>
+    </div>
+    <!--end::Sidebar Wrapper-->
+</aside>

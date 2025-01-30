@@ -9,7 +9,7 @@ namespace Chapter02.Pages.Admin.Users
     [Authorize(Roles = "admin")]
     public class AllUsers : PageModel
     {
-        public IEnumerable<AdminUserDto> Users { get; set; } = null!;
+        public IEnumerable<UserDto> Users { get; set; } = null!;
 
         private readonly UserService _userService;
         public AllUsers(UserService userService)

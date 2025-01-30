@@ -2,29 +2,74 @@
 @model Chapter02.Pages.Admin.Authors.CreateModel
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Create Author";
 }
-<form method="post" enctype="multipart/form-data">
-    @if (@ViewData["ErrorMessage"] != null)
-    {
-        <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
-    }
-    <br>
-    <h2 class="card-title">Create New Author</h2>
-    <div class="col-4 offset-4">
-        <label asp-for="Author.Name">Name</label>
-        <input required type="text" class="form-control" asp-for="Author.Name">
-        <span class="text-danger" asp-validation-for="Author.Name"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label asp-for="Author.Surname">Surname</label>
-        <input required type="text" class="form-control" asp-for="Author.Surname">
-        <span class="text-danger" asp-validation-for="Author.Surname"></span>
-    </div>
-    <div class="col-4 offset-4">
-        <label>Photo</label>
-        <input accept="image/*" type="file" class="form-control" name="photo">
-       
-    </div>
-    <br />
-    <button class="btn btn-success">Create</button>
-</form>
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+   
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">Create Author</h3>
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5 offset-3">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">New Author</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                @if (@ViewData["ErrorMessage"] != null)
+                                {
+                                    <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
+                                }
+                                <form method="post" enctype="multipart/form-data">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" asp-for="Author.Name" class="form-control" placeholder="Enter Name">
+                                            <span class="text-danger" asp-validation-for="Author.Name"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Surname</label>
+                                            <input type="text" asp-for="Author.Surname" class="form-control" placeholder="Enter Surname">
+                                            <span class="text-danger" asp-validation-for="Author.Surname"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Photo</label>
+                                            <input accept="image/*" type="file" class="form-control" name="photo">
+                                        </div>
+                                    </div>
+                                    <!-- /.card-body -->
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary">Create</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>

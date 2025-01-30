@@ -2,6 +2,7 @@
 @model Chapter02.Pages.User.UpdateModel
 @{
     Layout = "_Layout";
+    ViewData["Title"] = "Update Profile";
     
 }
 
@@ -41,16 +42,6 @@
                     <input class="form-control" asp-for="UpdateUser.Email" value="@Model.UpdateUser.Email" type="text">
                     <span class="text-danger" asp-validation-for="@Model.UpdateUser.Email"></span>
                 </div>
-                @if (@User.IsInRole("admin"))
-                {
-                    <div>
-                        <label>Role</label>
-                        <select class="form-select" asp-for="UpdateUser.Role" type="text">
-                            <option value="admin">Admin</option>
-                            <option value="user">User</option>
-                        </select>
-                    </div>
-                }
                 <br />
               <button class="btn btn-success">summbit</button>
             </form>

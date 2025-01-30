@@ -20,10 +20,7 @@ namespace Chapter02.Core.Validation.User
             .EmailAddress().WithMessage("Email addres not valid");
 
             RuleFor(x => x.PhoneNumber)
-            .MinimumLength(9).WithMessage("PhoneNumber must not be less than 10 characters.")
-            .MaximumLength(20).WithMessage("PhoneNumber must not exceed 50 characters.")
-            .NotEmpty().WithMessage("Cant be empty")
-            .Matches(new Regex("^\\+?[1-9][0-9]{7,14}$")).WithMessage("PhoneNumber not valid");
+            .MaximumLength(20).WithMessage("PhoneNumber must not exceed 20 characters.");
 
             RuleFor(x => x.Password).NotEmpty().WithMessage("Field cant be empty")
             .MinimumLength(8).WithMessage("Your password lenght Min is 6 symbol")

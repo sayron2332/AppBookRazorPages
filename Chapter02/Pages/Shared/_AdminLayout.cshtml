@@ -1,93 +1,38 @@
-﻿
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewData["Title"]</title>
+    <partial name="./Admin/_Headlinks.cshtml" />
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <!-- Логотип -->
-                <h1><a class="navbar-brand" href="#">BookStore</a></h1>
-               
-                <!-- Кнопка для мобільного меню -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <!-- Меню навігації -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/admin/users/allusers">Users</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/admin/authors/allauthors">Authors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/admin/categories/allcategories">Categories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/admin/books/allbooks">Books</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/user/profile">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/home/index">Home</a>
-                        </li>
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary sidebar-open app-loaded">
+   <div class="app-wrapper">
+        <partial name="./Admin/_Navbar.cshtml" />
+        <partial name="./Admin/_Sidebar.cshtml" />
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="flex-grow-1  py-3">
-        <div class="container text-center">
+        <main class="app-main">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>@ViewData["Title"]</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a asp-page="/admin/index">Home</a></li>
+                                <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
             @RenderBody()
-        </div>
-    </main>
-
-    <footer class="bg-dark text-white py-3">
-        <div class="container">
-            <div class="row">
-               
-                <div class="col-md-4">
-                    <h5 class="text-uppercase">BookStore</h5>
-                    <p>Your the best Choise for buy books all ganres. we like all reader and work on it</p>
-                </div>
-
-                
-                <div class="col-md-4">
-                    <h5 class="text-uppercase">Reference</h5>
-                    <ul class="list-unstyled">
-                        <li><a asp-page="/home/index" class="text-white text-decoration-none">Home</a></li>
-                        <li><a asp-page="/admin/users/allusers" class="text-white text-decoration-none">Users</a></li>
-                        <li><a asp-page="/admin/categories/allcategories" class="text-white text-decoration-none">Categories</a></li>
-                        <li><a asp-page="/admin/books/allbooks" class="text-white text-decoration-none">Books</a></li>
-                        <li><a asp-page="/admin/authors/allauthors" class="text-white text-decoration-none">Authors</a></li>
-                    </ul>
-                </div>
-
-                
-                <div class="col-md-4">
-                    <h5 class="text-uppercase">Contacts</h5>
-                    <p>
-                        <i class="bi bi-geo-alt"></i>Street Rivnenska 58, town Rivne<br>
-                        <i class="bi bi-telephone"></i>(+380) 959 348 105<br>
-                        <i class="bi bi-envelope"></i> xvtnxjgbyv@gmail.com
-                    </p>
-                </div>
-            </div>
-
-            <div class="text-center mt-3">
-                <p class="mb-0">&copy; 2024 BookStore. All copyright protected.</p>
-            </div>
-        </div>
-    </footer>
+        </main>
+        <partial name="./Admin/_Footer.cshtml" />
+        <div class="sidebar-overlay"></div>
+   </div>
+    <script src="/js/adminlte.min.js"></script>
 </body>
 </html>

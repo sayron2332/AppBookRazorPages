@@ -2,28 +2,66 @@
 @model Chapter02.Pages.Admin.Authors.DeleteModel
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Delete Author";
 }
 
-<div class=" bg-opacity-25">
+<div class="content-wrapper">
+   
 
-    <!-- /.card-header -->
-    <div class="card-body">
-        <div class="row">
-            <div class="col-md-5 offset-3">
-                <div class="card card-danger">
-                    <br />
-                    <div class="card">
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Do you wanna Delete Author @Model.Author?.Name @Model.Author?.Surname</h6>
-                            <form method="post">
-                                <button class="btn btn-danger">Delete</button>
-                            </form>
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-danger">
+                <div class="card-header">
+                    <h3 class="card-title">Delete Author</h3>
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5 offset-3">
+                            <div class="card card-danger">
+                                <div class="card-header">
+                                    <h3 class="card-title">Delete Author</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                @if (@ViewData["ErrorMessage"] != null)
+                                {
+                                    <span class="text-danger mt-3">@ViewData["ErrorMessage"]</span>
+                                }
+                                <form method="post">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Do you wanna delete Author with name: @Model.Author.Name</label>
+                                            <input type="hidden" value="@Model.Author.Id" name="Id">
+                                        </div>
+                                    </div>
+                                    <!-- /.card-body -->
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary">Delete</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- /.card -->
             </div>
+            <!-- /.row -->
         </div>
-    </div>
-    <!-- /.card -->
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
 </div>
+
 

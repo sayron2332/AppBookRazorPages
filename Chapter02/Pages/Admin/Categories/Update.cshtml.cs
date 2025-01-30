@@ -40,7 +40,6 @@ namespace Chapter02.Pages.Admin.Categories
                 TempData["ErrorMessage"] = result.Message;
                 return RedirectToPage("AllCategories");
             }
-
             return Page();
         }
     }

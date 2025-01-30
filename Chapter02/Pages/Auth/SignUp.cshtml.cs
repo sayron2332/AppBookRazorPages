@@ -29,25 +29,16 @@ namespace Chapter02.Pages.Auth
         
         public async Task<IActionResult> OnPost()
         {
-          
+            RegisterUser.Role = "user";
             CreateUserValidator validator = new CreateUserValidator();
             var validationResult = await validator.ValidateAsync(RegisterUser);
            
             if (validationResult.IsValid)
             {
-                if (!User.IsInRole("admin"))
-                {
-                    RegisterUser.Role = "user"; 
-                }
                 var serviceResult = await _userService.CreateAsync(RegisterUser);
                 if (serviceResult.Success)
                 {
                     TempData["SuccessMessage"] = serviceResult.Message;
-                    if (User.IsInRole("admin"))
-                    {
-                        return RedirectToPage("/admin/users/AllUsers");
-                    }
-
                     return RedirectToPage(nameof(SignIn));
                 }
                 ViewData["ErrorMessage"] = serviceResult.Message;

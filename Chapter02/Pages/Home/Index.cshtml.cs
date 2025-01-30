@@ -10,7 +10,7 @@ namespace Chapter02.Pages.Home
 {
     public class IndexModel : PageModel
     {
-        public List<AdminUserDto> contactUsers { get; set; } = null!;
+        public List<UserDto> contactUsers { get; set; } = null!;
         private readonly UserService _userService;
         public IndexModel(UserService userService)
         {

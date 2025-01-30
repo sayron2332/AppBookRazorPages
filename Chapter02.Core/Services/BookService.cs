@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Chapter02.Core.Dtos.Authors;
 using Chapter02.Core.Dtos.Book;
 using Chapter02.Core.Dtos.Configuration;
 using Chapter02.Core.Entities;
@@ -31,7 +32,10 @@ namespace Chapter02.Core.Services
             _authorService = authorService;
             _categoryService = categoryService;
         }
-
+        public async Task<IEnumerable<Category>> LoadCategories()
+            => await _categoryService.GetAll();
+        public async Task<IEnumerable<AuthorDto>> LoadAuthors()
+           => await _authorService.GetAll();
         public async Task<ServiceResponse> Create(IFormFile photo, CreateBookDto model)
         {
             if (photo != null)

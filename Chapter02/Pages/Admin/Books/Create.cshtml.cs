@@ -15,20 +15,15 @@ namespace Chapter02.Pages.Admin.Books
     public class CreateModel : PageModel
     {
         private readonly IBookService _bookservice;
-        private readonly ICategoryService _categoryService;
-        private readonly IAuthorService _authorService;
         [BindProperty]
         public CreateBookDto Book { get; set; } = null!;
-        public CreateModel(IBookService bookService, IAuthorService authorService, ICategoryService categoryService)
+        public CreateModel(IBookService bookService)
         {
             _bookservice = bookService;
-            _authorService = authorService;
-            _categoryService = categoryService;
         }
        
-        public async Task<IActionResult> OnGet([FromForm]string searchString)
+        public async Task<IActionResult> OnGet()
         {
-            
             await LoadCategoriesAndAuthors();
             return Page();
         }
@@ -54,12 +49,12 @@ namespace Chapter02.Pages.Admin.Books
         private async Task LoadCategoriesAndAuthors()
         {
             ViewData["categoryList"] = new SelectList(
-                await _categoryService.GetAll(),
+                await _bookservice.LoadCategories(),
                 nameof(Category.Id),
                 nameof(Category.Name)
             );
             ViewData["authorList"] = new SelectList(
-                await _authorService.GetAll(),
+                await _bookservice.LoadAuthors(),
                 nameof(AuthorDto.Id),
                 nameof(AuthorDto.FullName)
             );

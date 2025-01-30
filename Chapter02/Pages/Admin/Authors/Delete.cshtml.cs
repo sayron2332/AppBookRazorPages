@@ -30,7 +30,7 @@ namespace Chapter02.Pages.Admin.Authors
         }
         public async Task<IActionResult> OnPost(int id)
         {
-            var result = await _authorService.Delete(Author.Id);
+            var result = await _authorService.Delete(id);
             if (result.Success)
             {
                 TempData["SuccessMessage"] = result.Message;

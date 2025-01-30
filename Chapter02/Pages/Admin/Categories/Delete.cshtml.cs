@@ -11,7 +11,7 @@ namespace Chapter02.Pages.Admin.Categories
     public class DeleteModel : PageModel
     {
         private readonly ICategoryService _categoryService;
-        public Category? Category { get; set; }
+        public required Category Category { get; set; }
         public DeleteModel(ICategoryService categoryService)
         {
             _categoryService = categoryService;
@@ -28,7 +28,7 @@ namespace Chapter02.Pages.Admin.Categories
         }
         public async Task<IActionResult> OnPost(int Id)
         {
-            var result =  await _categoryService.Delete(Id);
+            var result = await _categoryService.Delete(Id);
             if (result.Success)
             {
                 TempData["SuccessMessage"] = result.Message;

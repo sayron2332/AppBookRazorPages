@@ -1,0 +1,83 @@
+﻿@page
+@model Chapter02.Pages.Admin.Users.UpdateModel
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Update User";
+}
+<div class="content-wrapper">
+   
+    <section class="content">
+        <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">Update user</h3>
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5 offset-3">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Update user</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                            @if (ViewData["ErrorMessage"] != null)
+                            {
+                                <span class="alert alert-danger">@ViewData["ErrorMessage"]</span>
+                            }
+                            <form class="text-start" method="post">
+                                <input value="@Model.UpdateUser.Id" asp-for="UpdateUser.Id" type="hidden">
+                                <div>
+                                    <label>Name</label>
+                                    <input class="form-control" asp-for="UpdateUser.Name" value="@Model.UpdateUser.Name" type="text">
+                                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.Name"></span>
+                                </div>
+
+                                <div>
+                                    <label>Surname</label>
+                                    <input class="form-control" asp-for="UpdateUser.Surname" value="@Model.UpdateUser.Surname" type="text">
+                                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.Surname"></span>
+                                </div>
+
+                                <div class="form">
+                                    <label>Phone</label>
+                                    <input class="form-control" asp-for="UpdateUser.PhoneNumber" value="@Model.UpdateUser.PhoneNumber" type="text">
+                                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.PhoneNumber"></span>
+                                </div>
+                                    <div class="form-group">
+                                        <label>Role</label>
+                                        <select class="form-control select2" asp-for="UpdateUser.Role" style="width: 100%;">
+                                            <option selected="selected">user</option>
+                                            <option>admin</option>
+                                        </select>
+                                        <span class="text-danger" asp-validation-for="UpdateUser.Role"></span>
+                                    </div>
+                                <div>
+                                    <label>Email</label>
+                                    <input class="form-control" asp-for="UpdateUser.Email" value="@Model.UpdateUser.Email" type="text">
+                                    <span class="text-danger" asp-validation-for="@Model.UpdateUser.Email"></span>
+                                </div>
+                                <br />
+                                <button class="btn btn-success">summbit</button>
+                            </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+         </div>  
+    </section>
+     
+    <!-- /.card -->
+</div>

@@ -1,4 +1,5 @@
-﻿using Chapter02.Core.Dtos.Book;
+﻿using Chapter02.Core.Dtos.Authors;
+using Chapter02.Core.Dtos.Book;
 using Chapter02.Core.Entities;
 using Microsoft.AspNetCore.Http;
 using System;
@@ -17,5 +18,7 @@ namespace Chapter02.Core.Interfaces
         public Task<IEnumerable<BookDto>> GetAll();
         public Task<ServiceResponse> Update(IFormFile photo,BookDto model);
         public Task<BookDto> GetBookByIdWithIncludes(int Id);
+        public Task<IEnumerable<Category>> LoadCategories();
+        public Task<IEnumerable<AuthorDto>> LoadAuthors();
     }
 }

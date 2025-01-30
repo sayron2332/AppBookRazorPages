@@ -15,7 +15,7 @@ namespace Chapter02.Core.AutoMapper.User
         {
             CreateMap<CreateUserDto, AspNetUser>()
                 .ForMember(dst => dst.UserName, act => act.MapFrom(src => src.Email));
-            CreateMap<AdminUserDto, AspNetUser>().ReverseMap();
+            CreateMap<UserDto, AspNetUser>().ReverseMap();
                
 
         }
