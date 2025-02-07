@@ -37,10 +37,15 @@ wwwroot\dist\assets\img\user6-128x128.jpg
 wwwroot\dist\assets\img\user7-128x128.jpg
 wwwroot\dist\assets\img\user8-128x128.jpg
 wwwroot\favicon.ico
-wwwroot\images\authors\bde1fe02-4db1-46e7-9dd8-95080b85ed16.jfif
+wwwroot\images\authors\77f1ae16-b3a5-4950-b70c-aa549426b2bf.jfif
+wwwroot\images\authors\9f0acf19-8252-421d-8b20-321eee11e842.jpg
 wwwroot\images\authors\default.jpg
-wwwroot\images\books\7b4f6630-53de-4d32-9a4b-eeaa80a6bb98.jfif
+wwwroot\images\books\3c826fca-3860-444a-a3b7-69c056a4eba7.png
+wwwroot\images\books\a577921e-3388-4567-a1c7-19cf348dcf63.jpg
 wwwroot\images\books\default.jpg
+wwwroot\images\users\0e155db9-7923-4111-ab63-7547873245f5.jfif
+wwwroot\images\users\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif
+wwwroot\images\users\default.jpg
 wwwroot\js\adminlte.js.map
 wwwroot\js\adminlte.min.js
 wwwroot\js\adminlte.min.js.map

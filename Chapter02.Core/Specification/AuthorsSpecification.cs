@@ -24,5 +24,20 @@ namespace Chapter02.Core.Specification
                 Query.AsTracking().Where(a => id.Contains(a.Id)).AsTracking();
             }
         }
+        public class GetListByPagination : Specification<Author>
+        {
+            public GetListByPagination(int skip, int take)
+            {
+                Query.Skip(skip).Take(take).OrderBy(c => c.Id);
+            }
+        }
+        public class SearchAndPagination : Specification<Author>
+        {
+            public SearchAndPagination(string searchString, int skip, int take)
+            {
+                Query.Where(p => p.Surname.Contains(searchString))
+                .Skip(skip).Take(take).OrderBy(p => p.Id);
+            }
+        }
     }
 }

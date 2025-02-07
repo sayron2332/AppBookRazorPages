@@ -10,5 +10,6 @@ namespace Chapter02.Core.Dtos.Configuration
     {
         public string AuthorImage { get; set; } = string.Empty;
         public string BookImage { get; set; } = string.Empty;
+        public string UserImage { get; set; } = string.Empty;
     }
 }

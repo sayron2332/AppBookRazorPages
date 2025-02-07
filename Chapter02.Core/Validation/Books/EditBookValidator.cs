@@ -32,9 +32,7 @@ namespace Chapter02.Core.Validation.Books
            .MaximumLength(30).WithMessage("Leanguage name maximum length 30 symbol")
            .MinimumLength(3).WithMessage("Leanguage name minumum length 3 symbol");
 
-            RuleFor(b => b.AuthorsLink).NotEmpty().NotNull().WithMessage("Author not will be Empty");
-
-            RuleFor(b => b.CategoriesLink).NotEmpty().NotNull().WithMessage("Author not will be Empty");
+          
 
         }
     }

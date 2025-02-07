@@ -17,5 +17,6 @@ namespace Chapter02.Core.Interfaces
         Task Delete(object id);
         Task Delete(TEntity entityToDelete);
         Task Update(TEntity ententityToUpdate);
+        Task<int> GetCount();
     }
 }

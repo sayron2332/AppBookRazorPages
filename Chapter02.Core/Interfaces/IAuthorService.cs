@@ -18,5 +18,8 @@ namespace Chapter02.Core.Interfaces
         public Task<ICollection<Author>> GetListById(int[] Id);
         public Task<ServiceResponse> Update(IFormFile photo, AuthorDto model);
         public Task<ICollection<Author>> GetListByIdAsTracking(int[] Id);
+        public Task<int> GetCount();
+        public Task<IEnumerable<AuthorDto>> GetListBySearchAndPagination(string searchString, int pageIndex, int pageSize = 10);
+        public Task<IEnumerable<AuthorDto>> GetListByPagination(int pageIndex, int pageSize = 10);
     }
 }

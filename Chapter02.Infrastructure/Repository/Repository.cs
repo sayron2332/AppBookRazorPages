@@ -80,6 +80,9 @@ namespace Chapter02.Infrastructure.Repository
             await _context.SaveChangesAsync();
         }
 
+        public async Task<int> GetCount()
+           => await _dbSet.CountAsync();
+        
         public async Task Update(TEntity ententityToUpdate)
         {
             if (ententityToUpdate is Book)

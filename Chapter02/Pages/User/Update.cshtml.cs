@@ -40,14 +40,14 @@ namespace Chapter02.Pages.User
         }
 
         
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPost(IFormFile photo)
         {
             UpdateUser.Role = "user";
             UpdateUserValidator validator = new UpdateUserValidator();
             ValidationResult validationResult = validator.Validate(UpdateUser);
             if (validationResult.IsValid)
             {
-                var result = await _userService.UpdateUserAsync(UpdateUser);
+                var result = await _userService.UpdateUserAsync(photo, UpdateUser);
                 if (result.Success)
                 {
                     TempData["SuccessMessage"] = result.Message;

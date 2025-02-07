@@ -81,10 +81,12 @@
                                         <div class="form-group">
                                             <label>Categories</label>
                                             <select class="form-select" multiple name="categoriesId" asp-items="Model.categoryList"></select>
+                                            <span class="text-danger">@Html.ValidationMessage("CategoriesLink")</span>
                                         </div>
                                         <div class="form-group">
                                             <label>Authors</label>
                                             <select class="form-select" multiple name="authorsId" asp-items="Model.authorList"></select>
+                                            <span class="text-danger" >@Html.ValidationMessage("AuthorsLink")</span>
                                         </div>
                                         <div class="form-group">
                                             <label>Photo</label>

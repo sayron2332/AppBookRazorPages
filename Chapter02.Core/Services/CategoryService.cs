@@ -1,4 +1,5 @@
-﻿using Chapter02.Core.Entities;
+﻿using Chapter02.Core.Dtos.Book;
+using Chapter02.Core.Entities;
 using Chapter02.Core.Interfaces;
 using Chapter02.Core.Specification;
 using System;
@@ -92,6 +93,20 @@ namespace Chapter02.Core.Services
         {
             var categories = await _repository.GetListBySpec(new CategorySpecification.GetListById(Id));
             return (ICollection<Category>)categories;
+        }
+        public async Task<int> GetCount()
+            => await _repository.GetCount();
+        public async Task<IEnumerable<Category>> GetListByPagination(
+          int pageIndex, int pageSize = 10)
+        {
+            int skip = (pageIndex - 1) * pageSize;
+            return await _repository.GetListBySpec(new CategorySpecification.GetListByPagination(skip, pageSize));
+        }
+        public async Task<IEnumerable<Category>> GetListBySearchAndPagination(
+            string searchString, int pageIndex, int pageSize = 10)
+        {
+            int skip = (pageIndex - 1) * pageSize;
+            return await _repository.GetListBySpec(new CategorySpecification.SearchAndPagination(searchString,skip, pageSize));
         }
     }
 }

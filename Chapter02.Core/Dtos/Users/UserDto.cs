@@ -14,5 +14,6 @@ namespace Chapter02.Core.Dtos.Users
         public string Email { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
         public string Role { get; set; } = string.Empty;
+        public string ImageName { get; set; } = string.Empty;
     }
 }

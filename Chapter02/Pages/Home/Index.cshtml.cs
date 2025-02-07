@@ -10,7 +10,7 @@ namespace Chapter02.Pages.Home
 {
     public class IndexModel : PageModel
     {
-        public List<UserDto> contactUsers { get; set; } = null!;
+       
         private readonly UserService _userService;
         public IndexModel(UserService userService)
         {
@@ -19,7 +19,7 @@ namespace Chapter02.Pages.Home
         public async Task<IActionResult> OnGet()
         {
 
-            contactUsers = await _userService.GetAllUsersAsync();
+          
             return Page();
         }
       

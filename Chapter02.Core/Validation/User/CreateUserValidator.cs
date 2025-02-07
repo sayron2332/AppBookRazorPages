@@ -30,7 +30,7 @@ namespace Chapter02.Core.Validation.User
             .Matches(@"[0-9]+").WithMessage("Your password must contain at least one number.");
 
             RuleFor(x => x.ConfirmPassword)
-            .Equal(x => x.Password).WithMessage("Confirm PasswordMust be Equal password");
+            .Equal(x => x.Password).WithMessage("Confirm Password Must be Equal password");
         }
     }
 }

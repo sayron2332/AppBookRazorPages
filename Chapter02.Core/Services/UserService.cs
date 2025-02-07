@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Chapter02.Core.Dtos.Configuration;
 using Chapter02.Core.Dtos.Users;
 using Chapter02.Core.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +14,7 @@ namespace Chapter02.Core.Services
     public class UserService
     {
         private readonly UserManager<AspNetUser> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        
         private readonly SignInManager<AspNetUser> _signInManager;
         private readonly EmailService _emailService;
         private readonly IConfiguration _config;
@@ -22,7 +24,6 @@ namespace Chapter02.Core.Services
             SignInManager<AspNetUser> signInManager, IConfiguration config,
             IMapper autoMapper)
         {
-            _roleManager = roleManager;
             _userManager = userManager;
             _signInManager = signInManager;
             _emailService = emailService;
@@ -139,7 +140,7 @@ namespace Chapter02.Core.Services
             };
 
         }
-        public async Task<ServiceResponse> CreateAsync(CreateUserDto registerUser)
+        public async Task<ServiceResponse> CreateAsync(IFormFile photo, CreateUserDto registerUser)
         {
             var user = await _userManager.FindByEmailAsync(registerUser.Email);
             if (user != null)
@@ -150,7 +151,33 @@ namespace Chapter02.Core.Services
                     Message = "This user already exist"
                 };
             }
+            if (photo != null)
+            {
 
+                ImageSettings imageSettings = _config.GetSection("ImageSettings").Get<ImageSettings>()!;
+                string existingFilePath = Path.Combine(imageSettings.UserImage, photo.FileName);
+
+                if (File.Exists(existingFilePath) && registerUser.ImageName != "default.png")
+                {
+                    File.Delete(existingFilePath);
+                }
+
+                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+
+                string upload = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.UserImage);
+
+                using (var fileStream = new FileStream(Path.Combine(upload, fileName), FileMode.Create))
+                {
+                    await photo.CopyToAsync(fileStream);
+                }
+
+
+                registerUser.ImageName = fileName;
+            }
+            else
+            {
+                registerUser.ImageName = "default.jpg";
+            }
             AspNetUser mappedUser = _autoMapper.Map<AspNetUser>(registerUser);
 
             var result = await _userManager.CreateAsync(mappedUser, registerUser.Password);
@@ -191,7 +218,12 @@ namespace Chapter02.Core.Services
                     Message = "User Not found"
                 };
             }
-
+            if (user.ImageName != "default.jpg")
+            {
+                ImageSettings imageSettings = _config.GetSection("ImageSettings").Get<ImageSettings>()!;
+                string image = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.UserImage, user.ImageName);
+                File.Delete(image);
+            }
             var result = await _userManager.DeleteAsync(user);
             if (result.Succeeded)
             {
@@ -210,7 +242,7 @@ namespace Chapter02.Core.Services
 
             };
         }
-        public async Task<ServiceResponse> UpdateUserAsync(UpdateUserDto updateUser)
+        public async Task<ServiceResponse> UpdateUserAsync(IFormFile photo,UpdateUserDto updateUser)
         {
             AspNetUser? user = await _userManager.FindByIdAsync(updateUser.Id!);
             if (user is null)
@@ -221,7 +253,27 @@ namespace Chapter02.Core.Services
                     Message = "User not found",
                 };
             }
+            if (photo != null)
+            {
+                ImageSettings imageSettings = _config.GetSection("ImageSettings").Get<ImageSettings>()!;
 
+                if (user.ImageName != "default.jpg")
+                {
+                    string oldImage = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.UserImage, user.ImageName);
+                    File.Delete(oldImage);
+                }
+
+                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+                string upload = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.UserImage);
+
+
+                using (var fileStream = new FileStream(Path.Combine(upload, fileName), FileMode.Create))
+                {
+                    photo.CopyTo(fileStream);
+                }
+
+                user.ImageName = fileName;
+            }
             var currentRole = await _userManager.GetRolesAsync(user);
             if (updateUser.Role != currentRole[0])
             {
@@ -287,7 +339,37 @@ namespace Chapter02.Core.Services
                 Errors = result.Errors.Select(e => e.Description) 
         };
         }
-     
+        public async Task<IEnumerable<UserDto>> GetListByPagination(int page,int pageSize = 10)
+        {
+            int skip = (page - 1) * pageSize;
+            var result = await _userManager.Users
+                .OrderBy(u => u.Id).Skip(skip).Take(pageSize).ToListAsync();
+            List<UserDto> mappedUsers = new();
+            foreach (var user in result)
+            {
+                UserDto adminUser = _autoMapper.Map<UserDto>(user);
+                IList<string> roles = await _userManager.GetRolesAsync(user);
+                adminUser.Role = roles[0];
+                mappedUsers.Add(adminUser);
+            }
+            return mappedUsers;
+        }
+        public async Task<IEnumerable<UserDto>> GetListBySearchByAndPagination(string searchString,int page, int pageSize = 10)
+        {
+            int skip = (page - 1) * pageSize;
+            var result = await _userManager.Users.Where(p => p.Email!.Contains(searchString))
+                .OrderBy(u => u.Id).Skip(skip).Take(pageSize).ToListAsync();
+            List<UserDto> mappedUsers = new();
+            foreach (var user in result)
+            {
+                UserDto adminUser = _autoMapper.Map<UserDto>(user);
+                IList<string> roles = await _userManager.GetRolesAsync(user);
+                adminUser.Role = roles[0];
+                mappedUsers.Add(adminUser);
+            }
+            return mappedUsers;
+        }
+        public async Task<int> GetCountAsync() => await _userManager.Users.CountAsync();
 
     }
 }

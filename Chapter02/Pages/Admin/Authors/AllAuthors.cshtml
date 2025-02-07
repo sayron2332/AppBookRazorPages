@@ -1,11 +1,17 @@
 ﻿@page
+
 @model Chapter02.Pages.Admin.Authors.AllAuthorsModel
 @{
 
     ViewData["Title"] = "All Authors";
     Layout = "_AdminLayout";
 }
-
+<style>
+    .pagination{
+        justify-content: center;
+        margin-top:5px;
+    }
+</style>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     @if (TempData["ErrorMessage"] != null)
@@ -16,53 +22,58 @@
     {
         <div class="alert alert-success">@TempData["SuccessMessage"]</div>
     }
-   
+    <section class="content-header">
+        <div class="container-fluid">
+            <h2 class="text-center display-4">Search by Surname</h2>
+        </div>
+    </section>
 
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Author list</h3>
+            <div class="row" style="margin-bottom: 20px">
+                <div class="col-md-8 offset-md-2">
+                    <form method="post">
+                        <div class="input-group input-group-lg">
+                            <input type="search" name="searchString" class="form-control form-control-lg" placeholder="Search...">
                         </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-
-                                    <tr>
-                                        <th>Img</th>
-                                        <th>Name</th>
-                                        <th>Surname</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var item in Model.Authors)
-                                    {
-                                        <tr>
-                                            <td><img style="width:150px; height:120px;" src="~/images/authors/@item.ImageName" /> </td>
-                                            <td>@item.Name</td>
-                                            <td>@item.Surname</td>
-                                            <td><a asp-page="/admin/authors/update" asp-route-Id="@item.Id" class="btn btn-dark">Edit</a></td>
-                                            <td><a asp-page="/admin/authors/delete" asp-route-Id="@item.Id" class="btn btn-danger">Delete</a></td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- /.card-body -->
-                    </div>
-                    <!-- /.card -->
+                    </form>
                 </div>
             </div>
-            <!-- /.col -->
-            <!-- /.row -->
+            <div class="row mt-3">
+                <div class="col-md-10 offset-md-1">
+                    <div class="list-group">
+                        @foreach (var item in Model.Authors)
+                        {
+                            <div class="list-group-item mb-5">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <img class="img-fluid" src="~/images/authors/@item.ImageName" alt="Photo" style="max-height: 160px;">
+                                    </div>
+                                    <div class="col px-4 mb-4">
+                                        <div class="mb-2">
+                                            <h3>@item.FullName</h3>
+                                            <a asp-page="/admin/authors/update" asp-route-id="@item.Id" class="btn btn-block btn-warning d-inline">Edit</a>
+                                            <a asp-page="/admin/authors/delete" asp-route-id="@item.Id" class="btn btn-block btn-danger d-inline">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <paging total-records=@Model.AuthorsCount
+                    page-no="Model.PageNo"
+                    show-prev-next="false"
+                    show-first-last="false"
+                    show-total-pages="false"
+                    show-total-records="false"
+                    show-page-size-nav="false"
+                    show-gap="false"
+                    max-displayed-pages="5">
+            </paging>
         </div>
-        <!-- /.container-fluid -->
     </section>
 </div>
 <!-- /.content -->

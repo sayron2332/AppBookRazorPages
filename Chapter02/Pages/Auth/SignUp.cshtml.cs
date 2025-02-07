@@ -27,7 +27,7 @@ namespace Chapter02.Pages.Auth
         {
         }
         
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPost(IFormFile file)
         {
             RegisterUser.Role = "user";
             CreateUserValidator validator = new CreateUserValidator();
@@ -35,7 +35,7 @@ namespace Chapter02.Pages.Auth
            
             if (validationResult.IsValid)
             {
-                var serviceResult = await _userService.CreateAsync(RegisterUser);
+                var serviceResult = await _userService.CreateAsync(file,RegisterUser);
                 if (serviceResult.Success)
                 {
                     TempData["SuccessMessage"] = serviceResult.Message;

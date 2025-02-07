@@ -18,7 +18,23 @@ namespace Chapter02.Core.Specification
                 Query.Include(a => a.AuthorsLink).Include(c => c.CategoriesLink).Where(b => b.Id == id);
             }
         }
-      
-       
+        public class GetListByPagination : Specification<Book>
+        {
+            public GetListByPagination(int skip, int take)
+            {
+                Query.Skip(skip).Take(take).OrderBy(c => c.Id);
+            }
+        }
+        public class SearchAndPagination : Specification<Book>
+        {
+            public SearchAndPagination(string searchString,int skip, int take)
+            {
+                 Query
+                 .Where(p => p.Name.Contains(searchString))
+                 .Skip(skip).Take(take).OrderBy(p => p.Id);
+            }
+        }
+
+
     }
 }

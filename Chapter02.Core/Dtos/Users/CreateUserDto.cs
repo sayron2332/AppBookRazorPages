@@ -15,5 +15,6 @@ namespace Chapter02.Core.Dtos.Users
         public string Password { get; set; } = string.Empty;
         public string ConfirmPassword { get; set; } = string.Empty;
         public string? Role { get; set; }
+        public string ImageName { get; set; } = string.Empty;
     }
 }

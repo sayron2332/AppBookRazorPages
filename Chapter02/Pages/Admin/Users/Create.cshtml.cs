@@ -16,14 +16,14 @@ namespace Chapter02.Pages.Admin.Users
         public void OnGet()
         {
         }
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPost(IFormFile photo)
         {
             CreateUserValidator validator = new CreateUserValidator();
             var validationResult = await validator.ValidateAsync(CreateUser);
 
             if (validationResult.IsValid)
             {
-                var serviceResult = await _userService.CreateAsync(CreateUser);
+                var serviceResult = await _userService.CreateAsync(photo, CreateUser);
                 if (serviceResult.Success)
                 {
                     TempData["SuccessMessage"] = serviceResult.Message;

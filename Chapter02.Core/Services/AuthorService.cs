@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 
 
+
 namespace Chapter02.Core.Services
 {
     public class AuthorService : IAuthorService
@@ -16,11 +17,30 @@ namespace Chapter02.Core.Services
         private readonly IRepository<Author> _repository;
         private readonly IMapper _mapper;
         private readonly IConfiguration _configuration;
+        
         public AuthorService(IRepository<Author> repository, IMapper mapper, IConfiguration configuration)
         {
             _repository = repository;
             _mapper = mapper;
             _configuration = configuration;
+        }
+
+        public async Task<int> GetCount()
+            => await _repository.GetCount();
+
+        public async Task<IEnumerable<AuthorDto>> GetListByPagination(
+           int pageIndex, int pageSize = 10)
+        {
+            int skip = (pageIndex - 1) * pageSize;
+            IEnumerable<Author> result = await _repository.GetListBySpec(new AuthorsSpecification.GetListByPagination(skip, pageSize));
+            return result.Select(a => _mapper.Map<AuthorDto>(a));
+        }
+        public async Task<IEnumerable<AuthorDto>> GetListBySearchAndPagination(
+           string searchString, int pageIndex, int pageSize = 10)
+        {
+            int skip = (pageIndex - 1) * pageSize;
+            IEnumerable<Author> result = await _repository.GetListBySpec(new AuthorsSpecification.SearchAndPagination(searchString,skip, pageSize));
+            return result.Select(a => _mapper.Map<AuthorDto>(a));
         }
         public async Task<ServiceResponse> Create(IFormFile photo, AuthorDto model)
         {

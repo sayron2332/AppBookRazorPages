@@ -4,7 +4,12 @@
     ViewData["Title"] = "All Categories";
     Layout = "_AdminLayout";
 }
-
+<style>
+    .pagination {
+        justify-content: center;
+        margin-top: 5px;
+    }
+</style>
 <div class="content-wrapper">
     @if (TempData["ErrorMessage"] != null)
     {
@@ -14,46 +19,60 @@
     {
         <div class="alert alert-success">@TempData["SuccessMessage"]</div>
     }
-    
-    
+
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Category list</h3>
+                <div class="col-md-8 offset-md-2" style="margin-bottom: 20px">
+                    <form method="post">
+                        <div class="input-group input-group-lg">
+                            <input type="search" name="searchString" class="form-control form-control-lg" placeholder="Search...">
                         </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var item in Model.categories)
-                                    {
-                                        <tr>
-                                            <td>@item.Name</td>
-                                            <td><a asp-page="/admin/categories/update" asp-route-Id="@item.Id" class="btn btn-dark">Edit</a></td>
-                                            <td><a asp-page="/admin/categories/delete" asp-route-Id="@item.Id" class="btn btn-danger">Delete</a></td>
-                                            
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- /.card-body -->
-                    </div>
-                    <!-- /.card -->
+                    </form>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="card-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.categories)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.Name</td>
+                                    <td><a asp-page="/admin/categories/update" asp-route-Id="@item.Id" class="btn btn-dark">Edit</a></td>
+                                    <td><a asp-page="/admin/categories/delete" asp-route-Id="@item.Id" class="btn btn-danger">Delete</a></td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <!-- /.col -->
-            <!-- /.row -->
+
+
+            <!-- /.card-body -->
+
+            <paging total-records=@Model.CategoryCount
+                    page-no="Model.PageNo"
+                    show-prev-next="false"
+                    show-first-last="false"
+                    show-total-pages="false"
+                    show-total-records="false"
+                    show-page-size-nav="false"
+                    show-gap="false"
+                    max-displayed-pages="5">
+            </paging>
+            <!-- /.card -->
         </div>
         <!-- /.container-fluid -->
     </section>

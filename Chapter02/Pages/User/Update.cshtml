@@ -17,7 +17,7 @@
                 <span class="alert alert-danger">@ViewData["ErrorMessage"]</span>
                 <span class="alert alert-danger">@ViewData["Error"]</span>
             }
-            <form class="text-start" method="post">
+            <form class="text-start" method="post" enctype="multipart/form-data">
                 <input value="@Model.Id"  asp-for="UpdateUser.Id" type="hidden">
                 <div>
                     <label>Name</label>
@@ -41,6 +41,11 @@
                     <label>Email</label>
                     <input class="form-control" asp-for="UpdateUser.Email" value="@Model.UpdateUser.Email" type="text">
                     <span class="text-danger" asp-validation-for="@Model.UpdateUser.Email"></span>
+                </div>
+                <div class="form-group">
+                    <label>Photo</label>
+                    <input accept="image/*" type="file" class="form-control" name="photo">
+
                 </div>
                 <br />
               <button class="btn btn-success">summbit</button>

@@ -34,30 +34,22 @@ namespace Chapter02.Pages.Admin.Books
             }
             return Page();
         }
-        public async Task<IActionResult> OnPost(IFormFile photo, int[] authorsId, int[] categoriesId)
+        public async Task<IActionResult> OnPost(IFormFile? photo, int[] authorsId, int[] categoriesId)
         {
-            foreach (var id in authorsId)
-            {
-                Book.AuthorsLink.Add(new BookAuthor
-                {
-                    AuthorId = id,
-                    BookId = Book.Id
-                });
-            }
-            foreach (var id in categoriesId)
-            {
-                Book.CategoriesLink.Add(new BookCategory
-                {
-                    CategoryId = id,
-                    BookId = Book.Id
-                });
-            }
-
+            
             EditBookValidator validator = new EditBookValidator();
             ValidationResult validationResult = validator.Validate(Book);
-            if (validationResult.IsValid)
+            if (authorsId.Length == 0)
             {
-                var result = await _bookService.Update(photo, Book);
+                ModelState.AddModelError("AuthorsLink", "Please select Author");
+            }
+            if (categoriesId.Length == 0)
+            {
+                ModelState.AddModelError("CategoriesLink", "Please select category");
+            }
+            if (validationResult.IsValid && ModelState.IsValid)
+            {
+                var result = await _bookService.Update(photo!, Book, authorsId, categoriesId);
                 if (result.Success)
                 {
                     TempData["SuccessMessage"] = result.Message;

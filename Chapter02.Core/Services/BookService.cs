@@ -132,7 +132,7 @@ namespace Chapter02.Core.Services
             }
             return _mapper.Map<BookDto>(result);
         }
-        public async Task<ServiceResponse> Update(IFormFile photo,BookDto model)
+        public async Task<ServiceResponse> Update(IFormFile photo,BookDto model, int[] authorsId, int[] categoriesId)
         {
             Book currentBook = _mapper.Map<Book>(await GetBookByIdWithIncludes(model.Id));
           
@@ -173,9 +173,6 @@ namespace Chapter02.Core.Services
 
             _mapper.Map(model, currentBook);
 
-            int[] authorsId = model.AuthorsLink.Select(a => a.AuthorId).ToArray();
-            int[] categoriesId = model.CategoriesLink.Select(a => a.CategoryId).ToArray();
-
             await AddAuthorsAndCategoriesToBook(currentBook, authorsId, categoriesId);
             await _bookRepository.Update(currentBook);
             await _bookRepository.Save();
@@ -186,6 +183,22 @@ namespace Chapter02.Core.Services
                 Message = "currentBook successfuly updated"
             };
         }
+        public async Task<int> GetCount()
+            => await _bookRepository.GetCount();
 
+        public async Task<IEnumerable<BookDto>> GetListBySearchAndPagination(
+           string searchString, int pageIndex, int pageSize = 10)
+        {
+            int skip = (pageIndex - 1) * pageSize;
+            IEnumerable<Book> result = await _bookRepository.GetListBySpec(new BookSpecification.SearchAndPagination(searchString,skip, pageSize));
+            return result.Select(a => _mapper.Map<BookDto>(a));
+        }
+        public async Task<IEnumerable<BookDto>> GetListByPagination(
+          int pageIndex, int pageSize = 10)
+        {
+            int skip = (pageIndex - 1) * pageSize;
+            IEnumerable<Book> result = await _bookRepository.GetListBySpec(new BookSpecification.GetListByPagination(skip, pageSize));
+            return result.Select(a => _mapper.Map<BookDto>(a));
+        }
     }
 }

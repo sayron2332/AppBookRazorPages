@@ -5,7 +5,12 @@
     ViewData["Title"] = "All Users";
     Layout = "_AdminLayout";
 }
-
+<style>
+    .pagination {
+        justify-content: center;
+        margin-top: 5px;
+    }
+</style>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     @if (TempData["ErrorMessage"] != null)
@@ -21,6 +26,18 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
+              
+                <div class="col-md-8 offset-md-2" style="margin-bottom: 20px">
+                    <h2 class="text-center display-4">Search by UserName</h2>
+                    <form method="post">
+                        <div class="input-group input-group-lg">
+                           
+                            <input type="search" name="searchString" class="form-control form-control-lg" placeholder="Search...">
+                        </div>
+                    </form>
+                </div>
+
+               
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
@@ -31,6 +48,7 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
+                                        <th>Img</th>
                                         <th>Name</th>
                                         <th>Surname</th>
                                         <th>Email</th>
@@ -46,6 +64,7 @@
                                     @foreach (var item in Model.Users)
                                     {
                                         <tr>
+                                            <td><img style="width:150px; height:120px;" src="~/images/users/@item.ImageName" /></td>
                                             <td>@item.Name</td>
                                             <td>@item.Surname</td>
                                             <td>@item.Email</td>
@@ -68,6 +87,16 @@
                         </div>
                         <!-- /.card-body -->
                     </div>
+                    <paging total-records=@Model.UserCount
+                            page-no="Model.PageNo"
+                            show-prev-next="false"
+                            show-first-last="false"
+                            show-total-pages="false"
+                            show-total-records="false"
+                            show-page-size-nav="false"
+                            show-gap="false"
+                            max-displayed-pages="5">
+                    </paging>
                     <!-- /.card -->
                 </div>
             </div>
