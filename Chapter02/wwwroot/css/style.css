@@ -1,0 +1,728 @@
+﻿@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+    input::-ms-clear {
+        display: none;
+    }
+
+button {
+    cursor: pointer;
+}
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+body {
+    font-family: BonaNova;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.header {
+    background: url(/img/header/bd_header.png);
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+    .header__logo span {
+        max-width: 185px;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0.56px;
+        text-align: left;
+        color: #cc9600;
+    }
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+
+    .header__menu a {
+        color: #fff;
+    }
+
+.header-item {
+    text-align: center;
+}
+
+.main__row {
+    max-width: 1280px;
+    margin-bottom: 57px;
+}
+
+    .main__row h2 {
+        padding-top: 70px;
+        margin: 0 auto;
+        text-align: center;
+        width: 540px;
+        height: 58px;
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 0.96px;
+        color: #cc9600;
+    }
+
+.main__navigation {
+    text-align: center;
+    margin-top: 78px;
+    display: flex;
+    justify-content: center;
+    gap: 59px;
+}
+
+    .main__navigation li:before {
+        content: "";
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        background: url(/img/Shop/main/checkBoxOutlineBlank.webp) no-repeat;
+        background-size: cover;
+        margin: 0 1px -4px 0;
+    }
+
+    .main__navigation a {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0.56px;
+        color: #000;
+    }
+
+.main__books {
+    gap: 57px;
+    margin-top: 89px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__books-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 436px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: solid 1px rgba(0, 0, 0, 0.45);
+}
+
+.main__books-item-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 340px;
+}
+
+.main__books-item-img {
+    max-width: 145px;
+    height: 210px;
+    object-fit: contain;
+}
+
+.main__books-item-title {
+    align-self: start;
+    margin-left: 35px;
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    color: #000;
+}
+
+.main__books-item-subtitle {
+    align-self: start;
+    margin-left: 35px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+}
+
+.main__books-item-button {
+    max-width: 169px;
+    max-height: 30px;
+    padding: 3px 32px 3px 33px;
+    border-radius: 10px;
+    border: solid 1px #cc9600;
+    background-color: none;
+    background-color: rgb(212, 212, 211);
+}
+
+.main__books-item-button-img {
+    padding-right: 3px;
+    padding-top: 1px;
+    max-width: 16px;
+}
+
+.main__buttons-name {
+    background-color: none;
+    font-family: BonaNova;
+    font-size: 14px;
+    color: #000;
+}
+
+.main__buttons-name-a {
+    background-color: none;
+    font-family: BonaNova;
+    font-size: 14px;
+    color: #000;
+}
+
+.footer__img {
+    display: block;
+}
+
+.footer__line {
+    margin: 0 auto;
+    background-color: #fff;
+    width: 1160px;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+.footer__row-social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 47px;
+    font-family: BonaNova;
+    font-size: 12px;
+}
+
+.footer__row-social-networks-text1 {
+    text-decoration: underline;
+}
+
+.footer__row-social-networks-text2 {
+    color: #cc9600;
+    font-size: 14px;
+}
+
+.book-open__row {
+    display: flex;
+}
+
+.book-open__name {
+    height: 100vh;
+    flex: 0 1 30%;
+    background-color: #000;
+    font-family: BonaNova;
+    font-weight: bold;
+}
+
+.book-open__name-book {
+    color: rgb(212, 212, 211);
+    font-size: 32px;
+    letter-spacing: 0.64px;
+    line-height: 1;
+}
+
+.book-open__autor-book {
+    color: #ffdd7e;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+
+.book-open__full-book {
+    flex: 1 1 70%;
+    background: rgb(212, 212, 211);
+}
+
+.book-open__full-book-category a {
+    text-align: center;
+    font-family: BonaNova;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.48px;
+    color: #000;
+}
+
+.book-open__full-book-info-in-autor {
+    font-family: BonaNova;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: justify;
+    color: #000;
+}
+
+.book-open__full-book-prace {
+    font-family: BonaNova;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.48px;
+    color: #ca891d;
+}
+
+.book-open__full-book-pay {
+    max-width: 235px;
+    max-height: 30px;
+    padding: 0 25px 0 0;
+    border-radius: 10px;
+    border: solid 1px #cc9600;
+    justify-content: center;
+}
+
+.book-open__full-book-pay {
+    font-family: BonaNova;
+    font-size: 14px;
+    text-align: left;
+    color: #000;
+}
+
+.book-open__about-this-book {
+    font-family: BonaNova;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.48px;
+    color: #000;
+}
+
+.book-open__translate {
+    padding: 6.2px 38px 7.3px 37px;
+    border-radius: 10px;
+    border: solid 1px #cc9600;
+}
+
+.book-open__translate-text {
+    font-family: BonaNova;
+    font-size: 14px;
+    color: #000;
+}
+
+.book-open__about-this-book-text {
+    font-family: BonaNova;
+    font-size: 14px;
+    text-align: left;
+    color: #000;
+}
+
+body {
+    background-color: rgb(212, 212, 211);
+}
+
+.header {
+    background: url(/img/header/bd_header.png);
+    height: 119px;
+}
+
+.header__row {
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    max-width: 170px;
+    color: #cc9600;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+    .header__logo h1 {
+        margin-left: 20px;
+    }
+
+.header__m {
+    align-items: center;
+}
+
+.header__name bona-nova-regular {
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header__menu {
+    height: 119px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 47px;
+}
+
+    .header__menu li {
+        font-size: 20px;
+    }
+
+        .header__menu li a {
+            color: #fff;
+        }
+
+        .header__menu li bona-nova-regular {
+            font-family: "Bona Nova", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .header__menu li:last-child {
+            margin: 0 77px 0 0;
+            text-align: center;
+            font-size: 11px;
+        }
+
+            .header__menu li:last-child img {
+                margin-bottom: 5px;
+            }
+
+.header__menu-item:hover {
+    color: #cc9600;
+}
+
+.search {
+    min-height: 100vh;
+    align-items: stretch;
+    background: url(/img/dody01/sams/samsung01-foto.jpg) center no-repeat scroll;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+}
+
+.search__title {
+    margin-top: 70px;
+    text-align: center;
+    font-family: BonaNova;
+    font-size: 68px;
+    font-weight: bold;
+    background-image: radial-gradient(circle at 50% 50%, #cc9600, #f70 100%);
+    -webkit-background-clip: text;
+    /* ����� ��� �� ������ */
+    -webkit-text-fill-color: transparent;
+    /* ������ ����� �������� */
+    background-size: 100%;
+    display: inline-block;
+    /* ��������� �������� ���������� */
+}
+
+.search__text {
+    text-align: center;
+    margin: 35px;
+}
+
+    .search__text p {
+        display: inline-block;
+        max-width: 1340px;
+        height: 48px;
+        font-family: BonaNova;
+        font-size: 30px;
+        letter-spacing: 0.4px;
+        color: #fff;
+    }
+
+.search__button {
+    margin: 0 auto;
+    margin-bottom: 42px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 460px;
+    border: solid 1px #cc9600;
+    border-radius: 10px;
+    font-family: BonaNova;
+    background: transparent;
+}
+
+    .search__button input {
+        height: 50px;
+        background: transparent;
+        font-family: BonaNova;
+        margin-left: 23px;
+        font-size: 22px;
+        color: #a59f9f;
+    }
+
+    .search__button button {
+        width: 100px;
+        margin: 8px;
+        padding: 8px 13px;
+        height: 37px;
+        border-radius: 5px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: #4b330b;
+        font-size: 18px;
+        color: #fff;
+    }
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.books {
+    font-family: BonaNova;
+}
+
+.books__row-item {
+    margin: 0 auto;
+}
+
+.books__row-books {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px auto;
+    font-size: 19px;
+}
+
+.books__row-item1 {
+    max-width: 200px;
+    justify-content: center;
+}
+
+.books__row-title {
+    margin: 100px auto;
+    width: 343px;
+    height: 58px;
+}
+
+    .books__row-title p {
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 0.96px;
+    }
+
+.books__row-item-img {
+    max-width: 200px;
+}
+
+.books__row-item-title {
+    display: block;
+    margin: 10px 0px;
+    font-family: BonaNova;
+    font-weight: bold;
+}
+
+.books__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.books__buttons-item {
+    cursor: pointer;
+    width: 25px;
+    /* ������ ������ */
+    height: 25px;
+    /* ������ ������ */
+    border-radius: 50%;
+    background-color: rgb(212, 212, 211);
+    border: 1px solid #eeb413;
+    transition: background-color 0.3s, border-color 0.3s;
+    /* ������� ���� ������� */
+}
+
+    .books__buttons-item:active {
+        background-color: #eeb413;
+    }
+
+    .books__buttons-item:hover {
+        background-color: #eeb413;
+    }
+
+.book-favourite {
+    background-color: #000000;
+    margin-top: 30px;
+    color: #fff;
+    padding: 150px 0 25px 0;
+}
+
+.book-favourite__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.book-favourite__img {
+    justify-content: right;
+    align-items: center;
+}
+
+.book-favourite__title {
+    max-width: 388px;
+    max-height: 108px;
+    font-family: BonaNova;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.35;
+    text-align: left;
+    color: #fff;
+}
+
+    .book-favourite__title span {
+        color: #cc9600;
+    }
+
+.book-favourite__text {
+    font-family: BonaNova;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: justify;
+    margin: 25px 0 53px 0px;
+    max-width: 575px;
+}
+
+.book-favourite__info {
+    display: flex;
+    justify-content: space-between;
+    color: #cc9600;
+    font-size: 18px;
+}
+
+    .book-favourite__info span {
+        font-size: 40px;
+    }
+
+.book-favourite__button button {
+    cursor: pointer;
+    margin: 50px 0;
+    border: 1px solid #cc9600;
+    border-radius: 6px;
+    width: 191px;
+    height: 43px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #000;
+    padding-bottom: 57px;
+}
+
+.footer__row {
+    color: #fff;
+}
+
+.footer__img {
+    display: block;
+}
+
+.footer__line {
+    margin: 0 auto;
+    background-color: #fff;
+    width: 1160px;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+.footer__row-social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: BonaNova;
+    font-size: 12px;
+}
+
+.footer__row-social-networks-text1 {
+    text-decoration: underline;
+}
+
+.footer__row-social-networks-text2 {
+    color: #cc9600;
+    font-size: 14px;
+}

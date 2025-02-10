@@ -13,8 +13,8 @@
       "PackagePath": "staticwebassets\\css\\adminlte.min.css.map"
     },
     {
-      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\dist\\assets\\img\\AdminLTEFullLogo.png",
@@ -181,16 +181,116 @@
       "PackagePath": "staticwebassets\\images\\books\\default.jpg"
     },
     {
-      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\0e155db9-7923-4111-ab63-7547873245f5.jfif",
-      "PackagePath": "staticwebassets\\images\\users\\0e155db9-7923-4111-ab63-7547873245f5.jfif"
-    },
-    {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif",
       "PackagePath": "staticwebassets\\images\\users\\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif"
     },
     {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\dd603b28-648a-4dd8-89f0-1f4c01c89363.jfif",
+      "PackagePath": "staticwebassets\\images\\users\\dd603b28-648a-4dd8-89f0-1f4c01c89363.jfif"
+    },
+    {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\default.jpg",
       "PackagePath": "staticwebassets\\images\\users\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\Shop\\footer\\logo-for-footer-or-body2.png",
+      "PackagePath": "staticwebassets\\img\\Shop\\footer\\logo-for-footer-or-body2.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\Shop\\main\\Group 7.png",
+      "PackagePath": "staticwebassets\\img\\Shop\\main\\Group 7.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\Shop\\main\\books\\Rectangle 34.png",
+      "PackagePath": "staticwebassets\\img\\Shop\\main\\books\\Rectangle 34.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\Shop\\main\\checkBoxOutlineBlank.svg",
+      "PackagePath": "staticwebassets\\img\\Shop\\main\\checkBoxOutlineBlank.svg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\Shop\\main\\checkBoxOutlineBlank.webp",
+      "PackagePath": "staticwebassets\\img\\Shop\\main\\checkBoxOutlineBlank.webp"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\Shop\\main\\shopping-cart-2-line.png",
+      "PackagePath": "staticwebassets\\img\\Shop\\main\\shopping-cart-2-line.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\body02\\books.png",
+      "PackagePath": "staticwebassets\\img\\body02\\books.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\body02\\logo-for-footer-or-body2.png",
+      "PackagePath": "staticwebassets\\img\\body02\\logo-for-footer-or-body2.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\books-foto\\book01.webp",
+      "PackagePath": "staticwebassets\\img\\books-foto\\book01.webp"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\books-foto\\book02.jpg",
+      "PackagePath": "staticwebassets\\img\\books-foto\\book02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\books-foto\\book03.webp",
+      "PackagePath": "staticwebassets\\img\\books-foto\\book03.webp"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\books-foto\\book04.webp",
+      "PackagePath": "staticwebassets\\img\\books-foto\\book04.webp"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\books-foto\\eng.jpg",
+      "PackagePath": "staticwebassets\\img\\books-foto\\eng.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\dody01\\ai-foto\\foto-ai.png",
+      "PackagePath": "staticwebassets\\img\\dody01\\ai-foto\\foto-ai.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\dody01\\ai-foto\\samsung-ai.jpg",
+      "PackagePath": "staticwebassets\\img\\dody01\\ai-foto\\samsung-ai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\dody01\\original-foto.png",
+      "PackagePath": "staticwebassets\\img\\dody01\\original-foto.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\dody01\\sams\\samsung01-foto.jpg",
+      "PackagePath": "staticwebassets\\img\\dody01\\sams\\samsung01-foto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\dody01\\sams\\samsung02-foto.jpeg",
+      "PackagePath": "staticwebassets\\img\\dody01\\sams\\samsung02-foto.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\footer\\Facebook.png",
+      "PackagePath": "staticwebassets\\img\\footer\\Facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\footer\\Linkedin.png",
+      "PackagePath": "staticwebassets\\img\\footer\\Linkedin.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\header\\02.jpg",
+      "PackagePath": "staticwebassets\\img\\header\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\header\\Bell.png",
+      "PackagePath": "staticwebassets\\img\\header\\Bell.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\header\\account_foto.png",
+      "PackagePath": "staticwebassets\\img\\header\\account_foto.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\header\\bd_header.png",
+      "PackagePath": "staticwebassets\\img\\header\\bd_header.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\header\\logo.png",
+      "PackagePath": "staticwebassets\\img\\header\\logo.png"
     },
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\js\\adminlte.js.map",

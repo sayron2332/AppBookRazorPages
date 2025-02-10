@@ -23,19 +23,32 @@ namespace Chapter02.Pages.Admin.Books
         public async Task<IActionResult> OnGet(int p = 1)
         {
             PageNo = p;
-            BookCount = await _bookService.GetCount();
-            Books = await _bookService.GetListByPagination(PageNo);
-            return Page();
+            return await LoadBooks("");
         }
         public async Task<IActionResult> OnPost(string searchString, int p = 1)
         {
             PageNo = p;
-            Books = await _bookService.GetListBySearchAndPagination(searchString, PageNo);
-            BookCount = Books.Count();
-            if (BookCount == 0)
+            return await LoadBooks(searchString);
+        }
+
+        private async Task<IActionResult> LoadBooks(string searchString)
+        {
+            if (String.IsNullOrWhiteSpace(searchString))
             {
-                TempData["ErrorMessage"] = "I cant find this author";
-                return RedirectToPage("AllBooks");
+                BookCount = await _bookService.GetCount();
+                Books = await _bookService.GetListByPagination(PageNo);
+            }
+            else
+            {
+                PageNo = 1;
+                Books = await _bookService.GetListBySearchAndPagination(searchString, PageNo);
+                BookCount = Books.Count();
+                if (BookCount <= 0)
+                {
+                    BookCount = await _bookService.GetCount();
+                    Books = await _bookService.GetListByPagination(PageNo);
+                    TempData["ErrorMessage"] = "Book not found";
+                }
             }
             return Page();
         }

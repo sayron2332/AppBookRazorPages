@@ -28,15 +28,17 @@ namespace Chapter02.Core.Specification
         {
             public GetListByPagination(int skip, int take)
             {
-                Query.Skip(skip).Take(take).OrderBy(c => c.Id);
+                Query.OrderBy(c => c.Id).Skip(skip).Take(take);
             }
         }
         public class SearchAndPagination : Specification<Author>
         {
             public SearchAndPagination(string searchString, int skip, int take)
             {
-                Query.Where(p => p.Surname.Contains(searchString))
-                .Skip(skip).Take(take).OrderBy(p => p.Id);
+                Query.Where(p => p.Surname.StartsWith(searchString))
+                     .OrderBy(p => p.Id)
+                     .Skip(skip)
+                     .Take(take);
             }
         }
     }

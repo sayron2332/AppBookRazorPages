@@ -23,19 +23,32 @@ namespace Chapter02.Pages.Admin.Categories
         public async Task<IActionResult> OnGet(int p = 1)
         {
             PageNo = p;
-            CategoryCount = await _categoryService.GetCount();
-            categories = await _categoryService.GetListByPagination(PageNo);
-            return Page();
+            return await LoadCategories("");
         }
-        public async Task<IActionResult> OnPost(string searchString,int p = 1)
+        public async Task<IActionResult> OnPost(string searchString, int p = 1)
         {
             PageNo = p;
-            categories = await _categoryService.GetListBySearchAndPagination(searchString,PageNo);
-            CategoryCount = categories.Count();
-            if (CategoryCount == 0)
+            return await LoadCategories(searchString);
+        }
+
+        private async Task<IActionResult> LoadCategories(string searchString)
+        {
+            if (String.IsNullOrWhiteSpace(searchString))
             {
-                TempData["ErrorMessage"] = "This category not find";
-                return RedirectToPage("AllCategories");
+                CategoryCount = await _categoryService.GetCount();
+                categories = await _categoryService.GetListByPagination(PageNo);
+            }
+            else
+            {
+                PageNo = 1;
+                categories = await _categoryService.GetListBySearchAndPagination(searchString, PageNo);
+                CategoryCount = categories.Count();
+                if (CategoryCount <= 0)
+                {
+                    CategoryCount = await _categoryService.GetCount();
+                    categories = await _categoryService.GetListByPagination(PageNo);
+                    TempData["ErrorMessage"] = "Category not found all categories loaded";
+                }
             }
             return Page();
         }

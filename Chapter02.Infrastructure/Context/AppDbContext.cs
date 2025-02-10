@@ -14,11 +14,22 @@ namespace Chapter02.Infrastructure.Context
         {
             SeedData.SeedRolesUsersComments(builder);
             SeedData.SeedBooksAuthorsCategories(builder);
+
             builder.Entity<BookAuthor>()
             .HasKey(ba => new { ba.BookId, ba.AuthorId });
 
             builder.Entity<BookCategory>()
            .HasKey(ba => new { ba.BookId, ba.CategoryId });
+
+
+            builder.Entity<Book>()
+            .HasIndex(b => b.Name);
+
+            builder.Entity<Category>()
+             .HasIndex(b => b.Name);
+
+            builder.Entity<Author>()
+           .HasIndex(b => b.Surname);
 
 
             base.OnModelCreating(builder);

@@ -1,5 +1,6 @@
 using Azure;
 using Chapter02.Core.Dtos.Authors;
+using Chapter02.Core.Entities;
 using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -21,29 +22,40 @@ namespace Chapter02.Pages.Admin.Authors
         public int PageNo { get; set; }
         public AllAuthorsModel(IAuthorService authorService)
         {
+
             _authorService = authorService;
         }
         public async Task<IActionResult> OnGet(int p = 1)
         {
             PageNo = p;
-            AuthorsCount = await _authorService.GetCount();
-            Authors = await _authorService.GetListByPagination(PageNo);
-            return Page();
+            return await LoadAuthors("");
         }
         public async Task<IActionResult> OnPost(string searchString,int p = 1)
         {
             PageNo = p;
-            Authors = await _authorService.GetListBySearchAndPagination(searchString, PageNo);
-            AuthorsCount = Authors.Count();
-            if (AuthorsCount == 0)
+            return await LoadAuthors(searchString);
+        }
+
+        private async Task<IActionResult> LoadAuthors(string searchString)
+        {
+            if (String.IsNullOrWhiteSpace(searchString))
             {
-                TempData["ErrorMessage"] = "I cant find this author";
-                return RedirectToPage("AllAuthors");
+                AuthorsCount = await _authorService.GetCount();
+                Authors = await _authorService.GetListByPagination(PageNo);
+            }
+            else
+            {
+                PageNo = 1;
+                Authors = await _authorService.GetListBySearchAndPagination(searchString, PageNo);
+                AuthorsCount = Authors.Count();
+                if (AuthorsCount <= 0)
+                {
+                    AuthorsCount = await _authorService.GetCount();
+                    Authors = await _authorService.GetListByPagination(PageNo);
+                    TempData["ErrorMessage"] = "Author not found all Authors loaded";
+                }
             }
             return Page();
         }
-       
-      
-       
     }
 }

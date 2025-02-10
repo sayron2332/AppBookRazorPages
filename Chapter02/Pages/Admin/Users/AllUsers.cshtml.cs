@@ -1,5 +1,6 @@
 using Azure;
 using Chapter02.Core.Dtos.Users;
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,20 +23,33 @@ namespace Chapter02.Pages.Admin.Users
         public async Task<IActionResult> OnGet(int p = 1)
         {
             PageNo = p;
-            UserCount = await _userService.GetCountAsync();
-           
-            Users = await _userService.GetListByPagination(PageNo);
-            return Page();
+            return await LoadUsers("");
         }
-        public async Task<IActionResult> OnPost(string searchString,int p = 1)
+        public async Task<IActionResult> OnPost(string searchString, int p = 1)
         {
             PageNo = p;
-            Users = await _userService.GetListBySearchByAndPagination(searchString,PageNo);
-            UserCount = Users.Count();
-            if (UserCount == 0)
+            return await LoadUsers(searchString);
+        }
+
+        private async Task<IActionResult> LoadUsers(string searchString)
+        {
+            if (String.IsNullOrWhiteSpace(searchString))
             {
-                TempData["ErrorMessage"] = "I cant find this user";
-                return RedirectToPage("AllUsers");
+                UserCount = await _userService.GetCountAsync();
+                Users = await _userService.GetListByPagination(PageNo);
+            }
+            else
+            {
+                PageNo = 1;
+                Users = await _userService.GetListBySearchByAndPagination(searchString, PageNo);
+                UserCount = Users.Count();
+                if (UserCount <= 0)
+                {
+                    UserCount = await _userService.GetCountAsync();
+                    Users = await _userService.GetListByPagination(PageNo);
+                    TempData["ErrorMessage"] = "User not found all Users loaded";
+                }
+               
             }
             return Page();
         }

@@ -8,10 +8,126 @@
     
 }
 
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
-}
+
+
+
+   
+    <section class="search">
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+        <div class="container">
+            <div class="search__row">
+                <div class="search__title">
+                    <p>The Book Lover's Dreamland Awaits!</p>
+                </div>
+                <div class="search__text">
+                    <p>
+                        Welcome to the ultimate book lover's paradise!
+                        Join our community and contribute to the ever-evolving library of stories,
+                        where every book has a chance to inspire someone new.
+                    </p>
+                </div>
+                <div class="search__button">
+                    <form method="post">
+                        <input type="text" name="searchString" placeholder="Search a Book">
+                        <button>Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="books">
+        <div class="container">
+            <ul class="books__row">
+                <li class="books__row-item">
+                    <div class="books__row-title">
+                        <p>Our Best Picks</p>
+                    </div>
+                    <ul class="books__row-books">
+                        <li class="books__row-item1">
+                            <img class="books__row-item-img" src="img/books-foto/book01.webp" alt="">
+                            <span class="books__row-item-title">
+                                Убивче зілля. Історії (не)вигаданих отрут
+                                <br>
+                            </span>
+                            <span class="books__row-item-subtitle"> Володимир Саркісян</span>
+                        </li>
+                        <li class="books__row-item1">
+                            <img class="books__row-item-img" src="img/books-foto/book02.jpg" alt="">
+                            <span class="books__row-item-title">
+                                Наш метаболізм. Новий погляд на обмін речвин людини
+                                <br>
+                            </span>
+                            <span class="books__row-item-subtitle">Герман Понцер</span>
+                        </li>
+                        <li class="books__row-item1">
+                            <img class="books__row-item-img" src="img/books-foto/book03.webp" alt="">
+                            <span class="books__row-item-title">Їжа для мозку <br></span>
+                            <span class="books__row-item-subtitle">Ліса Москоні</span>
+                        </li>
+                        <li class="books__row-item1">
+                            <img class="books__row-item-img" src="img/books-foto/book04.webp" alt="">
+                            <span class="books__row-item-title">Безмежна сила математики <br></span>
+                            <span class="books__row-item-subtitle"></span>Стівен Строгац
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="books__buttons">
+                <li class="books__buttons-item">
+                    <button><a href="#"></a></button>
+                </li>
+                <li class="books__buttons-item"><button></button><a href="#"></a></li>
+                <li class="books__buttons-item"><button></button><a href="#"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="book-favourite">
+        <div class="container">
+            <div class="book-favourite__flex">
+                <img src="/img/body02/books.png" alt="" class="book-favourite__img">
+
+                <div class="book-favourite__right">
+                    <div class="book-favourite__title">
+                        <h2>
+                            Your favourite
+                            <span>Reads Are Here!</span>
+                        </h2>
+                    </div>
+                    <div class="book-favourite__text">
+                        <p>
+                            Buy your favorite books online with ease! Enjoy exclusive offers and discounts on
+                            selected
+                            titles. Dive into our collection and find special deals that make reading more
+                            affordable.
+                            Shop
+                            now and unlock more savings with every purchase!
+                        </p>
+                    </div>
+                    <ul class="book-favourite__info">
+                        <li class="book-favourite__info-item">
+                            <span>8oo+</span>
+                            <p>Book Listing</p>
+                        </li>
+                        <li class="book-favourite__info-item">
+                            <span>1K+</span>
+                            <p>Registered Members</p>
+                        </li>
+                        <li class="book-favourite__info-item">
+                            <span>5o+ <br></span>
+                            <p> Branch Count</p>
+                        </li>
+                    </ul>
+                    <div class="book-favourite__button">
+                        <button>Explore More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     

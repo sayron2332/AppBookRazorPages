@@ -328,5 +328,5 @@ C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\refint\Chap
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\Chapter02.pdb
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\Chapter02.genruntimeconfig.cache
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\ref\Chapter02.dll
-C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\bin\Debug\net8.0\LazZiya.TagHelpers.dll
+C:\Users\sayron\Desktop\AppBookRazorPages\Chapter02\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

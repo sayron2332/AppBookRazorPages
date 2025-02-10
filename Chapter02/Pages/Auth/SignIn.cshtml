@@ -9,6 +9,9 @@
 {
     <div class="alert alert-success">@TempData["SuccessMessage"]</div>
 }
+<div class="container">
+
+
 <form method="post" asp-page="/SignIn">
         @if (@ViewData["ErrorMessage"] != null)
         {
@@ -27,11 +30,17 @@
             <input type="password" class="form-control" asp-for="SignInUser.Password">
             <span class="text-danger" asp-validation-for="SignInUser.Password"></span>
         </div>
-
+        <div class="justify-content-between">
         <div class="mb-3 form-check">
             <input asp-for="SignInUser.RememberMe" type="checkbox" class="form-check-input">
             <label class="form-check-label" asp-for="SignInUser.RememberMe">Check me out</label>
         </div>
+        <div class="mb-3 form-check">
+          <a asp-page="ForgotPassword">If you forgot Password</a>
+        </div>
+        </div>
+       
         <button type="submit" class="btn btn-primary">Submit</button>
         <div class="text-danger" asp-validation-summary="All"></div>
     </form>
+</div>

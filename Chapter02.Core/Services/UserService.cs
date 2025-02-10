@@ -84,6 +84,69 @@ namespace Chapter02.Core.Services
             AspNetUser? user = await _userManager.FindByIdAsync(id);
             return user!;
         }
+        public async Task<ServiceResponse> ResetPasswordAsync(ForgotPasswordDto model)
+        {
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                return new ServiceResponse
+                {
+                    Success = false,
+                    Message = "User not found."
+                };
+            }
+
+            var decodedToken = WebEncoders.Base64UrlDecode(model.Token);
+            var normalToken = Encoding.UTF8.GetString(decodedToken);
+
+
+            var result = await _userManager.ResetPasswordAsync(user, normalToken, model.Password);
+
+            if (result.Succeeded)
+            {
+                return new ServiceResponse
+                {
+                    Success = true,
+                    Message = "Password successfully reset."
+                };
+            }
+
+            return new ServiceResponse
+            {
+                Success = false,
+                Message = "Something wrong. Connect with your admin.",
+                Errors = result.Errors.Select(e => e.Description)
+            };
+        }
+        public async Task<ServiceResponse> SendResetPasswordEmailAsync(string Email)
+        {
+            var user = await _userManager.FindByEmailAsync(Email);
+            if (user == null)
+            {
+                return new ServiceResponse
+                {
+                    Success = false,
+                    Message = "The email isn`t exist",
+                    Errors = new List<string>
+                    {
+                        "The email isn`t exist",
+                    }
+                };
+            }
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var encodedEmailToken = Encoding.UTF8.GetBytes(token);
+            var validEmailToken = WebEncoders.Base64UrlEncode(encodedEmailToken);
+
+            var url = $"{_config["HostSettings:URL"]}/auth/ResetPassword?email={Email}&token={validEmailToken}";
+            await _emailService.SendEmailAsync(Email, "Reset Password email.", url);
+
+            return new ServiceResponse
+            {
+                Success = true,
+                Message = "Email for reset password successfully send."
+            };
+
+        }
         public async Task<List<UserDto>> GetAllUsersAsync()
         {
             var users = await _userManager.Users.ToListAsync();

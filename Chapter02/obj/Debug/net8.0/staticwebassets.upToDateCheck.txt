@@ -1,7 +1,7 @@
 wwwroot\css\adminlte.css.map
 wwwroot\css\adminlte.min.css
 wwwroot\css\adminlte.min.css.map
-wwwroot\css\site.css
+wwwroot\css\style.css
 wwwroot\dist\assets\img\AdminLTEFullLogo.png
 wwwroot\dist\assets\img\AdminLTELogo.png
 wwwroot\dist\assets\img\avatar.png
@@ -43,9 +43,34 @@ wwwroot\images\authors\default.jpg
 wwwroot\images\books\3c826fca-3860-444a-a3b7-69c056a4eba7.png
 wwwroot\images\books\a577921e-3388-4567-a1c7-19cf348dcf63.jpg
 wwwroot\images\books\default.jpg
-wwwroot\images\users\0e155db9-7923-4111-ab63-7547873245f5.jfif
 wwwroot\images\users\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif
+wwwroot\images\users\dd603b28-648a-4dd8-89f0-1f4c01c89363.jfif
 wwwroot\images\users\default.jpg
+wwwroot\img\body02\books.png
+wwwroot\img\body02\logo-for-footer-or-body2.png
+wwwroot\img\books-foto\book01.webp
+wwwroot\img\books-foto\book02.jpg
+wwwroot\img\books-foto\book03.webp
+wwwroot\img\books-foto\book04.webp
+wwwroot\img\books-foto\eng.jpg
+wwwroot\img\dody01\ai-foto\foto-ai.png
+wwwroot\img\dody01\ai-foto\samsung-ai.jpg
+wwwroot\img\dody01\original-foto.png
+wwwroot\img\dody01\sams\samsung01-foto.jpg
+wwwroot\img\dody01\sams\samsung02-foto.jpeg
+wwwroot\img\footer\Facebook.png
+wwwroot\img\footer\Linkedin.png
+wwwroot\img\header\02.jpg
+wwwroot\img\header\account_foto.png
+wwwroot\img\header\bd_header.png
+wwwroot\img\header\Bell.png
+wwwroot\img\header\logo.png
+wwwroot\img\Shop\footer\logo-for-footer-or-body2.png
+wwwroot\img\Shop\main\books\Rectangle 34.png
+wwwroot\img\Shop\main\checkBoxOutlineBlank.svg
+wwwroot\img\Shop\main\checkBoxOutlineBlank.webp
+wwwroot\img\Shop\main\Group 7.png
+wwwroot\img\Shop\main\shopping-cart-2-line.png
 wwwroot\js\adminlte.js.map
 wwwroot\js\adminlte.min.js
 wwwroot\js\adminlte.min.js.map

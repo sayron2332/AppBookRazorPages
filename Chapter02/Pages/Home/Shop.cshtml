@@ -1,0 +1,85 @@
+﻿@page "/shop"
+@model ShopModel
+@{
+    Layout = "_Layout";
+}
+<style>
+    .pagination {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .search__button{
+        display:block;
+        margin: 25px auto 0px auto;
+        color: black;
+    }
+</style>
+
+    @if (ViewData["ErrorMessage"] != null)
+    {
+    <div class="alert alert-danger"> @ViewData["ErrorMessage"] </div>
+    }
+    <div class="container">
+        <div class="main__row">
+       
+            <h2>
+                Explore All Books Here
+            </h2>
+       
+            <ul class="main__navigation">
+           
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Novel</a>
+                </li>
+                <li>
+                    <a href="">Translations</a>
+                </li>
+                <li>
+                    <a href="">Kids' Stories</a>
+                </li>
+            </ul>
+        <div class="search__button">
+            <form method="post">
+                <input type="text" name="searchString" placeholder="Search a Book">
+                <button>Search</button>
+            </form>
+        </div>
+            <ul class="main__books">
+                @foreach (var item in Model.Books)
+                {
+                    <li class="main__books-item">
+                        <div class="main__books-item-main">
+                            <img class="main__books-item-img" src="~/images/books/@item.ImageName" alt="">
+                            <span class="main__books-item-title">
+                                @item.Name
+                                <br>
+                            </span>
+                            <span class="main__books-item-subtitle"> @item.Description</span> <br>
+                        </div>
+                        <button class="main__books-item-button">
+
+                            <img class="main__books-item-button-img" src="/img/Shop/main/shopping-cart-2-line.png"
+                                 alt="">
+                            <span class="main__buttons-name"><a class="main__buttons-name-a" href="/book.html">Add to Cart</a></span>
+
+                        </button>
+                    </li>
+                }
+              
+            </ul>
+        </div>
+        <paging total-records=@Model.BookCount
+                page-no="Model.PageNo"
+                show-prev-next="false"
+                show-first-last="false"
+                show-total-pages="false"
+                show-total-records="false"
+                show-page-size-nav="false"
+                show-gap="false"
+                max-displayed-pages="5">
+        </paging>
+    </div>

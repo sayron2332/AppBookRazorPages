@@ -1,104 +1,98 @@
 ﻿<!DOCTYPE html>
-
-<html>
+<html lang="en">
+    @using Chapter02.Core.Entities
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<AspNetUser> manager
+@{
+    var user = await manager.GetUserAsync(User);
+}
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
 
     <title>@ViewData["Title"]</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
-    
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <!-- Логотип -->
-                    <h1><a class="navbar-brand" href="#">BookStore</a></h1>
-                    <!-- Кнопка для мобільного меню -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <!-- Меню навігації -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <img src="img/header/logo.png" alt="">
+                    <h1>NETH BOOKPOINT</h1>
+                </div>
+                <nav class="header__m">
+                    <ul class="header__menu">
                         @if (User.IsInRole("admin"))
                         {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-page="/admin/index">Admin</a>
+                            <li class="header__menu-item"><a asp-page="/admin/index" class="home">Dashboard</a></li>
+                        }
+                        <li class="header__menu-item"><a asp-page="/home/index" class="home">Home</a></li>
+                        <li class="header__menu-item"><a href="" class="about">About</a></li>
+                        <li class="header__menu-item"><a asp-page="/home/shop" class="shop">Shop</a></li>
+                        <li class="header__menu-item"><a href="" class="delivery-Team">Delivery Team</a></li>
+                        <li class="header__menu-item"><a href="" class="sellers">Sellers</a></li>
+                        <li class="header__menu-item"><a href="" class="bell"><img src="img/header/Bell.png" alt=""></a></li>
+                        @if (user != null)
+                        {
+                            <li class="header__menu-item">
+                                <a asp-page="/user/profile" class="bell">
+                                    <img style="max-width:50px; border-radius:15px" src="/images/users/@user!.ImageName" alt="">
+                                    <p>@user.Email</p>
+                                </a>
                             </li>
                         }
-                            <li class="nav-item">
-                                <a class="nav-link" asp-page="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" asp-page="/about-us">About us</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" asp-page="/catalog">Catalog</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" asp-page="/contacts">Contacts</a>
-                            </li>
+                        else{
+                        <li class="header__menu-item">
+                            <a asp-page="/auth/signin" class="link-primary">Sign In
+                            </a>
+                        </li>
+                        }
                        
-                        @if (User.Identity!.IsAuthenticated)
-                        {
-                            <li class="nav-item">
-                                <a asp-page="/user/profile" class="nav-link">Profile</a>
-                            </li>
-                        }else
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-page="/auth/signin">Sign In</a>
-                            </li>
-                        }
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main class="flex-grow-1  py-3">
-            <div class="container">
-                @RenderBody()
+
+                    </ul>
+                </nav>
             </div>
-        </main>
-     
-        <footer class="bg-dark text-white py-3">
-            <div class="container">
-                <div class="row">
-                    <!-- Логотип і опис -->
-                    <div class="col-md-4">
-                        <h5 class="text-uppercase">BookStore</h5>
-                    <p>Your the best Choise for buy books all ganres. we like all reader and work on it</p>
-                    </div>
+        </div>
+    </header>
+    <main class="main">
+        @RenderBody()
 
-                    <!-- Швидкі посилання -->
-                    <div class="col-md-4">
-                        <h5 class="text-uppercase">Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="/" class="text-white text-decoration-none">Home</a></li>
-                            <li><a href="/about-us" class="text-white text-decoration-none">About us</a></li>
-                            <li><a href="/contact" class="text-white text-decoration-none">Contact</a></li>
-                            <li><a href="/catalog" class="text-white text-decoration-none">Catalog</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Контактна інформація -->
-                    <div class="col-md-4">
-                        <h5 class="text-uppercase">Contact</h5>
-                        <p>
-                            <i class="bi bi-geo-alt"></i>Street Rivnenska 58, Rivne <br>
-                            <i class="bi bi-telephone"></i>(+380) 959 348 105<br>
-                            <i class="bi bi-envelope"></i>xvtnxjgbyv@gmail.com
-                        </p>
-                    </div>
-                </div>
-
-                <div class="text-center mt-3">
-                    <p class="mb-0">&copy; 2024 BookStore. All copyright protected.</p>
-                </div>
-            </div>
-        </footer>
+    </main>
     
+    <footer class="footer">
+        <div class="container">
+            <img class="footer__img" src="/img/Shop/footer/logo-for-footer-or-body2.png" alt="">
+            <div class="footer__line"></div>
+            <div class="footer__row">
+                <ul class="footer__row-social-networks">
+                    <li>
+                        <p>
+                            © 2024
+
+                            <span class="footer__row-social-networks-text1">| Neth BookPoint</span>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="footer__row-social-networks-text2">
+                            Visit our branches in Galle, Kurunegala, Kandy, and Colombo, and register for our online
+                            platform to enjoy maximum benefits!
+                        </span>
+                    </li>
+                    <li>
+                        <img src="/img/footer/Facebook.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/footer/Linkedin.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  
 </body>
+
 </html>

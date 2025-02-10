@@ -16,12 +16,14 @@ namespace Chapter02.Pages.Home
         {
             _userService = userService;
         }
-        public async Task<IActionResult> OnGet()
+        public void OnGet()
         {
-
-          
-            return Page();
         }
-      
+        public IActionResult OnPost(string searchString)
+        {
+            TempData["searchString"] = searchString;
+            return RedirectToPage("Shop");
+        }
+
     }
 }
