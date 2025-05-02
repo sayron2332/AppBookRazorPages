@@ -13,7 +13,7 @@ namespace Chapter02.Infrastructure.Helpers
 {
     internal static class SeedData
     {
-        public static void SeedRolesUsersComments(ModelBuilder builder)
+        public static void SeedRolesUsersCommentsCarts(ModelBuilder builder)
         {
             string ADMIN_ID = Guid.NewGuid().ToString();
             string ADMIN_ROLE_ID = Guid.NewGuid().ToString();
@@ -31,6 +31,13 @@ namespace Chapter02.Infrastructure.Helpers
                 NormalizedName = "USER"
             });
 
+            builder.Entity<Cart>(b =>
+            {
+                b.HasData(
+                    new Cart { Id = 1,  UserId = ADMIN_ID }
+                );
+            });
+
             var hasher = new PasswordHasher<AspNetUser>();
             builder.Entity<AspNetUser>().HasData(new AspNetUser
             {
@@ -45,6 +52,7 @@ namespace Chapter02.Infrastructure.Helpers
                 EmailConfirmed = true,
                 PasswordHash = hasher.HashPassword(null!, "Sayron561"),
                 SecurityStamp = string.Empty,
+                CartId = 1
              
             }) ;
 
@@ -53,6 +61,8 @@ namespace Chapter02.Infrastructure.Helpers
                 RoleId = ADMIN_ROLE_ID,
                 UserId = ADMIN_ID
             });
+
+          
 
             builder.Entity<Comment>(b =>
             {

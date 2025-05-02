@@ -3,6 +3,7 @@ using Chapter02.Core;
 using Chapter02.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder();
 
@@ -15,7 +16,6 @@ builder.Services.Configure<RouteOptions>(options =>
 });
 
 string? connString = builder.Configuration.GetConnectionString("DefaultConnection");
-
 //Add Coockie
 builder.Services.ConfigureCoockie();
 
@@ -50,6 +50,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

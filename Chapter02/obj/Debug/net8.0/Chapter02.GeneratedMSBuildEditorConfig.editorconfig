@@ -112,6 +112,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sayron/Desktop/AppBookRazorPages/Chapter02/Pages/Home/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sayron/Desktop/AppBookRazorPages/Chapter02/Pages/Home/Contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxDb250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -122,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sayron/Desktop/AppBookRazorPages/Chapter02/Pages/Home/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sayron/Desktop/AppBookRazorPages/Chapter02/Pages/Home/ShowMore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxTaG93TW9yZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sayron/Desktop/AppBookRazorPages/Chapter02/Pages/Shared/Admin/_Footer.cshtml]

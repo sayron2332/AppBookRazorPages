@@ -4,8 +4,11 @@
 @using Microsoft.AspNetCore.Identity
 @inject UserManager<AspNetUser> manager
 @{
-    var user = await manager.GetUserAsync(User);
+    AspNetUser? user = await manager.GetUserAsync(User);
+    ViewData["currentUser"] = user;
+    
 }
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

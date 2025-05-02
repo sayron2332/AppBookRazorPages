@@ -30,6 +30,9 @@ namespace Chapter02.Infrastructure.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -88,6 +91,9 @@ namespace Chapter02.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CartId")
+                        .IsUnique();
+
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -101,9 +107,10 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "bb90daf0-3394-4ee8-859d-dc1373752597",
+                            Id = "f750a958-462b-4d6c-9bc2-a088afcf5269",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "17652b7f-3123-43b4-8adf-f83004775ef6",
+                            CartId = 1,
+                            ConcurrencyStamp = "f3f01b67-02f5-46bc-b34e-8f5be872d710",
                             Email = "xvtnxjgbyv@gmail.com",
                             EmailConfirmed = true,
                             ImageName = "default.jpg",
@@ -111,7 +118,7 @@ namespace Chapter02.Infrastructure.Migrations
                             Name = "Nazar",
                             NormalizedEmail = "xvtnxjgbyv@gmail.com",
                             NormalizedUserName = "xvtnxjgbyv@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEjGm+/nfe04HNublIvaH+Bidu7X3Kqe8A9V8D7x1SnYH7qrS/xubwa8hzQXgbD1mQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEH7FnlVxuL2pDe4pC/DvpKdaZrwiGyGdWoLp+Zg6WP+0jK7GkIqHBoaoCEAZzszC+A==",
                             PhoneNumber = "+380959348105",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
@@ -139,9 +146,11 @@ namespace Chapter02.Infrastructure.Migrations
 
                     b.Property<string>("Surname")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Surname");
 
                     b.ToTable("Authors");
 
@@ -173,6 +182,9 @@ namespace Chapter02.Infrastructure.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
+                    b.Property<int?>("CartId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -187,7 +199,7 @@ namespace Chapter02.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<long>("NumberOfPages")
                         .HasColumnType("bigint");
@@ -196,6 +208,10 @@ namespace Chapter02.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("Name");
 
                     b.ToTable("Books");
 
@@ -251,6 +267,21 @@ namespace Chapter02.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Chapter02.Core.Entities.BookCart", b =>
+                {
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BookId", "CartId");
+
+                    b.HasIndex("CartId");
+
+                    b.ToTable("BookCart");
+                });
+
             modelBuilder.Entity("Chapter02.Core.Entities.BookCategory", b =>
                 {
                     b.Property<int>("BookId")
@@ -278,6 +309,34 @@ namespace Chapter02.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Chapter02.Core.Entities.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cart");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Quantity = 0,
+                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269"
+                        });
+                });
+
             modelBuilder.Entity("Chapter02.Core.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -288,9 +347,11 @@ namespace Chapter02.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Name");
 
                     b.ToTable("Catogories");
 
@@ -338,14 +399,14 @@ namespace Chapter02.Infrastructure.Migrations
                             Id = 1,
                             Name = "So cool Book about asp.net Core",
                             NumberOfStars = (byte)5,
-                            UserId = "bb90daf0-3394-4ee8-859d-dc1373752597"
+                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269"
                         },
                         new
                         {
                             Id = 2,
                             Name = "So cool Book about Entity Framwork Core",
                             NumberOfStars = (byte)4,
-                            UserId = "bb90daf0-3394-4ee8-859d-dc1373752597"
+                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269"
                         });
                 });
 
@@ -378,13 +439,13 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "372b58b6-3d70-4481-80aa-85a584b6a9aa",
+                            Id = "49212154-2682-4593-9ffe-56cbf99bea81",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "96e6fdbf-b1aa-49be-857c-c39d33e68eed",
+                            Id = "110db4cf-555d-4c8f-b254-71339c721f6b",
                             Name = "user",
                             NormalizedName = "USER"
                         });
@@ -479,8 +540,8 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "bb90daf0-3394-4ee8-859d-dc1373752597",
-                            RoleId = "372b58b6-3d70-4481-80aa-85a584b6a9aa"
+                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269",
+                            RoleId = "49212154-2682-4593-9ffe-56cbf99bea81"
                         });
                 });
 
@@ -503,6 +564,22 @@ namespace Chapter02.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Chapter02.Core.Entities.AspNetUser", b =>
+                {
+                    b.HasOne("Chapter02.Core.Entities.Cart", "Cart")
+                        .WithOne("User")
+                        .HasForeignKey("Chapter02.Core.Entities.AspNetUser", "CartId");
+
+                    b.Navigation("Cart");
+                });
+
+            modelBuilder.Entity("Chapter02.Core.Entities.Book", b =>
+                {
+                    b.HasOne("Chapter02.Core.Entities.Cart", null)
+                        .WithMany("Books")
+                        .HasForeignKey("CartId");
+                });
+
             modelBuilder.Entity("Chapter02.Core.Entities.BookAuthor", b =>
                 {
                     b.HasOne("Chapter02.Core.Entities.Author", "Author")
@@ -520,6 +597,25 @@ namespace Chapter02.Infrastructure.Migrations
                     b.Navigation("Author");
 
                     b.Navigation("Book");
+                });
+
+            modelBuilder.Entity("Chapter02.Core.Entities.BookCart", b =>
+                {
+                    b.HasOne("Chapter02.Core.Entities.Book", "Book")
+                        .WithMany("CartLink")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Chapter02.Core.Entities.Cart", "Cart")
+                        .WithMany()
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("Cart");
                 });
 
             modelBuilder.Entity("Chapter02.Core.Entities.BookCategory", b =>
@@ -617,7 +713,17 @@ namespace Chapter02.Infrastructure.Migrations
                 {
                     b.Navigation("AuthorsLink");
 
+                    b.Navigation("CartLink");
+
                     b.Navigation("CategoriesLink");
+                });
+
+            modelBuilder.Entity("Chapter02.Core.Entities.Cart", b =>
+                {
+                    b.Navigation("Books");
+
+                    b.Navigation("User")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Chapter02.Core.Entities.Category", b =>

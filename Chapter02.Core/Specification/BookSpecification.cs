@@ -18,6 +18,13 @@ namespace Chapter02.Core.Specification
                 Query.Include(a => a.AuthorsLink).Include(c => c.CategoriesLink).Where(b => b.Id == id);
             }
         }
+        public class GetByIdAsTracking : Specification<Book>
+        {
+            public GetByIdAsTracking(int id)
+            {
+                Query.AsTracking().Where(b => b.Id == id);
+            }
+        }
         public class GetListByPagination : Specification<Book>
         {
             public GetListByPagination(int skip, int take)

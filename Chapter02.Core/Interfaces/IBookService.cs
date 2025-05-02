@@ -21,6 +21,7 @@ namespace Chapter02.Core.Interfaces
         public Task<IEnumerable<Category>> LoadCategories();
         public Task<IEnumerable<AuthorDto>> LoadAuthors();
         public Task<int> GetCount();
+        public Task<Book> GetByIdAsTracking(int Id);
         public Task<IEnumerable<BookDto>> GetListBySearchAndPagination(string searchString, int pageIndex, int pageSize = 10);
         public Task<IEnumerable<BookDto>> GetListByPagination(int pageIndex, int pageSize = 10);
     }

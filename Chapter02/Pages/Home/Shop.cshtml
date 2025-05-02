@@ -60,13 +60,11 @@
                             </span>
                             <span class="main__books-item-subtitle"> @item.Description</span> <br>
                         </div>
-                        <button class="main__books-item-button">
-
+                    <a asp-route-id="@item.Id" asp-page="ShowMore" class="main__books-item-button">
                             <img class="main__books-item-button-img" src="/img/Shop/main/shopping-cart-2-line.png"
                                  alt="">
-                            <span class="main__buttons-name"><a class="main__buttons-name-a" href="/book.html">Add to Cart</a></span>
-
-                        </button>
+                            <span class="main__buttons-name">Show More</span>
+                    </a>
                     </li>
                 }
               

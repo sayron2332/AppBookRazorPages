@@ -41,7 +41,7 @@ namespace Chapter02
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             .AddCookie(options =>
             {
-                options.LoginPath = "/auth/login";  // Шлях для редиректу при невдалій автентифікації
+                options.LoginPath = "/auth/signin";  // Шлях для редиректу при невдалій автентифікації
                 options.AccessDeniedPath = "/error";  // Шлях при відмові в доступі
                 options.Cookie.Name = "authCoockie"; // Ім'я cookie
                 options.Cookie.HttpOnly = true;  // Доступно тільки через HTTP

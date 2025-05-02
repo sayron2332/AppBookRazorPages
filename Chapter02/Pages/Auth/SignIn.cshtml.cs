@@ -1,4 +1,5 @@
 using Chapter02.Core.Dtos.Users;
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Chapter02.Core.Validation.User;
 using Microsoft.AspNetCore.Mvc;
@@ -14,8 +15,8 @@ namespace Chapter02.Pages.Auth
     {
         [BindProperty]
         public SignInUserDto SignInUser { get; set; } = null!;
-        private readonly UserService _userService;
-        public SignInModel(UserService userService)
+        private readonly IUserService _userService;
+        public SignInModel(IUserService userService)
         {
             _userService = userService;
         }

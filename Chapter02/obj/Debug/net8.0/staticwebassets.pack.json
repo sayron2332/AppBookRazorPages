@@ -173,6 +173,10 @@
       "PackagePath": "staticwebassets\\images\\books\\3c826fca-3860-444a-a3b7-69c056a4eba7.png"
     },
     {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\9f3fee1f-50a3-4836-a7f7-85aae68a3b82.jfif",
+      "PackagePath": "staticwebassets\\images\\books\\9f3fee1f-50a3-4836-a7f7-85aae68a3b82.jfif"
+    },
+    {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\a577921e-3388-4567-a1c7-19cf348dcf63.jpg",
       "PackagePath": "staticwebassets\\images\\books\\a577921e-3388-4567-a1c7-19cf348dcf63.jpg"
     },
@@ -181,8 +185,20 @@
       "PackagePath": "staticwebassets\\images\\books\\default.jpg"
     },
     {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\0eb248c6-2683-4a56-ae91-835cdbaeb31e.png",
+      "PackagePath": "staticwebassets\\images\\users\\0eb248c6-2683-4a56-ae91-835cdbaeb31e.png"
+    },
+    {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif",
       "PackagePath": "staticwebassets\\images\\users\\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\aff799ce-dd62-4c1c-a2db-b5fdeb4ecdbc.png",
+      "PackagePath": "staticwebassets\\images\\users\\aff799ce-dd62-4c1c-a2db-b5fdeb4ecdbc.png"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\b1a94081-0add-4fb6-a9e2-c3db7433ced3.png",
+      "PackagePath": "staticwebassets\\images\\users\\b1a94081-0add-4fb6-a9e2-c3db7433ced3.png"
     },
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\dd603b28-648a-4dd8-89f0-1f4c01c89363.jfif",
@@ -191,6 +207,10 @@
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\default.jpg",
       "PackagePath": "staticwebassets\\images\\users\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\f0664bf0-4d6f-47e6-9398-b72107bca8fb.jfif",
+      "PackagePath": "staticwebassets\\images\\users\\f0664bf0-4d6f-47e6-9398-b72107bca8fb.jfif"
     },
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\img\\Shop\\footer\\logo-for-footer-or-body2.png",
@@ -535,6 +555,10 @@
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\templates\\valentineEmail.html",
+      "PackagePath": "staticwebassets\\templates\\valentineEmail.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Chapter02.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

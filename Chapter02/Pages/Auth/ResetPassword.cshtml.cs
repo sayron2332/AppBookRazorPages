@@ -1,4 +1,5 @@
 using Chapter02.Core.Dtos.Users;
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Chapter02.Core.Validation.User;
 using Microsoft.AspNetCore.Mvc;
@@ -6,9 +7,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Chapter02.Pages.Auth
 {
-    public class ResetPasswordModel(UserService userService) : PageModel
+    public class ResetPasswordModel(IUserService userService) : PageModel
     {
-        private readonly UserService _userService = userService;
+        private readonly IUserService _userService = userService;
         [BindProperty]
         public required ForgotPasswordDto ForgotPassword { get; set; }
         public IActionResult OnGet(string email, string token)

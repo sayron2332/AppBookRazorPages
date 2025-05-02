@@ -1,4 +1,5 @@
 using Chapter02.Core.Dtos.Users;
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Chapter02.Core.Validation.User;
 using FluentValidation.Results;
@@ -13,8 +14,8 @@ namespace Chapter02.Pages.Admin.Users
         [BindProperty(SupportsGet = true)]
         public UpdateUserDto UpdateUser { get; set; } = null!;
 
-        private readonly UserService _userService;
-        public UpdateModel(UserService userService)
+        private readonly IUserService _userService;
+        public UpdateModel(IUserService userService)
         {
             _userService = userService;
         }

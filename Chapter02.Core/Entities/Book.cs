@@ -19,6 +19,7 @@ namespace Chapter02.Core.Entities
         public string ImageName { get; set; } = "default.jpg";
         public ICollection<BookCategory> CategoriesLink { get; set; } = [];
         public ICollection<BookAuthor> AuthorsLink { get; set; } = [];
-    
+        public ICollection<BookCart> CartLink { get; set; } = [];
+
     }
 }

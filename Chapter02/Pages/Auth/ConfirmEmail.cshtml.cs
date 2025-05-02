@@ -1,3 +1,4 @@
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -7,8 +8,8 @@ namespace Chapter02.Pages.Auth
 {
     public class ConfirmEmailModel : PageModel
     {
-        private readonly UserService _userService;
-        public ConfirmEmailModel(UserService userService)
+        private readonly IUserService _userService;
+        public ConfirmEmailModel(IUserService userService)
         {
             _userService = userService;
         }

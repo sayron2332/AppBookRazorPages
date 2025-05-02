@@ -1,6 +1,7 @@
 using Ardalis.Specification;
 using Chapter02.Core;
 using Chapter02.Core.Dtos.Users;
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Chapter02.Core.Validation.User;
 using FluentValidation;
@@ -14,11 +15,11 @@ namespace Chapter02.Pages.Auth
     [EnableRateLimiting("StrongLimitation")]
     public class SignUp : PageModel
     {
-        private readonly UserService _userService;
+        private readonly IUserService _userService;
 
         [BindProperty]
         public CreateUserDto RegisterUser { get; set; } = null!;
-        public SignUp(UserService userService)
+        public SignUp(IUserService userService)
         {
             _userService = userService;
         }

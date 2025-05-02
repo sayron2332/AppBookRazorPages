@@ -1,3 +1,4 @@
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -5,9 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Chapter02.Pages.Auth
 {
-    public class ForgotPasswordModel(UserService userService) : PageModel
+    public class ForgotPasswordModel(IUserService userService) : PageModel
     {
-        private readonly UserService _userService = userService;
+        private readonly IUserService _userService = userService;
         [EmailAddress]
         [BindProperty]
         public required string Email { get; set; }

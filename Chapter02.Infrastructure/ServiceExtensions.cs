@@ -4,6 +4,7 @@ using Chapter02.Infrastructure.Context;
 using Chapter02.Infrastructure.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System;
@@ -22,6 +23,7 @@ namespace Chapter02.Infrastructure
             services.AddDbContext<AppDbContext>(options => 
             { 
                 options.UseSqlServer(connString);
+                
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
         }

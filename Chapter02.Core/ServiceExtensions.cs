@@ -15,7 +15,8 @@ namespace Chapter02.Core
     {
         public static IServiceCollection AddCoreServices(this IServiceCollection services)
         {
-            services.AddScoped<UserService>();
+            services.AddScoped<IUserService,UserService>();
+            services.AddScoped<ICartService, CartService>();
             services.AddScoped<EmailService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IAuthorService, AuthorService>();

@@ -28,40 +28,13 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AspNetUsers",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
-                    AccessFailedCount = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Authors",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Surname = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ImageName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -70,22 +43,17 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Books",
+                name: "Cart",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Leanguage = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<int>(type: "int", nullable: false),
-                    NumberOfPages = table.Column<long>(type: "bigint", nullable: false),
-                    Age = table.Column<int>(type: "int", nullable: false),
-                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Books", x => x.Id);
+                    table.PrimaryKey("PK_Cart", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -94,7 +62,7 @@ namespace Chapter02.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -120,6 +88,65 @@ namespace Chapter02.Infrastructure.Migrations
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AspNetUsers",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CartId = table.Column<int>(type: "int", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
+                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    AccessFailedCount = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AspNetUsers_Cart_CartId",
+                        column: x => x.CartId,
+                        principalTable: "Cart",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Books",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Leanguage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Price = table.Column<int>(type: "int", nullable: false),
+                    NumberOfPages = table.Column<long>(type: "bigint", nullable: false),
+                    Age = table.Column<int>(type: "int", nullable: false),
+                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CartId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Books", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Books_Cart_CartId",
+                        column: x => x.CartId,
+                        principalTable: "Cart",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -253,6 +280,30 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "BookCart",
+                columns: table => new
+                {
+                    BookId = table.Column<int>(type: "int", nullable: false),
+                    CartId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BookCart", x => new { x.BookId, x.CartId });
+                    table.ForeignKey(
+                        name: "FK_BookCart_Books_BookId",
+                        column: x => x.BookId,
+                        principalTable: "Books",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_BookCart_Cart_CartId",
+                        column: x => x.CartId,
+                        principalTable: "Cart",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "BookCategory",
                 columns: table => new
                 {
@@ -281,14 +332,9 @@ namespace Chapter02.Infrastructure.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "7b3f1b36-c87a-4b5d-932b-092febc92cf1", null, "user", "USER" },
-                    { "d40c703b-fa58-4d7d-86ba-b4e8cd39cb69", null, "admin", "ADMIN" }
+                    { "110db4cf-555d-4c8f-b254-71339c721f6b", null, "user", "USER" },
+                    { "49212154-2682-4593-9ffe-56cbf99bea81", null, "admin", "ADMIN" }
                 });
-
-            migrationBuilder.InsertData(
-                table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Surname", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "97e8873f-dca7-4304-8205-ec24fe812772", 0, "2a8c818a-904e-4942-aad2-accce52b53bd", "xvtnxjgbyv@gmail.com", true, false, null, "Nazar", "xvtnxjgbyv@gmail.com", "xvtnxjgbyv@gmail.com", "AQAAAAIAAYagAAAAEMjTLjxY3SuAVjuo60Rwe45134xIx+w+FuhbA9KNeQTkWkNDOYJCODaCtdRLi2g+9g==", "+380959348105", false, "", "Kurylovych", false, "xvtnxjgbyv@gmail.com" });
 
             migrationBuilder.InsertData(
                 table: "Authors",
@@ -301,12 +347,17 @@ namespace Chapter02.Infrastructure.Migrations
 
             migrationBuilder.InsertData(
                 table: "Books",
-                columns: new[] { "Id", "Age", "Description", "ImageName", "Leanguage", "Name", "NumberOfPages", "Price" },
+                columns: new[] { "Id", "Age", "CartId", "Description", "ImageName", "Leanguage", "Name", "NumberOfPages", "Price" },
                 values: new object[,]
                 {
-                    { 1, 2021, "You will learn all asp net core", "default.jpg", "English", "Asp.Net Core in action, Third Edition", 819L, 24 },
-                    { 2, 2020, "You will learn all Entity Framework core", "default.jpg", "English", "Entity Framework core in action, Third Edition", 920L, 30 }
+                    { 1, 2021, null, "You will learn all asp net core", "default.jpg", "English", "Asp.Net Core in action, Third Edition", 819L, 24 },
+                    { 2, 2020, null, "You will learn all Entity Framework core", "default.jpg", "English", "Entity Framework core in action, Third Edition", 920L, 30 }
                 });
+
+            migrationBuilder.InsertData(
+                table: "Cart",
+                columns: new[] { "Id", "Quantity", "UserId" },
+                values: new object[] { 1, 0, "f750a958-462b-4d6c-9bc2-a088afcf5269" });
 
             migrationBuilder.InsertData(
                 table: "Catogories",
@@ -318,9 +369,9 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "AspNetUserRoles",
-                columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "d40c703b-fa58-4d7d-86ba-b4e8cd39cb69", "97e8873f-dca7-4304-8205-ec24fe812772" });
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "CartId", "ConcurrencyStamp", "Email", "EmailConfirmed", "ImageName", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Surname", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "f750a958-462b-4d6c-9bc2-a088afcf5269", 0, 1, "f3f01b67-02f5-46bc-b34e-8f5be872d710", "xvtnxjgbyv@gmail.com", true, "default.jpg", false, null, "Nazar", "xvtnxjgbyv@gmail.com", "xvtnxjgbyv@gmail.com", "AQAAAAIAAYagAAAAEH7FnlVxuL2pDe4pC/DvpKdaZrwiGyGdWoLp+Zg6WP+0jK7GkIqHBoaoCEAZzszC+A==", "+380959348105", false, "", "Kurylovych", false, "xvtnxjgbyv@gmail.com" });
 
             migrationBuilder.InsertData(
                 table: "BookAuthor",
@@ -341,12 +392,17 @@ namespace Chapter02.Infrastructure.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[] { "49212154-2682-4593-9ffe-56cbf99bea81", "f750a958-462b-4d6c-9bc2-a088afcf5269" });
+
+            migrationBuilder.InsertData(
                 table: "Comments",
                 columns: new[] { "Id", "Name", "NumberOfStars", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "So cool Book about asp.net Core", (byte)5, "97e8873f-dca7-4304-8205-ec24fe812772" },
-                    { 2, "So cool Book about Entity Framwork Core", (byte)4, "97e8873f-dca7-4304-8205-ec24fe812772" }
+                    { 1, "So cool Book about asp.net Core", (byte)5, "f750a958-462b-4d6c-9bc2-a088afcf5269" },
+                    { 2, "So cool Book about Entity Framwork Core", (byte)4, "f750a958-462b-4d6c-9bc2-a088afcf5269" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -382,6 +438,12 @@ namespace Chapter02.Infrastructure.Migrations
                 column: "NormalizedEmail");
 
             migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_CartId",
+                table: "AspNetUsers",
+                column: "CartId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
@@ -389,14 +451,39 @@ namespace Chapter02.Infrastructure.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Authors_Surname",
+                table: "Authors",
+                column: "Surname");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_BookAuthor_AuthorId",
                 table: "BookAuthor",
                 column: "AuthorId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_BookCart_CartId",
+                table: "BookCart",
+                column: "CartId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_BookCategory_CategoryId",
                 table: "BookCategory",
                 column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Books_CartId",
+                table: "Books",
+                column: "CartId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Books_Name",
+                table: "Books",
+                column: "Name");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Catogories_Name",
+                table: "Catogories",
+                column: "Name");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Comments_UserId",
@@ -426,6 +513,9 @@ namespace Chapter02.Infrastructure.Migrations
                 name: "BookAuthor");
 
             migrationBuilder.DropTable(
+                name: "BookCart");
+
+            migrationBuilder.DropTable(
                 name: "BookCategory");
 
             migrationBuilder.DropTable(
@@ -445,6 +535,9 @@ namespace Chapter02.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Cart");
         }
     }
 }

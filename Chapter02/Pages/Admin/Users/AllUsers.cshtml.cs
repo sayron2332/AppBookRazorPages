@@ -15,8 +15,8 @@ namespace Chapter02.Pages.Admin.Users
         public int UserCount { get; set; }
         public required IEnumerable<UserDto> Users { get; set; }
 
-        private readonly UserService _userService;
-        public AllUsers(UserService userService)
+        private readonly IUserService _userService;
+        public AllUsers(IUserService userService)
         {
             _userService = userService;
         }

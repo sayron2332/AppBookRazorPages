@@ -2,6 +2,7 @@
 using Chapter02.Core.Dtos.Configuration;
 using Chapter02.Core.Dtos.Users;
 using Chapter02.Core.Entities;
+using Chapter02.Core.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
@@ -11,7 +12,7 @@ using System.Security.Claims;
 using System.Text;
 namespace Chapter02.Core.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly UserManager<AspNetUser> _userManager;
         
@@ -19,16 +20,18 @@ namespace Chapter02.Core.Services
         private readonly EmailService _emailService;
         private readonly IConfiguration _config;
         private readonly IMapper _autoMapper;
+        private readonly ICartService _cartService;
         public UserService(UserManager<AspNetUser> userManager,
             RoleManager<IdentityRole> roleManager, EmailService emailService,
             SignInManager<AspNetUser> signInManager, IConfiguration config,
-            IMapper autoMapper)
+            IMapper autoMapper,ICartService cartService )
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailService = emailService;
             _config = config;
             _autoMapper = autoMapper;
+            _cartService = cartService;
         }
 
         public async Task<ServiceResponse> SignInUserAsync(SignInUserDto signInUser)
@@ -118,35 +121,7 @@ namespace Chapter02.Core.Services
                 Errors = result.Errors.Select(e => e.Description)
             };
         }
-        public async Task<ServiceResponse> SendResetPasswordEmailAsync(string Email)
-        {
-            var user = await _userManager.FindByEmailAsync(Email);
-            if (user == null)
-            {
-                return new ServiceResponse
-                {
-                    Success = false,
-                    Message = "The email isn`t exist",
-                    Errors = new List<string>
-                    {
-                        "The email isn`t exist",
-                    }
-                };
-            }
-            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-            var encodedEmailToken = Encoding.UTF8.GetBytes(token);
-            var validEmailToken = WebEncoders.Base64UrlEncode(encodedEmailToken);
-
-            var url = $"{_config["HostSettings:URL"]}/auth/ResetPassword?email={Email}&token={validEmailToken}";
-            await _emailService.SendEmailAsync(Email, "Reset Password email.", url);
-
-            return new ServiceResponse
-            {
-                Success = true,
-                Message = "Email for reset password successfully send."
-            };
-
-        }
+       
         public async Task<List<UserDto>> GetAllUsersAsync()
         {
             var users = await _userManager.Users.ToListAsync();
@@ -242,11 +217,13 @@ namespace Chapter02.Core.Services
                 registerUser.ImageName = "default.jpg";
             }
             AspNetUser mappedUser = _autoMapper.Map<AspNetUser>(registerUser);
-
+            await _cartService.CreateCart(new Cart { UserId = mappedUser.Id });
+            var cart = await _cartService.GetByUserId(mappedUser.Id);
+            mappedUser.CartId = cart.Id;
             var result = await _userManager.CreateAsync(mappedUser, registerUser.Password);
             if (result.Succeeded)
             {
-
+               
                 await _userManager.AddToRoleAsync(mappedUser, registerUser.Role!);
                 await SendConfirmationEmail(mappedUser);
                 return new ServiceResponse
@@ -272,7 +249,9 @@ namespace Chapter02.Core.Services
         }
         public async Task<ServiceResponse> DeleteByIdAsync(string id)
         {
-            AspNetUser? user = await _userManager.FindByIdAsync(id);
+            AspNetUser? user = await _userManager.Users
+                .Include(a => a.Cart)
+                .FirstOrDefaultAsync(a => a.Id == id);
             if (user is null)
             {
                 return new ServiceResponse
@@ -281,15 +260,18 @@ namespace Chapter02.Core.Services
                     Message = "User Not found"
                 };
             }
-            if (user.ImageName != "default.jpg")
-            {
-                ImageSettings imageSettings = _config.GetSection("ImageSettings").Get<ImageSettings>()!;
-                string image = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.UserImage, user.ImageName);
-                File.Delete(image);
-            }
+           
             var result = await _userManager.DeleteAsync(user);
             if (result.Succeeded)
             {
+                if (user.ImageName != "default.jpg")
+                {
+                    ImageSettings imageSettings = _config.GetSection("ImageSettings").Get<ImageSettings>()!;
+                    string image = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imageSettings.UserImage, user.ImageName);
+                    File.Delete(image);
+                }
+                var cart = await _cartService.GetByUserId(user.Id);
+                await _cartService.DeleteCartById(cart.Id);
                 return new ServiceResponse
                 {
                     Success = true,
@@ -304,6 +286,35 @@ namespace Chapter02.Core.Services
                 Errors = result.Errors.Select(e => e.Description)
 
             };
+        }
+        public async Task<ServiceResponse> SendResetPasswordEmailAsync(string Email)
+        {
+            var user = await _userManager.FindByEmailAsync(Email);
+            if (user == null)
+            {
+                return new ServiceResponse
+                {
+                    Success = false,
+                    Message = "The email isn`t exist",
+                    Errors = new List<string>
+                    {
+                        "The email isn`t exist",
+                    }
+                };
+            }
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var encodedEmailToken = Encoding.UTF8.GetBytes(token);
+            var validEmailToken = WebEncoders.Base64UrlEncode(encodedEmailToken);
+
+            var url = $"{_config["HostSettings:URL"]}/auth/ResetPassword?email={Email}&token={validEmailToken}";
+            await _emailService.SendEmailAsync(Email, "Reset Password email.", url);
+
+            return new ServiceResponse
+            {
+                Success = true,
+                Message = "Email for reset password successfully send."
+            };
+
         }
         public async Task<ServiceResponse> UpdateUserAsync(IFormFile photo,UpdateUserDto updateUser)
         {
@@ -355,7 +366,6 @@ namespace Chapter02.Core.Services
                 user.UserName = updateUser.Email;
                 await SendConfirmationEmail(user);
             }
-
             var result = await _userManager.UpdateAsync(user);
             if (result.Succeeded)
             {

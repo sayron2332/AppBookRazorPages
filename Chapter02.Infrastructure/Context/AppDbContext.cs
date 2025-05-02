@@ -12,14 +12,23 @@ namespace Chapter02.Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            SeedData.SeedRolesUsersComments(builder);
+            SeedData.SeedRolesUsersCommentsCarts(builder);
             SeedData.SeedBooksAuthorsCategories(builder);
+
+            builder.Entity<AspNetUser>()
+              .HasOne(u => u.Cart)
+              .WithOne(c => c.User)
+              .HasForeignKey<AspNetUser>(u => u.CartId)
+              .IsRequired(false);
 
             builder.Entity<BookAuthor>()
             .HasKey(ba => new { ba.BookId, ba.AuthorId });
 
             builder.Entity<BookCategory>()
            .HasKey(ba => new { ba.BookId, ba.CategoryId });
+
+            builder.Entity<BookCart>()
+          .HasKey(ba => new { ba.BookId, ba.CartId });
 
 
             builder.Entity<Book>()

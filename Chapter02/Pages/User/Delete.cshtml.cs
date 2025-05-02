@@ -1,4 +1,5 @@
 using Chapter02.Core.Dtos.Users;
+using Chapter02.Core.Interfaces;
 using Chapter02.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -14,8 +15,8 @@ namespace Chapter02.Pages.User
         [BindProperty(SupportsGet = true)]
         public UpdateUserDto UpdateUser { get; set; } = null!;
 
-        private readonly UserService _userService;
-        public DeleteModel(UserService userService)
+        private readonly IUserService _userService;
+        public DeleteModel(IUserService userService)
         {
             _userService = userService;
         }

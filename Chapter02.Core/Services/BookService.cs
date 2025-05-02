@@ -200,5 +200,11 @@ namespace Chapter02.Core.Services
             IEnumerable<Book> result = await _bookRepository.GetListBySpec(new BookSpecification.GetListByPagination(skip, pageSize));
             return result.Select(a => _mapper.Map<BookDto>(a));
         }
+
+        public async Task<Book> GetByIdAsTracking(int Id)
+        {
+            var book = await _bookRepository.GetItemBySpec(new BookSpecification.GetByIdAsTracking(Id));
+            return book!;
+        }
     }
 }

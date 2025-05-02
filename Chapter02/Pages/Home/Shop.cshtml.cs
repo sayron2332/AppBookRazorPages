@@ -20,11 +20,15 @@ namespace Chapter02.Pages.Home
             string searchString = TempData["searchString"]?.ToString() ?? "";
             return await LoadBooks(searchString);
         }
-
         public async Task<IActionResult> OnPost(string searchString, int p = 1)
         {
             PageNo = p;
             return await LoadBooks(searchString);
+        }
+        public async Task<IActionResult> OnPostAddToCart(int p = 1)
+        {
+            PageNo = p;
+            return await LoadBooks("");
         }
 
         private async Task<IActionResult> LoadBooks(string searchString)

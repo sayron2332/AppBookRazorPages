@@ -10,14 +10,19 @@ using System.Text;
 using System.Threading.Tasks;
 using MailKit.Security;
 using Chapter02.Core.Dtos.Configuration;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
+using Chapter02.Core.Entities;
 
 namespace Chapter02.Core.Services
 {
     public class EmailService
     {
         private readonly IConfiguration _config;
-        public EmailService(IConfiguration config)
+        private readonly UserManager<AspNetUser> _userManager;
+        public EmailService(IConfiguration config,UserManager<AspNetUser> userManager)
         {
+            _userManager=userManager;
             _config = config;
         }
         public async Task SendEmailAsync(string toEmail, string subject, string htmlMessage)
@@ -25,7 +30,7 @@ namespace Chapter02.Core.Services
             var emailSettings = _config.GetSection("EmailSetting")
                 .Get<EmailSettings>();
 
-            
+           
             MimeMessage email = new();
             email.From.Add(MailboxAddress.Parse(emailSettings?.User));
             email.To.Add(MailboxAddress.Parse(toEmail));
@@ -45,5 +50,6 @@ namespace Chapter02.Core.Services
             }
          
         }
+      
     }
 }
