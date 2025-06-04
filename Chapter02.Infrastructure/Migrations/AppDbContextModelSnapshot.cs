@@ -107,24 +107,24 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f750a958-462b-4d6c-9bc2-a088afcf5269",
+                            Id = "bbe1c079-183b-4845-834b-4d6ee5a2b86c",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "f3f01b67-02f5-46bc-b34e-8f5be872d710",
-                            Email = "xvtnxjgbyv@gmail.com",
+                            ConcurrencyStamp = "2ad49216-01e8-414b-abc8-5547fda56781",
+                            Email = "admin@example.com",
                             EmailConfirmed = true,
                             ImageName = "default.jpg",
                             LockoutEnabled = false,
                             Name = "Nazar",
-                            NormalizedEmail = "xvtnxjgbyv@gmail.com",
-                            NormalizedUserName = "xvtnxjgbyv@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEH7FnlVxuL2pDe4pC/DvpKdaZrwiGyGdWoLp+Zg6WP+0jK7GkIqHBoaoCEAZzszC+A==",
+                            NormalizedEmail = "admin@example.com",
+                            NormalizedUserName = "admin@example.com",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJLF5pfauUCzTFan/GKfSZuBG/ZnqxnytQ9i0tpX3GoisSv7oOpHsJ1TZNIC4G3diw==",
                             PhoneNumber = "+380959348105",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             Surname = "Kurylovych",
                             TwoFactorEnabled = false,
-                            UserName = "xvtnxjgbyv@gmail.com"
+                            UserName = "admin@example.com"
                         });
                 });
 
@@ -333,7 +333,7 @@ namespace Chapter02.Infrastructure.Migrations
                         {
                             Id = 1,
                             Quantity = 0,
-                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269"
+                            UserId = "bbe1c079-183b-4845-834b-4d6ee5a2b86c"
                         });
                 });
 
@@ -399,14 +399,14 @@ namespace Chapter02.Infrastructure.Migrations
                             Id = 1,
                             Name = "So cool Book about asp.net Core",
                             NumberOfStars = (byte)5,
-                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269"
+                            UserId = "bbe1c079-183b-4845-834b-4d6ee5a2b86c"
                         },
                         new
                         {
                             Id = 2,
                             Name = "So cool Book about Entity Framwork Core",
                             NumberOfStars = (byte)4,
-                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269"
+                            UserId = "bbe1c079-183b-4845-834b-4d6ee5a2b86c"
                         });
                 });
 
@@ -439,13 +439,13 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "49212154-2682-4593-9ffe-56cbf99bea81",
+                            Id = "f6648126-872f-4226-b019-bacc20ef2823",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "110db4cf-555d-4c8f-b254-71339c721f6b",
+                            Id = "6a57eae1-c31f-4810-bc22-354d1a6f0c75",
                             Name = "user",
                             NormalizedName = "USER"
                         });
@@ -540,8 +540,8 @@ namespace Chapter02.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "f750a958-462b-4d6c-9bc2-a088afcf5269",
-                            RoleId = "49212154-2682-4593-9ffe-56cbf99bea81"
+                            UserId = "bbe1c079-183b-4845-834b-4d6ee5a2b86c",
+                            RoleId = "f6648126-872f-4226-b019-bacc20ef2823"
                         });
                 });
 

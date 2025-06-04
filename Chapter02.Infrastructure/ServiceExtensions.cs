@@ -4,14 +4,8 @@ using Chapter02.Infrastructure.Context;
 using Chapter02.Infrastructure.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Chapter02.Infrastructure
 {
@@ -31,7 +25,6 @@ namespace Chapter02.Infrastructure
         {
             services.AddIdentity<AspNetUser, IdentityRole>(options =>
             {
-                options.SignIn.RequireConfirmedEmail = true;
                 options.Lockout.MaxFailedAccessAttempts = 5;
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
                 options.Password.RequireDigit = true;

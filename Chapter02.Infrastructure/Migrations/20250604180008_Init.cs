@@ -332,8 +332,8 @@ namespace Chapter02.Infrastructure.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "110db4cf-555d-4c8f-b254-71339c721f6b", null, "user", "USER" },
-                    { "49212154-2682-4593-9ffe-56cbf99bea81", null, "admin", "ADMIN" }
+                    { "6a57eae1-c31f-4810-bc22-354d1a6f0c75", null, "user", "USER" },
+                    { "f6648126-872f-4226-b019-bacc20ef2823", null, "admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -357,7 +357,7 @@ namespace Chapter02.Infrastructure.Migrations
             migrationBuilder.InsertData(
                 table: "Cart",
                 columns: new[] { "Id", "Quantity", "UserId" },
-                values: new object[] { 1, 0, "f750a958-462b-4d6c-9bc2-a088afcf5269" });
+                values: new object[] { 1, 0, "bbe1c079-183b-4845-834b-4d6ee5a2b86c" });
 
             migrationBuilder.InsertData(
                 table: "Catogories",
@@ -371,7 +371,7 @@ namespace Chapter02.Infrastructure.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "CartId", "ConcurrencyStamp", "Email", "EmailConfirmed", "ImageName", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Surname", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "f750a958-462b-4d6c-9bc2-a088afcf5269", 0, 1, "f3f01b67-02f5-46bc-b34e-8f5be872d710", "xvtnxjgbyv@gmail.com", true, "default.jpg", false, null, "Nazar", "xvtnxjgbyv@gmail.com", "xvtnxjgbyv@gmail.com", "AQAAAAIAAYagAAAAEH7FnlVxuL2pDe4pC/DvpKdaZrwiGyGdWoLp+Zg6WP+0jK7GkIqHBoaoCEAZzszC+A==", "+380959348105", false, "", "Kurylovych", false, "xvtnxjgbyv@gmail.com" });
+                values: new object[] { "bbe1c079-183b-4845-834b-4d6ee5a2b86c", 0, 1, "2ad49216-01e8-414b-abc8-5547fda56781", "admin@example.com", true, "default.jpg", false, null, "Nazar", "admin@example.com", "admin@example.com", "AQAAAAIAAYagAAAAEJLF5pfauUCzTFan/GKfSZuBG/ZnqxnytQ9i0tpX3GoisSv7oOpHsJ1TZNIC4G3diw==", "+380959348105", false, "", "Kurylovych", false, "admin@example.com" });
 
             migrationBuilder.InsertData(
                 table: "BookAuthor",
@@ -394,15 +394,15 @@ namespace Chapter02.Infrastructure.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "49212154-2682-4593-9ffe-56cbf99bea81", "f750a958-462b-4d6c-9bc2-a088afcf5269" });
+                values: new object[] { "f6648126-872f-4226-b019-bacc20ef2823", "bbe1c079-183b-4845-834b-4d6ee5a2b86c" });
 
             migrationBuilder.InsertData(
                 table: "Comments",
                 columns: new[] { "Id", "Name", "NumberOfStars", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "So cool Book about asp.net Core", (byte)5, "f750a958-462b-4d6c-9bc2-a088afcf5269" },
-                    { 2, "So cool Book about Entity Framwork Core", (byte)4, "f750a958-462b-4d6c-9bc2-a088afcf5269" }
+                    { 1, "So cool Book about asp.net Core", (byte)5, "bbe1c079-183b-4845-834b-4d6ee5a2b86c" },
+                    { 2, "So cool Book about Entity Framwork Core", (byte)4, "bbe1c079-183b-4845-834b-4d6ee5a2b86c" }
                 });
 
             migrationBuilder.CreateIndex(
