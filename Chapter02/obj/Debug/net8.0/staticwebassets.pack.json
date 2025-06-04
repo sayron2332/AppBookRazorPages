@@ -181,6 +181,10 @@
       "PackagePath": "staticwebassets\\images\\books\\a577921e-3388-4567-a1c7-19cf348dcf63.jpg"
     },
     {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\bb793f8b-0de3-412b-92b5-417e9f05db5e.png",
+      "PackagePath": "staticwebassets\\images\\books\\bb793f8b-0de3-412b-92b5-417e9f05db5e.png"
+    },
+    {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\books\\default.jpg",
       "PackagePath": "staticwebassets\\images\\books\\default.jpg"
     },
@@ -191,6 +195,10 @@
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif",
       "PackagePath": "staticwebassets\\images\\users\\586a2fc6-20ea-4a72-ac0b-ca6d30e0b269.jfif"
+    },
+    {
+      "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\9f59dc48-a46a-42fb-9ec9-1e6d2a31babe.png",
+      "PackagePath": "staticwebassets\\images\\users\\9f59dc48-a46a-42fb-9ec9-1e6d2a31babe.png"
     },
     {
       "Id": "C:\\Users\\sayron\\Desktop\\AppBookRazorPages\\Chapter02\\wwwroot\\images\\users\\aff799ce-dd62-4c1c-a2db-b5fdeb4ecdbc.png",

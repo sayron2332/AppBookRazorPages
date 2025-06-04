@@ -44,13 +44,13 @@ namespace Chapter02.Infrastructure.Helpers
                 Id = ADMIN_ID,
                 Name = "Nazar",
                 Surname = "Kurylovych",
-                UserName = "xvtnxjgbyv@gmail.com",
-                NormalizedUserName = "xvtnxjgbyv@gmail.com",
-                Email = "xvtnxjgbyv@gmail.com",
-                NormalizedEmail = "xvtnxjgbyv@gmail.com",
+                UserName = "admin@example.com",
+                NormalizedUserName = "admin@example.com",
+                Email = "admin@example.com",
+                NormalizedEmail = "admin@example.com",
                 PhoneNumber = "+380959348105",
                 EmailConfirmed = true,
-                PasswordHash = hasher.HashPassword(null!, "Sayron561"),
+                PasswordHash = hasher.HashPassword(null!, "Admin123!"),
                 SecurityStamp = string.Empty,
                 CartId = 1
              
