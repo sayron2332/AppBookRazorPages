@@ -1,4 +1,5 @@
-# AppBookRazorPages
+![image](https://github.com/user-attachments/assets/6a2e3ba5-039b-4701-949b-e0fd85499186)
+![image](https://github.com/user-attachments/assets/6aec5d1f-3409-4b9f-8055-7a30242c0ca8)# AppBookRazorPages
 
 
 Project Setup Instructions (ASP.NET Core + SQL Server)
