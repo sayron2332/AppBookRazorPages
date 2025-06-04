@@ -34,13 +34,9 @@ and open folder with project: cd AppBookRazorPages
 Then run the following command to apply migrations and create the database:
 dotnet ef database update --project Chapter02.Infrastructure --startup-project Chapter02
 
-build the Project project:
-dotnet build
+and than you need to open Api project: cd Chapter02
 
-and than you need to open main project: run the project:
-cd Chapter02
-run the project:
-dotnet run
+and finish run: dotnet run
 
 🔑 Admin Login Credentials
 By default, the project seeds an admin user when it starts:
