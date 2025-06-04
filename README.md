@@ -34,7 +34,7 @@ and open folder with project: cd AppBookRazorPages
 Then run the following command to apply migrations and create the database:
 dotnet ef database update --project Chapter02.Infrastructure --startup-project Chapter02
 
-and than you need to open Api project: cd Chapter02
+and than you need to open Web project: cd Chapter02
 
 and finish run: dotnet run
 
