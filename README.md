@@ -37,8 +37,9 @@ dotnet ef database update --project Chapter02.Infrastructure --startup-project C
 build the Project project:
 dotnet build
 
-and than you can run the project:
+and than you need to open main project: run the project:
 cd Chapter02
+run the project:
 dotnet run
 
 🔑 Admin Login Credentials
