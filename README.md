@@ -24,3 +24,9 @@ dotnet build
 
 and than you can the project 
 dotnet run
+
+🔑 Admin Login Credentials
+By default, the project seeds an admin user when it starts:
+Email: admin@example.com
+Password: Admin123!
+These can be changed in the SeedData.cs or DbInitializer.cs file if needed.
