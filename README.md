@@ -14,7 +14,7 @@ Visual Studio 2022 or Visual Studio Code (with the C# extension)
 🔧 How to Run the Project
 1. Clone the Repository
 git clone https://github.com/sayron2332/AppBookRazorPages
-cd AppBookRazorPages
+and open folder with project cd AppBookRazorPages
 
 
 Then run the following command to apply migrations and create the database:
